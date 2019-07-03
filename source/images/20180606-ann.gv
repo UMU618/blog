@@ -1,0 +1,13 @@
+digraph G {
+    rankdir=LR;
+
+    {i1 i2} -> {h1 h2} -> {o1};
+
+    i1 [shape=circle; label="x1";];
+    i2 [shape=circle; label="x2";];
+    h1, h2, o1 [shape=circle; label="神经元";];
+
+    input -> hidden -> output [style=invis;];
+
+    input, hidden, output [shape=plaintext;];
+}
