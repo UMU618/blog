@@ -4,7 +4,7 @@ date: 2012-11-18 15:40:25
 description: 
 categories: UMUTech
 tags:
-- donet
+- dotnet
 - Programming Windows
 - 开源
 ---
