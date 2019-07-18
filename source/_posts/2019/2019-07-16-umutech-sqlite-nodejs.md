@@ -27,10 +27,10 @@ const sqlite = require('sqlite3')
 const dbPath = path.join(__dirname, 'test.db')
 const db = new sqlite.Database(dbPath)
 
-const sqls = ['CREATE TABLE test(
+const sqls = [`CREATE TABLE test(
   id CHAR(64) NOT NULL PRIMARY KEY CHECK(LENGTH(id) == 64),
   timeStamp INTEGER NOT NULL,
-  state INTEGER NOT NULL DEFAULT 0)'
+  state INTEGER NOT NULL DEFAULT 0)`
   , 'CREATE INDEX index_id ON txs(id)'
   , 'CREATE INDEX index_timeStamp ON txs(timeStamp)'
   , 'CREATE INDEX index_state ON txs(state)'
