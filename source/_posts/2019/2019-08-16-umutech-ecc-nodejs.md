@@ -80,4 +80,12 @@ console.log(privateKey)
 console.log(publicKey)
 ```
 
+## 3. 对比
+
+elliptic 比较好用，比较快。
+
+# 代码
+
+<https://github.com/UMU618/secp256k1-tools>
+
 [sage]: https://sagecell.sagemath.org/
