@@ -82,7 +82,7 @@ class Pos {
 		return row === this.row && column === this.column
 	}
 
-	setPos(row, column) {
+	set(row, column) {
 		this.row = row
 		this.column = column
 	}
@@ -96,13 +96,13 @@ class Matrix {
 		this.array.fill(0)
 	}
 
-	getElement() {
+	get() {
 		if (arguments.length === 1) {
-			var n = arguments[0]
+			let n = arguments[0]
 			return this.array[n.row * this.columns + n.column]
 		} else if (arguments.length === 2) {
-			var row = arguments[0]
-			var column = arguments[1]
+			let row = arguments[0]
+			let column = arguments[1]
 			if (typeof row !== 'number' || typeof column !== 'number') {
 				throw new Error('Invalid parameter: ' + row + ', ' + column)
 			}
@@ -112,21 +112,19 @@ class Matrix {
 		}
 	}
 
-	setElement() {
+	set() {
 		if (arguments.length === 2) {
-			var n = arguments[0]
-			if (n instanceof Pos) {
-				this.array[n.row * this.columns + n.column] = arguments[1]
-			} else {
-				throw new Error('Invalid parameter: ' + n)
-			}
+			let n = arguments[0]
+			let data = arguments[1]
+			this.array[n.row * this.columns + n.column] = data
 		} else if (arguments.length === 3) {
-			var row = arguments[0]
-			var column = arguments[1]
+			let row = arguments[0]
+			let column = arguments[1]
+			let data = arguments[2]
 			if (typeof row !== 'number' || typeof column !== 'number') {
 				throw new Error('Invalid parameter: ' + row + ', ' + column)
 			}
-			this.array[row * this.columns + column] = arguments[2]
+			this.array[row * this.columns + column] = data
 		} else {
 			throw new Error('Invalid parameters count')
 		}
@@ -135,15 +133,15 @@ class Matrix {
 
 const map = new Matrix(ROWS, COLUMNS), uiMap = new Matrix(ROWS, COLUMNS)
 const start = new Pos(0, 0)
-var moving_start = false
+let moving_start = false
 const end = new Pos(ROWS - 1, COLUMNS - 1)
-var moving_end = false
-const table = document.createElement('table')
+let moving_end = false
+let table = document.createElement('table')
 
-for (var i = 0; i < ROWS; ++i) {
-	const tr = document.createElement('tr')
-	for (var j = 0; j < COLUMNS; ++j) {
-		const td = document.createElement('td')
+for (let i = 0; i < ROWS; ++i) {
+	let tr = document.createElement('tr')
+	for (let j = 0; j < COLUMNS; ++j) {
+		let td = document.createElement('td')
 		if (start.equals2(i, j)) {
 			td.className = 'start'
 		} else if (end.equals2(i, j)) {
@@ -151,32 +149,32 @@ for (var i = 0; i < ROWS; ++i) {
 		} else {
 			td.className = ''
 		}
-		uiMap.setElement(i, j, tr.appendChild(td))
+		uiMap.set(i, j, tr.appendChild(td))
 		; (function (i, j) {
 			// 用闭包把确定下来的 i, j 传给 onclick
 			td.onclick = function () {
 				clearPath()
-				if (uiMap.getElement(i, j).className == 'block') {
-					uiMap.getElement(i, j).className = ''
-					map.setElement(i, j, 0)
-				} else if (uiMap.getElement(i, j).className == "start" && !moving_start) {
-					uiMap.getElement(i, j).className = ''
+				if (uiMap.get(i, j).className == 'block') {
+					uiMap.get(i, j).className = ''
+					map.set(i, j, 0)
+				} else if (uiMap.get(i, j).className == "start" && !moving_start) {
+					uiMap.get(i, j).className = ''
 					moving_start = true
-				} else if (uiMap.getElement(i, j).className == 'end' && !moving_end) {
-					uiMap.getElement(i, j).className = ''
+				} else if (uiMap.get(i, j).className == 'end' && !moving_end) {
+					uiMap.get(i, j).className = ''
 					moving_end = true
-				} else if (!uiMap.getElement(i, j).className) {
+				} else if (!uiMap.get(i, j).className) {
 					if (moving_start) {
 						moving_start = false
-						start.setPos(i, j)
-						uiMap.getElement(i, j).className = 'start'
+						start.set(i, j)
+						uiMap.get(i, j).className = 'start'
 					} else if (moving_end) {
 						moving_end = false
-						end.setPos(i, j)
-						uiMap.getElement(i, j).className = 'end'
+						end.set(i, j)
+						uiMap.get(i, j).className = 'end'
 					} else {
-						uiMap.getElement(i, j).className = 'block'
-						map.setElement(i, j, 1)
+						uiMap.get(i, j).className = 'block'
+						map.set(i, j, 1)
 					}
 				}
 			}
@@ -187,7 +185,7 @@ for (var i = 0; i < ROWS; ++i) {
 document.body.appendChild(table)
 
 function clearPath() {
-	for (var i = 0; i < uiMap.array.length; ++i) {
+	for (let i = 0; i < uiMap.array.length; ++i) {
 		if (uiMap.array[i].className == "path"
 			|| uiMap.array[i].className == "searched") {
 			uiMap.array[i].className = ""
@@ -198,26 +196,26 @@ function clearPath() {
 // 相当于在起点倒水，满了溢出扩散，直到溢到终点
 function bfs() {
 	clearPath()
-	var finded = false
-	var frontier = [start]
+	let finded = false
+	let frontier = [start]
 	const visited = new Matrix(ROWS, COLUMNS)
-	var tempList = []
+	let tempList = []
 
-	function walk(from, to) {
-		if (!map.getElement(to) && !finded) {
+	const walk = (from, to) => {
+		if (!map.get(to) && !finded) {
 			if (end.equals(to)) {
 				finded = true
-				visited.setElement(to, from)
-			} else if (!visited.getElement(to)) {
+				visited.set(to, from)
+			} else if (!visited.get(to)) {
 				tempList.push(to)
-				visited.setElement(to, from)
+				visited.set(to, from)
 			}
 		}
 	}
 
 	do {
 		tempList = []
-		for (var i = 0; i < frontier.length; ++i) {
+		for (let i = 0; i < frontier.length; ++i) {
 			const current = frontier[i]
 			const r = current.row, c = current.column
 			// 左
@@ -233,8 +231,8 @@ function bfs() {
 	} while (!finded && frontier.length)
 
 	// 显示搜索过的路径
-	var searched = 0
-	for (var i = 0; i < uiMap.array.length; ++i) {
+	let searched = 0
+	for (let i = 0; i < uiMap.array.length; ++i) {
 		if (visited.array[i] && !uiMap.array[i].className) {
 			++searched
 			uiMap.array[i].className = 'searched'
@@ -244,60 +242,75 @@ function bfs() {
 	// 显示结果
 	const result = []
 	if (finded) {
-		var cur = end
-		while (!cur.equals(start)) {
-			result.unshift(cur)
-			cur = visited.getElement(cur)
+		let current = end
+		while (!current.equals(start)) {
+			result.unshift(current)
+			current = visited.get(current)
 		}
 	}
 	document.getElementById('steps').innerHTML = result.length + ', ' + searched
-	for (var i = 0; i < result.length; ++i) {
+	for (let i = 0; i < result.length; ++i) {
 		if (!result[i].equals(end)) {
-			uiMap.getElement(result[i]).className = 'path'
+			uiMap.get(result[i]).className = 'path'
 		}
 	}
+}
+
+// 优先向着目标奔去
+function gbfs() {
+	return aStar((list) => {
+		let min_h = ROWS * COLUMNS
+		let index
+		list.forEach((v, k) => {
+			if (v.h < min_h) {
+				min_h = v.h
+				index = k
+			}
+		})
+		return index
+	})
 }
 
 // 带权重的水，更智能一些，一般比 BFS 搜索面更少，但可能找到的不是最短。
 function aStar(choose) {
 	clearPath()
-	var finded = false
+	let finded = false
 	const openList = new Map
 	const closeList = new Map
 
-	function getIndex(n) {
+	const getIndex = (n) => {
 		return n.row * COLUMNS + n.column
 	}
-	function getIndex2(row, column) {
+	const getIndex2 = (row, column) => {
 		return row * COLUMNS + column
 	}
 
-	function getDistance(a, b) {
+	const getDistance = (a, b) => {
 		return Math.abs(a.row - b.row) + Math.abs(a.column - b.column)
 	}
 
-	function G(n) {
-		var current = closeList.get(getIndex(n))
+	const G = (n) => {
+		let current = closeList.get(getIndex(n))
 		return current.g
 	}
 
-	function H(n) {
+	const H = (n) => {
 		return getDistance(n, end)
 	}
 
-	function removeFromOpenList(n) {
+	const removeFromOpenList = (n) => {
 		openList.delete(getIndex(n))
 	}
 
-	function popMinOpenPos() {
-		var index = choose(openList)
+	const popMinOpenPos = () => {
+		let index = choose(openList)
 		openList.delete(index)
 		return new Pos(Math.floor(index / COLUMNS), index % COLUMNS)
 	}
 
-	function walk(from, to) {
+	const walk = (from, to) => {
 		if (!closeList.has(getIndex(to)) && !openList.has(getIndex(to))
-			&& !map.getElement(to) && !finded) {
+			&& !map.get(to) && !finded) {
 			if (end.equals(to)) {
 				finded = true
 			} else {
@@ -311,7 +324,7 @@ function aStar(choose) {
 	closeList.set(getIndex(start), {parent: null, g: 0})
 
 	do {
-		var current = popMinOpenPos()
+		let current = popMinOpenPos()
 		const r = current.row, c = current.column
 		// 左
 		; (c - 1 >= 0) && walk(current, new Pos(r, c - 1))
@@ -324,54 +337,39 @@ function aStar(choose) {
 	} while (!finded && openList.size > 0)
 
 	// 显示搜索过的路径
-	var searched = 0
-	closeList.forEach(function (v, k) {
-		var i = Math.floor(k / COLUMNS)
-		var j = k % COLUMNS
-		if (!uiMap.getElement(i, j).className) {
+	let searched = 0
+	closeList.forEach((v, k) => {
+		let i = Math.floor(k / COLUMNS)
+		let j = k % COLUMNS
+		if (!uiMap.get(i, j).className) {
 			++searched
-			uiMap.getElement(i, j).className = 'searched'
+			uiMap.get(i, j).className = 'searched'
 		}
 	})
 
 	// 显示结果
 	const result = []
 	if (finded) {
-		var cur = end
-		while (!cur.equals(start)) {
-			result.unshift(cur)
-			cur = closeList.get(getIndex(cur)).parent
+		let current = end
+		while (!current.equals(start)) {
+			result.unshift(current)
+			current = closeList.get(getIndex(current)).parent
 		}
 	}
 	document.getElementById('steps').innerHTML = result.length + ', ' + searched
-	for (var i = 0; i < result.length; ++i) {
+	for (let i = 0; i < result.length; ++i) {
 		if (!result[i].equals(end)) {
-			uiMap.getElement(result[i]).className = 'path'
+			uiMap.get(result[i]).className = 'path'
 		}
 	}
-}
-
-// 优先向着目标奔去
-function gbfs() {
-	return aStar(function (list) {
-		var min_h = ROWS * COLUMNS
-		var index
-		list.forEach(function (v, k) {
-			if (v.h < min_h) {
-				min_h = v.h
-				index = k
-			}
-		})
-		return index
-	})
 }
 
 // 网格图每个节点之间的移动代价是相等的，所以 Dijkstra 算法和 BFS 一样。
 function dijkstra() {
-	return aStar(function (list) {
-		var min = ROWS * COLUMNS
-		var index
-		list.forEach(function (v, k) {
+	return aStar((list) => {
+		let min = ROWS * COLUMNS
+		let index
+		list.forEach((v, k) => {
 			if (v.g < min) {
 				min = v.g
 				index = k
@@ -382,11 +380,11 @@ function dijkstra() {
 }
 
 function dijkstraPlus() {
-	return aStar(function (list) {
-		var min
-		var min_g = ROWS * COLUMNS
-		var index
-		list.forEach(function (v, k) {
+	return aStar((list) => {
+		let min
+		let min_g = ROWS * COLUMNS
+		let index
+		list.forEach((v, k) => {
 			if (v.g < min_g) {
 				min_g = v.g
 				min = v.g + v.h
@@ -401,10 +399,10 @@ function dijkstraPlus() {
 }
 
 function aStarSearch() {
-	return aStar(function (list) {
-		var min = ROWS * COLUMNS
-		var index
-		list.forEach(function (v, k) {
+	return aStar((list) => {
+		let min = ROWS * COLUMNS
+		let index
+		list.forEach((v, k) => {
 			if (v.g + v.h < min) {
 				min = v.g + v.h
 				index = k
@@ -415,11 +413,11 @@ function aStarSearch() {
 }
 
 function aStarSearchConservative() {
-	return aStar(function (list) {
-		var min = ROWS * COLUMNS
-		var min_g
-		var index
-		list.forEach(function (v, k) {
+	return aStar((list) => {
+		let min = ROWS * COLUMNS
+		let min_g
+		let index
+		list.forEach((v, k) => {
 			if (v.g + v.h < min) {
 				min_g = v.g
 				min = v.g + v.h
@@ -434,11 +432,11 @@ function aStarSearchConservative() {
 }
 
 function aStarSearchRadical() {
-	return aStar(function (list) {
-		var min = ROWS * COLUMNS
-		var min_h
-		var index
-		list.forEach(function (v, k) {
+	return aStar((list) => {
+		let min = ROWS * COLUMNS
+		let min_h
+		let index
+		list.forEach((v, k) => {
 			if (v.g + v.h < min) {
 				min_h = v.h
 				min = v.g + v.h
