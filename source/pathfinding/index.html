@@ -12,7 +12,14 @@
 	}
 	.button {
 		width: 810px;
+		height: 32px;
 		margin: 2px auto;
+	}
+	button {
+		height: 100%;
+	}
+	.clear {
+		color: red;
 	}
 	table {
 		border-collapse: collapse;
@@ -47,6 +54,7 @@
 </head>
 <body>
 	<div class="button">
+		<button class="clear" onclick="javascript: clearAll();">Clear</button>
 		<button onclick="javascript:console.time('elapsed'); bfs(); console.timeEnd('elapsed');">Breadth First Search</button>
 		<button onclick="javascript:console.time('elapsed'); gbfs(); console.timeEnd('elapsed');">Greedy Best First Search</button>
 		<button onclick="javascript:console.time('elapsed'); dijkstra(); console.timeEnd('elapsed');">Dijkstra</button>
@@ -185,6 +193,17 @@ for (var i = 0; i < ROWS; ++i) {
 	table.appendChild(tr)
 }
 document.body.appendChild(table)
+
+function clearAll() {
+	for (var i = 0; i < uiMap.array.length; ++i) {
+		map.array[i] = 0
+		if (uiMap.array[i].className == "block"
+			|| uiMap.array[i].className == "path"
+			|| uiMap.array[i].className == "searched") {
+			uiMap.array[i].className = ""
+		}
+	}
+}
 
 function clearPath() {
 	for (var i = 0; i < uiMap.array.length; ++i) {
