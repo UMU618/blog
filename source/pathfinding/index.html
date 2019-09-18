@@ -10,13 +10,14 @@
 		background: #c7edcc;
 		margin: 0px auto;
 	}
-	.button {
+	.toolbar {
 		width: 810px;
-		height: 32px;
+		height: 36px;
 		margin: 2px auto;
 	}
 	button {
-		height: 100%;
+		height: 32px;
+		margin: 0px auto;
 	}
 	.clear {
 		color: red;
@@ -53,7 +54,7 @@
 </style>
 </head>
 <body>
-	<div class="button">
+	<div class="toolbar">
 		<button class="clear" onclick="javascript: clearAll();">Clear</button>
 		<button onclick="javascript:console.time('elapsed'); bfs(); console.timeEnd('elapsed');">Breadth First Search</button>
 		<button onclick="javascript:console.time('elapsed'); gbfs(); console.timeEnd('elapsed');">Greedy Best First Search</button>
