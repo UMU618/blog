@@ -7,13 +7,13 @@ tags:
 - nodejs
 - Debug
 ---
-# 需求故事
+# 需求
 
 原版 EOS 历史 API 插件将数据都保存在内存，随着历史数据越来越多，内存消耗高达 T 级以上，使得这个插件失去实用性。于是出现很多替代产品，比如把数据同步到 MongoDB，然后用 Nodejs 对接 MongoDB 来实现 API 服务。
 
 2019 年 3 月份，MEET.ONE 实现了一个基于 MongoDB 的 EOS 历史 API 服务。劣者将去掉 MongoDB 交互部分的框架开源于 [UMU618](https://github.com/UMU618)/[eos-history-api-service](https://github.com/UMU618/eos-history-api-service)。
 
-# 测试故事
+# 测试
 
 这个 API 服务的开发者是公司另一名 Web 全栈开发，他测试通过之后，劣者用 `cleos` 一试，立马 bug！调试后端代码，发现 req.body 不是一个 JSON 对象。
 
@@ -51,6 +51,8 @@ http.createServer(function (req, res) {
 
 经对比，`cleos` 发的请求不带 Content-Type。`cleos` 是 EOSIO 的官方工具，使用者众多，若不支持它是不合理的，后端也不能要求客户端都带上 Content-Type。
 
+# 调试
+
 检查后端代码，其对 body 的解析是用 body-parser 完成的：
 
 ```js
@@ -71,6 +73,10 @@ DEBUG=body-parser:* node app.js
 ```
 
 原来 body-parser 会检查 Content-Type，不符合它的预期，就不解析，于是 body 就不是 JSON 对象。
+
+# 开发
+
+## 暴力的解决方案
 
 参考《[Express 解析 json 格式 post 数据](https://cnodejs.org/topic/54929c5561491ead0cc7bff2)》后，我们这样解决：
 
@@ -94,7 +100,7 @@ app.use((req, res, next) => {
 
 但劣者认为以上方案比较不优雅，JavaScript 作为一门高级语言，我们希望更多专注于业务逻辑，尽量复用现有代码，少自己写工具性代码。下面探讨使用 body-parser 的解法。
 
-# 优雅的解决方案
+## 优雅的解决方案
 
 劣者希望能告诉 body-parser 遇到不传 Content-Type 依然当它是 JSON 去解析。于是这就得去看它的代码！我们从上面关键的调试信息入手，可以很快发现：
 
