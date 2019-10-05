@@ -12,7 +12,7 @@ date: 2019-04-13 17:47:50
 
 - Github: <https://github.com/UMU618>
 
-- 技术敏感性强，学习速度快；
+- 技术敏感性强，善于发现 bug，学习速度快；
 
 # 教育背景
 
@@ -71,8 +71,12 @@ CN201010188864.2，获得专利授权；共申请 15 个专利，仅 3 个失败
 
 - 离职后，被启用竞业限制协议 6 个月，现已失效。
 
-# 3. 2018-09 ~ 今，厦门顺势共识信息科技有限公司，实验室
+# 3. 2018-09 ~ 今，厦门顺势共识信息科技有限公司，实验室负责人
 
 - 从事 EOS 生态各种开发、测试、运维，写文档；
 
 - 请见：<https://github.com/meet-one/>
+
+- 被官方合并的 PR：<https://github.com/meet-one/documentation/blob/master/docs/eosio-prs.md>
+
+- 被感谢：<https://github.com/EOSIO/eos/releases/tag/v1.8.0>，请搜 UMU618。
