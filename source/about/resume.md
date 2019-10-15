@@ -12,7 +12,7 @@ date: 2019-04-13 17:47:50
 
 - Github: <https://github.com/UMU618>
 
-- 技术敏感性强，善于发现 bug，学习速度快；
+- 技术敏感性强，善于发现 bug，喜欢研究难题，学习速度快；
 
 # 教育背景
 
@@ -53,7 +53,7 @@ CN201010188864.2，获得专利授权；共申请 15 个专利，仅 3 个失败
 
 - 2014-07~2016-11，OTT 产品部，担任 Android NDK 开发和 Android App 开发组组长。
 
-- 2016-05~2017-10，负责新项目[云游戏](/2019/04/14/umutech-a-developer-s-guide-to-cloud-gaming-1/)研发，与 Android 开发组组长有时间重叠，同时牵头跨部门合作项目——Android 平台自研播放器。 
+- 2016-05~2017-10，负责新项目[云游戏](/2019/04/14/umutech-a-developer-s-guide-to-cloud-gaming-1/)研发，与 Android 开发组组长有时间重叠，同时牵头跨部门合作项目——基于 [ijkplayer](https://github.com/Bilibili/ijkplayer) 的播放器。 
 
 - 网宿科技 2015 年期权激励对象（名单未公开）；
 
@@ -69,14 +69,14 @@ CN201010188864.2，获得专利授权；共申请 15 个专利，仅 3 个失败
 
 - 独立开发打印机监控系统，满足基本需求，监控效果达到市场价 10-20 万的产品水平。
 
-- 离职后，被启用竞业限制协议 6 个月，现已失效。
+- 2018-08-31 离职，被启用竞业限制协议 12 个月，实际执行 6 个月，网宿科技主动停止。
 
 # 3. 2018-09 ~ 今，厦门顺势共识信息科技有限公司，实验室负责人
 
-- 从事 EOS 生态各种开发、测试、运维，写文档；
+- 从事 EOS 生态各种开发、测试、运维，写文档，技术支援业务部门；
 
 - 请见：<https://github.com/meet-one/>
 
-- 被官方合并的 PR：<https://github.com/meet-one/documentation/blob/master/docs/eosio-prs.md>
+- 被 EOSIO 官方合并的 PR：<https://github.com/meet-one/documentation/blob/master/docs/eosio-prs.md>
 
 - 被感谢：<https://github.com/EOSIO/eos/releases/tag/v1.8.0>，请搜 UMU618。
