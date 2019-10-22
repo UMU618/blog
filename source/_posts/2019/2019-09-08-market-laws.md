@@ -1,5 +1,5 @@
 layout: post
-title: 炒币炒鞋必懂的市场理论
+title: 投资必懂的市场理论
 date: 2019-09-08 12:02:43
 description:
 categories:
