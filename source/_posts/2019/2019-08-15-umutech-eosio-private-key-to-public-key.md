@@ -47,7 +47,7 @@ bsc.decode('5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3')
 
 得到 `<Buffer 80 d2 65 3f f7 cb b2 d8 ff 12 9a c2 7e f5 78 1c e6 8b 25 58 c4 1a 74 af 1f 2d dc a6 35 cb ee f0 7d>`，去掉首字节后为：
 
-```d2 65 3f f7 cb b2 d8 ff 12 9a c2 7e f5 78 1c e6 8b 25 58 c4 1a 74 af 1f 2d dc a6 35 cb ee f0 7d```
+`d2 65 3f f7 cb b2 d8 ff 12 9a c2 7e f5 78 1c e6 8b 25 58 c4 1a 74 af 1f 2d dc a6 35 cb ee f0 7d`
 
 这是 256bit 整数的 Big endian 字节流表示，转为 16 进制整形为 `0xd2653ff7cbb2d8ff129ac27ef5781ce68b2558c41a74af1f2ddca635cbeef07d`，记为 `pk`。
 

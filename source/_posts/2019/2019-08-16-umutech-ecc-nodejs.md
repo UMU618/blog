@@ -36,8 +36,6 @@ pub.affineY.isEven()
 流程基本一样，所以这里给出完整转换代码。
 
 ```js
-#!/usr/bin/env node
-
 /**
  * @author UMU618 <umu618@hotmail.com>
  * @copyright MEET.ONE 2019
