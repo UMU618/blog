@@ -37,7 +37,7 @@ $(document).ready(function() {
         $('#parameters').val(makeParameters(jo))
       })
       .catch((err) => {
-        $('#result').text(err)
+        $('#result').val(err)
       })
   })
 
@@ -59,10 +59,10 @@ $(document).ready(function() {
         return null
       })
       .then((jo) => {
-        $('#result').text(makeCommand(jo))
+        $('#result').val(makeCommand(jo))
       })
       .catch((err) => {
-        $('#result').text(err)
+        $('#result').val(err)
       })
   })
 
