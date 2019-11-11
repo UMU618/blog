@@ -1,9 +1,6 @@
-.hide {
-  display: none !important;
-}
-
 body {
   background-color: #C7EDCC;
+  margin: 0 auto;
 }
 
 .container {
@@ -15,27 +12,48 @@ body {
   margin: 0 auto;
 }
 
+.block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 8px 0;
+}
+
 .button-wrapper {
-  margin-top: 20px;
+  margin: 20px 0 0;
 }
 
 .input-wrapper {
-  margin-top: 16px;
+  margin: 16px 0 0;
+}
+
+.longtext-wrapper {
+  margin: 4px 0 0;
 }
 
 textarea {
   box-sizing: border-box;
   border: none;
   background: #EAEAEA;
-  font-size: 14px; /* no */
-  border-radius: 8px;
+  font-size: 14px;
   width: 100%;
+}
+.longtext {
+  height: 32px;
+  margin: 0 auto 0;
+  padding: 6px;
+}
+.resulttext {
+  border-radius: 8px;
   height: 160px;
-  margin: 24px auto 20px;
+  margin: 20px auto 0;
   padding: 10px;
 }
 
 input[type="text"] {
+  width: 26%;
   height: 32px;
   font-size: 14px;
   letter-spacing: 0;
@@ -45,14 +63,7 @@ input[type="text"] {
   border: none;
   outline: none;
   border-radius: 2px;
-  padding-left: 4px;
-}
-
-.longtext {
-  width: 100%;
-}
-.eosname {
-  width: 25%;
+  padding: 0 4px 0;
 }
 
 input[type="text"]::-webkit-input-placeholder {
@@ -60,7 +71,7 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .small-button {
-  width: 40%;
+  width: 60%;
   height: 30px;
   font-size: 14px;
   margin-top: 0;

@@ -113,34 +113,36 @@ $(document).ready(function() {
   </noscript>
 
   <div class="container">
-    <div class="input-wrapper">
-      URL: <input type="text" class="longtext" id="url" value="https://mainnet.meet.one" />
-    </div>
-    <div class="input-wrapper">
-      Proposal name: <input type="text" class="eosname" id="proposal_name" maxlength="12" value="transfer" />
-    </div>
-    <div class="input-wrapper">
-      Actor: <input type="text" class="eosname" id="actor" maxlength="12" value="eosiomeetone" />
-      Permission: <input type="text" class="eosname" id="permission" maxlength="12" value="active" />
-    </div>
-    <div class="input-wrapper">
-      Contract: <input type="text" class="eosname" id="contract" maxlength="12" value="eosio.token" />
-      Action: <input type="text" class="eosname" id="action" maxlength="12" value="transfer" />
-    </div>
-    <div class="input-wrapper">
+    <div class="block">
+      <div class="input-wrapper">URL:</div>
+      <div class="longtext-wrapper">
+        <textarea class="longtext" id="url">https://mainnet.meet.one</textarea>
+      </div>
+      <div class="input-wrapper">
+        Proposal name: <input type="text" class="eosname" id="proposal_name" maxlength="12" value="transfer" />
+      </div>
+      <div class="input-wrapper">
+        Auth: <input type="text" class="eosname" id="actor" maxlength="12" value="eosiomeetone" />@<input type="text" class="eosname" id="permission" maxlength="12" value="active" />
+      </div>
+      <div class="input-wrapper">
+        Contract: <input type="text" class="eosname" id="contract" maxlength="12" value="eosio.token" />
+        Action: <input type="text" class="eosname" id="action" maxlength="12" value="transfer" />
+      </div>
+      <div class="input-wrapper">
         Parameters: <button class="small-button" id="parametersTemplate">Parameters Template</button>
-	</div>
-	<div class="input-wrapper">
-        <input type="text" class="longtext" id="parameters" />
-    </div>
-    <div class="button-wrapper">
-      <button id="generateCommand">Generate cleos command</button>
-    </div>
-    <div>
-      <textarea id="result" cols="60" rows="40"></textarea>
-    </div>
-    <div class="footer">
-      <a class="opensource" href="https://github.com/UMU618/eos-multisig-generator" target="_blank">View source code</a>
+      </div>
+      <div class="longtext-wrapper">
+        <textarea class="longtext" id="parameters">{}</textarea>
+      </div>
+      <div class="button-wrapper">
+        <button id="generateCommand">Generate cleos command</button>
+      </div>
+      <div>
+        <textarea class="resulttext" id="result" cols="60" rows="40"></textarea>
+      </div>
+      <div class="footer">
+        <a class="opensource" href="https://github.com/UMU618/eos-multisig-generator" target="_blank">View source code</a>
+      </div>
     </div>
   </div>
 </body>
