@@ -17,6 +17,8 @@ $(document).ready(function() {
   const url = $('#url').val()
 
   $('#parametersTemplate').click(() => {
+    $('#parametersTemplate').prop('disabled', true)
+    $('#generateCommand').prop('disabled', true)
     fetch(url + '/v1/chain/get_abi', {
         method: 'POST'
         , headers: {
@@ -28,6 +30,8 @@ $(document).ready(function() {
         })
       })
       .then((res) => {
+        $('#parametersTemplate').prop('disabled', false)
+        $('#generateCommand').prop('disabled', false)
         if (res.status == 200) {
           return res.json()
         }
@@ -37,11 +41,14 @@ $(document).ready(function() {
         $('#parameters').val(makeParameters(jo))
       })
       .catch((err) => {
+        $('#parametersTemplate').prop('disabled', false)
+        $('#generateCommand').prop('disabled', false)
         $('#result').val(err)
       })
   })
 
   $('#generateCommand').click(() => {
+    $('#generateCommand').prop('disabled', true)
     fetch(url + '/v1/chain/get_account', {
         method: 'POST'
         , headers: {
@@ -53,6 +60,7 @@ $(document).ready(function() {
         })
       })
       .then((res) => {
+        $('#generateCommand').prop('disabled', false)
         if (res.status == 200) {
           return res.json()
         }
@@ -62,6 +70,7 @@ $(document).ready(function() {
         $('#result').val(makeCommand(jo))
       })
       .catch((err) => {
+        $('#generateCommand').prop('disabled', false)
         $('#result').val(err)
       })
   })
