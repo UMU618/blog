@@ -14,12 +14,57 @@
   <script>window.jQuery || document.write('<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" type="text/javascript"><\/script>')</script>
   <script>
 $(document).ready(function() {
-  const url = $('#url').val()
+  const makeData = (abi) => {
+    if (abi && abi.abi && abi.abi.structs) {
+      const action = $('#action').val()
+      for (let s of abi.abi.structs) {
+        if (s.name === action) {
+          const result = {}
+          for (let e of s.fields) {
+            result[e.name] = e.type
+          }
+          return JSON.stringify(result)
+        }
+      }
+    }
+    return null
+  }
 
-  $('#parametersTemplate').click(() => {
-    $('#parametersTemplate').prop('disabled', true)
+  const makeCommand = (account) => {
+    if (account && account.permissions) {
+      const permission = $('#permission').val()
+      for (let p of account.permissions) {
+        if (p.perm_name == permission) {
+          const result = []
+          for (let a of p.required_auth.accounts) {
+            result.push(a.permission)
+          }
+          return 'cleos -u ' + $('#url').val() + ' multisig propose '
+            + $('#proposal_name').val() + " '" + JSON.stringify(result)
+            + '\' \'[{"actor":"' + $('#actor').val() + '","permission":"'
+            + permission + '"}]\' ' + $('#contract').val() + ' '
+            + $('#action').val() + ' \'' + $('#data').val() + '\''
+        }
+      }
+    }
+    return null
+  }
+
+  const setValues = (str) => {
+    const v = str.split('|')
+    $('#proposal_name').val(v[0])
+    $('#contract').val(v[1])
+    $('#action').val(v[2])
+    $('#data').val(v[3])
+  }
+
+  $('#url').val($('#chain').get(0).value)
+  setValues($('#task').get(0).value)
+
+  $('#dataTemplate').click(() => {
+    $('#dataTemplate').prop('disabled', true)
     $('#generateCommand').prop('disabled', true)
-    fetch(url + '/v1/chain/get_abi', {
+    fetch($('#url').val() + '/v1/chain/get_abi', {
         method: 'POST'
         , headers: {
           accept: "application/json",
@@ -30,7 +75,7 @@ $(document).ready(function() {
         })
       })
       .then((res) => {
-        $('#parametersTemplate').prop('disabled', false)
+        $('#dataTemplate').prop('disabled', false)
         $('#generateCommand').prop('disabled', false)
         if (res.status == 200) {
           return res.json()
@@ -38,10 +83,10 @@ $(document).ready(function() {
         return null
       })
       .then((jo) => {
-        $('#parameters').val(makeParameters(jo))
+        $('#data').val(makeData(jo))
       })
       .catch((err) => {
-        $('#parametersTemplate').prop('disabled', false)
+        $('#dataTemplate').prop('disabled', false)
         $('#generateCommand').prop('disabled', false)
         $('#result').val(err)
       })
@@ -49,7 +94,7 @@ $(document).ready(function() {
 
   $('#generateCommand').click(() => {
     $('#generateCommand').prop('disabled', true)
-    fetch(url + '/v1/chain/get_account', {
+    fetch($('#url').val() + '/v1/chain/get_account', {
         method: 'POST'
         , headers: {
           accept: "application/json",
@@ -75,41 +120,21 @@ $(document).ready(function() {
       })
   })
 
-  const makeParameters = (abi) => {
-    if (abi && abi.abi && abi.abi.structs) {
-      const action = $('#action').val()
-      for (let s of abi.abi.structs) {
-        if (s.name === action) {
-          const result = {}
-          for (let e of s.fields) {
-            result[e.name] = e.type
-          }
-          return JSON.stringify(result)
-        }
-      }
+  $('.eosname').change((e) => {
+    let name = e.currentTarget.value.replace(/[^\a-\z\.1-5]/g,'')
+    if (name.length > 12 && name.charAt(12) > 'j') {
+      name = name.substring(0, 12)
     }
-    return null
-  }
+    name = name.replace(/[\.]+$/g, '')
+    e.currentTarget.value = name
+  })
 
-  const makeCommand = (account) => {
-    if (account && account.permissions) {
-      const permission = $('#permission').val()
-      for (let p of account.permissions) {
-        if (p.perm_name == permission) {
-          const result = []
-          for (let a of p.required_auth.accounts) {
-            result.push(a.permission)
-          }
-          return 'cleos -u ' + url + ' multisig propose '
-            + $('#proposal_name').val() + " '" + JSON.stringify(result)
-            + '\' \'[{"actor":"' + $('#actor').val() + '","permission":"'
-            + permission + '"}]\' ' + $('#contract').val() + ' '
-            + $('#action').val() + ' \'' + $('#parameters').val() + '\''
-        }
-      }
-    }
-    return null
-  }
+  $('#chain').change((e) => {
+    $('#url').val(e.currentTarget.value)
+  })
+  $('#task').change((e) => {
+    setValues(e.currentTarget.value)
+  })
 })
   </script>
   <link rel="stylesheet" href="./css/common.css?20191111"/>
@@ -123,25 +148,38 @@ $(document).ready(function() {
 
   <div class="container">
     <div class="block">
-      <div class="input-wrapper">URL:</div>
+      <div class="input-wrapper">
+        Chain:<select id="chain">
+          <option value="https://mainnet.meet.one">EOS - meet.one</option>
+          <option value="https://eos.greymass.com">EOS - greymass</option>
+          <option value="https://eospush.tokenpocket.pro">EOS - tokenpocket</option>
+          <option value="http://kylin.meet.one:8888">Kylin Testnet - meet.one</option>
+          <option value="https://fullnode.meet.one">MEETONE - meet.one</option>
+        </select>
+        Task:<select id="task">
+        <option value="transfer.m|eosio.token|transfer|{&quot;from&quot;:&quot;eosiomeetone&quot;,&quot;to&quot;:&quot;UMU618&quot;,&quot;quantity&quot;:&quot;1.0000 EOS&quot;,&quot;memo&quot;:&quot;string&quot;}">transfer</option>
+        <option value="approve.m|eosio.msig|approve|{&quot;proposer&quot;:&quot;eosiomeetone&quot;,&quot;proposal_name&quot;:&quot;UMUTech&quot;,&quot;level&quot;:{&quot;actor&quot;:&quot;eosiomeetone&quot;,&quot;permission&quot;:&quot;active&quot;},&quot;proposal_hash&quot;:&quot;&quot;}">approve</option>
+        <option value="delegatebw.m|eosio|delegatebw|{&quot;from&quot;:&quot;eosiomeetone&quot;,&quot;receiver&quot;:&quot;UMU618&quot;,&quot;stake_net_quantity&quot;:&quot;0.0000 EOS&quot;,&quot;stake_cpu_quantity&quot;:&quot;1.0000 EOS&quot;,&quot;transfer&quot;:false}">delegatebw</option>
+      </select>
+      </div>
+      <div class="input-wrapper">
+        URL:<input type="url" id="url" />
+      </div>
+      <div class="input-wrapper">
+        Proposal name:<input type="text" class="eosname" id="proposal_name" maxlength="13" />
+      </div>
+      <div class="restrict-wrapper">
+        Permission:<input type="text" class="eosname" id="actor" maxlength="13" value="eosiomeetone" />@<input type="text" class="eosname" id="permission" maxlength="13" value="active" />
+      </div>
+      <div class="restrict-wrapper">
+        Contract:<input type="text" class="eosname" id="contract" maxlength="13" />
+        Action:<input type="text" class="eosname" id="action" maxlength="13" />
+      </div>
+      <div class="input-wrapper">
+        Data: <button class="small-button" id="dataTemplate">Data Template</button>
+      </div>
       <div class="longtext-wrapper">
-        <textarea class="longtext" id="url">https://mainnet.meet.one</textarea>
-      </div>
-      <div class="input-wrapper">
-        Proposal name: <input type="text" class="eosname" id="proposal_name" maxlength="12" value="transfer" />
-      </div>
-      <div class="input-wrapper">
-        Auth: <input type="text" class="eosname" id="actor" maxlength="12" value="eosiomeetone" />@<input type="text" class="eosname" id="permission" maxlength="12" value="active" />
-      </div>
-      <div class="input-wrapper">
-        Contract: <input type="text" class="eosname" id="contract" maxlength="12" value="eosio.token" />
-        Action: <input type="text" class="eosname" id="action" maxlength="12" value="transfer" />
-      </div>
-      <div class="input-wrapper">
-        Parameters: <button class="small-button" id="parametersTemplate">Parameters Template</button>
-      </div>
-      <div class="longtext-wrapper">
-        <textarea class="longtext" id="parameters">{}</textarea>
+        <textarea class="bigtext" id="data"></textarea>
       </div>
       <div class="button-wrapper">
         <button id="generateCommand">Generate cleos command</button>
