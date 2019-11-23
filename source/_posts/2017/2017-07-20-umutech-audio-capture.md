@@ -4,7 +4,10 @@ date: 2017-07-20 17:42:00
 description: 
 categories: UMUTech
 tags:
+- ffmpeg
+- Programming Windows
 - 调研
+- 流媒体
 - 作品
 ---
 在云游戏和云桌面项目中，总结了几类声音采集技术，把录音做到极致。
