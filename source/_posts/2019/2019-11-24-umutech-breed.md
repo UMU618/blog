@@ -56,7 +56,7 @@ Writing from ./breed-mt7620-hiwifi-hc5761.bin to u-boot ...
 刷完，捅菊花进入的信息是：
 
 | CPU | MediaTek MT7620A ver 2, eco 3 |
-| -: | :- |
+| :- | :- |
 | 内存 | 128MB DDR2 |
 | Flash | Winbond W25Q128 @ 24MHz (16MB) |
 | 以太网 | MediaTek MT7620A built-in 5-port 10/100M switch |
@@ -106,7 +106,7 @@ Writing from breed-mt7620-hiwifi-hc5861.bin to u-boot ...
 BREED 信息：
 
 | CPU | MediaTek MT7620A ver 2, eco 6 |
-| -: | :- |
+| :- | :- |
 | 内存 | 128MB DDR2 |
 | Flash | Winbond W25Q128 @ 24MHz (16MB) |
 | 以太网 | MediaTek MT7620A built-in 5-port 10/100M switch |
@@ -203,7 +203,7 @@ mtd7: 00010000 00010000 "nvram"
 信息为：
 
 | CPU | MediaTek MT7621A ver 1, eco 3 |
-| -: | :- |
+| :- | :- |
 | 内存 | 512MB DDR3 |
 | Flash | Winbond W25Q256 @ 48MHz (32MB) |
 | 以太网 | MediaTek MT7530 Gigabit switch |
