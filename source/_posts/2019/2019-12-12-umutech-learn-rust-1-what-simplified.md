@@ -63,9 +63,9 @@ Rust 有分号的是语句（statement），返回值是 ()，即没有返回值
 
 # 6. case 隐含 break
 
-| 语言 | case 是否默认隐含 break |
+| 语言 | case 是否隐含 break |
 | :- | :- |
-| C/C++/C#/Java | 必须显示 break |
+| C/C++/C#/Java | 必须显式 break |
 | Go/Rust/Swift | 隐含 break |
 
-Rust 优秀在用 match 代替了 switch，明确告诉大家这是新语法，而 Go/Swift 用 switch，却改变 case 行为，还多出一个 fallthrough 关键字，容易引起[鲸神魂裂](/tags/鲸神魂裂/)。
+Rust 优秀在用 match 代替 switch，明确告诉大家这是新语法，而 Go/Swift 用 switch，却改变 case 行为，还多出一个 fallthrough 关键字，容易引起[鲸神魂裂](/tags/鲸神魂裂/)。
