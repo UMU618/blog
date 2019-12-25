@@ -10,7 +10,7 @@ tags:
 ---
 # 前情
 
-上篇《[ECC Node.js](https://blog.umu618.com/2019/08/16/umutech-ecc-nodejs/)》讲解椭圆曲线点的计算。本篇分析椭圆曲线签名算法。
+上篇《[ECC Node.js](/2019/08/16/umutech-ecc-nodejs/)》讲解椭圆曲线点的计算。本篇分析椭圆曲线签名算法。
 
 # 代码
 
