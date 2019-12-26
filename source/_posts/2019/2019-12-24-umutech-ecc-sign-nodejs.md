@@ -116,7 +116,7 @@ const u1 = h.mul(sinv).umod(k1.n)
 u1.toString(16)
 
 const x = new BN('24d3d62d14db559646aee583ad143d2581e85013a424f98438244ad222dd62a4', 16)
-// b = x/s
+// u2 = x/s
 const u2 = x.mul(sinv).umod(k1.n)
 u2.toString(16)
 
