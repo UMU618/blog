@@ -9,7 +9,6 @@ tags:
 
 资源管理一向是编程中的重要任务。当一个函数要管理多个资源时，很容易出现代码嵌套层级太深的问题，尤其是调用系统或第三方 API 时。
 
-
 以 C 语言代码为例，这里简化为两个资源，请您自行脑补多个资源：
 
 ```c
@@ -61,6 +60,44 @@ free_new_resource2(p2);
 ```
 
 但这么改在资源释放时，**更容易遗漏**。也有人为使代码层级平坦化，会使用 `goto` 到函数末尾统一释放，或者更优雅点的 C++ 方式：用 `try...throw...catch...finally` 将所有资源包含起来管理。
+
+Node.js 的异步回调函数也存在嵌套层级过深的问题，可以用 Promise 来平坦化，参考：
+
+```js
+setTimeout(() => {
+  console.log('step1')
+  setTimeout(() => {
+    console.log('step2')
+    setTimeout(function() {
+      console.log('step3')
+      console.log('done!')
+    }, 1000)
+  }, 1000)
+}, 1000)
+
+// flatten
+let timer = (text) => {
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(text)
+      resolve()
+    }, 1000)
+  })
+
+  return promise
+}
+
+timer("step1")
+  .then(() => {
+    return timer("step2")
+  })
+  .then(() => {
+    return timer("step3")
+  })
+  .then(() => {
+    console.log("done!")
+  })
+```
 
 C++ 建议使用 RAII 思想来管理资源，获得资源后立刻放到管理对象里。如果有些资源使用得不频繁，想偷懒不去封装，则可以使用 scope_exit。go 语言更是用内置关键字 `defer` 来提供 scope_exit 机制。
 
