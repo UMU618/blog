@@ -446,3 +446,32 @@ friend 的传统用途是“访问 class 的 non-public 成分”。
 在 class 内部声明 non-member 函数的唯一办法就是：令它成为一个 friend。
 
 - 当我们编写一个 class template，而它所提供之“于此 template 相关的”函数支持“所有参数之隐式类型转换”时，请将那些函数定义为“class templdate 内部的 friend 函数”。
+
+## 47. 请使用 traits classes 表现类型信息
+
+STL 的迭代器有 5 种：input、output、forward、bidirectional、random access，为了给它们实现统一的 advance 函数，需要再编译期间判断迭代器的类型，这可以使用 Traits 技术来实现。
+
+- 建立一组重载函数（身份像劳工）或函数模板（例如 doAdvance，最后一个参数是 typename std::iterator_traits<IterT>::iterator_category()），彼此间的差异只在于各自的 traits 参数（可以不命名，只是一个类型）。令每个函数实现码与其接受之 traits 信息相应和。
+
+- 简历一个控制函数（身份像工头）或函数模板（例如 advance），它调用上述那些“劳工函数”并传递 traits class 所提供的信息。
+
+- Traits classes 使得“类型相关信息”在编译期可用。它们以 templates 和“templates 特化”完成实现。
+
+- 整合重载技术（overloading）后，traits classes 有可能在编译期对类型执行 if...else 测试。
+
+## 48. 认识 template 元编程
+
+Traits 解法属于 TMP（Template metaprogramming，模板元编程），比 typeid-based 解法高效，高效的原因：
+
+- 编译期测试类型。
+
+- 类型测试代码不会被链接到可执行程序中。
+
+TMP 是图灵完备（Turling-complete）的。
+
+- TMP 可将工作由运行期移往编译期，因而得以实现早期错误侦测和更高的执行效率。
+
+- TMP 可被用来生成“基于政策选择组合”（based on combinations of policy choices）的客户定制代码，也可用来避免生成对某些特殊类型并不适合的代码。
+
+# 第八章 定制 new 和 delete
+
