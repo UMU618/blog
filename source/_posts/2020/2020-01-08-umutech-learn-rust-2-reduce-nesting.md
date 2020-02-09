@@ -2,8 +2,10 @@ layout: post
 title: 学习 Rust【2】减少代码嵌套
 date: 2020-01-08 17:59:01
 description:
-categories:
+categories: UMUTech
 tags:
+- Rust
+- 简化
 ---
 结论先行：**减少代码嵌套就是降低复杂度。**
 
