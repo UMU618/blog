@@ -7,11 +7,21 @@ tags:
 - cpp
 - nodejs
 ---
-# 宗旨
+# 前言
 
 - 如果您看得懂，那么，这是 Node.js 程序员的 C++ 进修指南。
 
 - 如果您没看懂，那么，这是学 C++ 的劝退书！
+
+# 目的
+
+用 C++ 改写 Node.js 程序，主要目的可能有两个：保密、提高性能。
+
+那么您肯定要问：为什么不用 Go 或者 Rust 改写？UMU 是推荐用 Go 或 Rust 的，而且相对改写为 C++ 要简单得多，本系列文章，可能从反面论证：您应该选择用 Go 或者 Rust 改写！
+
+# 代码仓库
+
+<https://github.com/UMU618/cpp-for-nodejs-programmers>
 
 # 第一个例子
 
@@ -211,8 +221,4 @@ if(Boost_FOUND)
 endif()
 ```
 
-**小结**：太难了……这真的是劝退书！
-
-# 参考
-
-<https://github.com/UMU618/cpp-for-nodejs-programmers>
+**小结**：好很多，但太难了……这真是劝退书！
