@@ -131,6 +131,14 @@ set_property(TARGET set_timeout PROPERTY CXX_STANDARD 17)
 target_compile_features(set_timeout PRIVATE cxx_auto_type)
 ```
 
+- 编译：
+
+```bash
+# cd to source code directory
+cmake .
+make
+```
+
 **小结**：以上代码，可用，但不推荐。首先它是用多线程模拟的定时器，当设置 N 个定时器时，将创建 N 个线程，这不够优雅。其次，当您取消定时器时，会发现它无法立刻取消并退出线程。
 
 ## Boost Asio 实现
@@ -161,7 +169,7 @@ class Timer {
   void wait();
 
  private:
-  boost::asio::io_service io;
+  boost::asio::io_context io;
   std::vector<boost::asio::steady_timer> timers;
   size_t count;
 };
