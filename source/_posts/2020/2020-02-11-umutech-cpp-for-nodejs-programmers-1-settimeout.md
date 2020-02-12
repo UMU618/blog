@@ -21,9 +21,17 @@ tags:
 setTimeout(() => {
   console.log('step1')
 }, 1000)
+
+setTimeout(() => {
+  console.log('step2')
+}, 2000)
+
+setTimeout(() => {
+  console.log('step3')
+}, 3000)
 ```
 
-这段代码实现的功能是：一秒后打印 `step1`，退出。
+这段代码实现的功能是：一秒后打印 `step1`，再一秒后打印 `step2`，再一秒后打印 `step3`，退出。
 
 # 翻译为 C++
 
@@ -93,7 +101,10 @@ void Timer::wait() {
 
 int main() {
   Timer timer;
+  //timer.setTimeout([&]() { std::cout << "step1\n"; timer.stop(); }, 1000);
   timer.setTimeout([]() { std::cout << "step1\n"; }, 1000);
+  timer.setTimeout([]() { std::cout << "step2\n"; }, 2000);
+  timer.setTimeout([]() { std::cout << "step3\n"; }, 3000);
   timer.wait();
   return 0;
 }
@@ -110,7 +121,7 @@ set_property(TARGET set_timeout PROPERTY CXX_STANDARD 17)
 target_compile_features(set_timeout PRIVATE cxx_auto_type)
 ```
 
-**小结**：以上代码，可用，但它是用多线程模拟的定时器，当设置 N 个定时器时，将创建 N 个线程，这不够优雅。
+**小结**：以上代码，可用，但不推荐。首先它是用多线程模拟的定时器，当设置 N 个定时器时，将创建 N 个线程，这不够优雅。其次，当您取消定时器时，会发现它无法立刻取消并退出线程。
 
 ## Boost Asio 实现
 
@@ -171,9 +182,10 @@ void Timer::wait() {
 
 int main() {
   Timer timer;
-  timer.setTimeout([&]() { std::cout << "step1\n"; timer.stop(); }, 1000);
-  //timer.setTimeout([]() { std::cout << "step1\n"; }, 1000);
+  //timer.setTimeout([&]() { std::cout << "step1\n"; timer.stop(); }, 1000);
+  timer.setTimeout([]() { std::cout << "step1\n"; }, 1000);
   timer.setTimeout([]() { std::cout << "step2\n"; }, 2000);
+  timer.setTimeout([]() { std::cout << "step3\n"; }, 3000);
   timer.wait();
   return 0;
 }
@@ -200,3 +212,7 @@ endif()
 ```
 
 **小结**：太难了……这真的是劝退书！
+
+# 参考
+
+<https://github.com/UMU618/cpp-for-nodejs-programmers>
