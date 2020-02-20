@@ -60,6 +60,8 @@ echo CST-8 > /etc/TZ;
 个性化，非必要：
 
 ```bash
+echo 'DIR-505' > /proc/sys/kernel/hostname;
+
 uci set system.@system[0].hostname='DIR-505';
 uci commit system;
 

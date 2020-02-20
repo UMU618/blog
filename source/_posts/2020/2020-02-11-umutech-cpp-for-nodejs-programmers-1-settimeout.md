@@ -143,7 +143,7 @@ make
 
 ## Boost Asio 实现
 
-我们知道，Nodejs 内部使用 libuv 作为异步 IO 库，它是 C 实现的，用 C++ 调用 libuv 就显得不那么 C++，所以我们决定用和 libuv 同类且更强大的 Boost Asio 来代替。
+我们知道，Nodejs 内部使用 libuv 作为异步 IO 库，它是 C 实现的，用 C++ 调用 libuv 就显得不那么 C++，所以我们决定用和 libuv 同类且更强大的 [Boost Asio](https://www.boost.org/doc/libs/1_72_0/doc/html/boost_asio/examples.html) 来代替。
 
 - 安装 boost，目前是 1.72.0 版：
 
