@@ -4,7 +4,9 @@ date: 2012-12-25 10:06:29
 description:
 categories: UMUTech
 tags:
-- Programming Windows
+- dev
+- windows
+- cpp
 ---
 # 前提
 

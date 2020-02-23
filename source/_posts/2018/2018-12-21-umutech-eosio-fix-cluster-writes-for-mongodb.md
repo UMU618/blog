@@ -4,8 +4,8 @@ date: 2018-12-21 21:51:12
 description: 
 categories: UMUTech
 tags:
-- Debug
-- MongoDB
+- debug
+- mongodb
 - 区块链
 ---
 > 作者: UMU @ MEET.ONE 实验室

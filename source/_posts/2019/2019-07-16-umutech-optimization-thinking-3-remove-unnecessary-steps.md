@@ -4,8 +4,9 @@ date: 2019-07-16 20:14:44
 description:
 categories: UMUTech
 tags:
+- dev
 - cpp
-- Debug
+- debug
 - 区块链
 ---
 # 故事

@@ -4,7 +4,7 @@ date: 2012-10-13 02:57:04
 description: 
 categories: UMUTech
 tags:
-- Debug
+- debug
 ---
 　　Windows 8 确实是个不错的系统，DP、CP、RC、RTM，UMU 一路追过来。
 

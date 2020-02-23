@@ -4,8 +4,8 @@ date: 2014-06-02 01:00:35
 description: 
 categories: UMUTech
 tags:
-- Embedded
-- OpenWRT
+- embedded
+- openwrt
 ---
 # 登录
 

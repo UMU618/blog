@@ -4,7 +4,8 @@ date: 2013-05-09 22:37:39
 description: 
 categories: UMUTech
 tags:
-- Programming Windows
+- dev
+- windows
 - 作品
 ---
 # 闲谈
@@ -67,6 +68,7 @@ RT Jailbreak Tool By Netham45, Version 1.20
 
 开源工具应运而生：<https://github.com/peterdn/dll2lib>
 
-然后，炫耀一下，UMU 已经把自己的一个小作品“[天翼宽带智能提速](/2011/12/13/umutech-tianyi-speed/)”移植成功。这个程序比较小，一两个小时从解锁到移植开发全部搞定。
+然后，炫耀一下，UMU 已经把自己的一个小作品“[天翼宽带智能提速](/2011/12/13/umutech-tianyi-speed/
+)”移植成功。这个程序比较小，一两个小时从解锁到移植开发全部搞定。
 
 最后，如果程序是 .NET 4.x 写的，是可以直接跑在 RT 上的，所以为了省力气，也许应该考虑多用 .NET。

@@ -4,7 +4,7 @@ date: 2018-05-19 21:23:40
 description: 
 categories: 宇督观
 tags:
-- Debug
+- debug
 - 洗脑
 ---
 # 高中时代

@@ -4,9 +4,11 @@ date: 2017-07-04 20:46:31
 description:
 categories: UMUTech
 tags:
-- ffmpeg
-- Programming Windows
+- dev
+- windows
+- cpp
 - 流媒体
+- ffmpeg
 ---
 # 需求
 

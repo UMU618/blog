@@ -4,8 +4,9 @@ date: 2018-03-21 18:01:32
 description: 
 categories: UMUTech
 tags:
+- dev
 - cpp
-- Debug
+- debug
 ---
 最近用 WTL 写 Ribbon 界面，发现一个坑。
 

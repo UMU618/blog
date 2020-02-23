@@ -4,7 +4,8 @@ date: 2011-12-13 17:03:00
 description: 
 categories: UMUTech
 tags:
-- Programming Windows
+- dev
+- windows
 - 作品
 ---
 2011-12-13 17:03 发布于百度空间，最近百度删除了 UMU 高中时代珍贵的记录，所以 UMU 正在去百度化。
@@ -32,4 +33,5 @@ v1.1
 3. 原理就是把本来就有的带宽还给我们，原来的 4M 其实是故意限制的……提速的手段除了电信官方分方法之外，还有 OpenWRT 上的“多拨”方案，同时拨号N次，可能拨通，一个4M，如果拨上15个就有60M了……
 
 ---
-2013-05-09，这个软件已经有 ARM 版本，详见：《[开发 Windows RT 桌面应用（来自 Surface RT）](/2013/05/09/umutech-windows-rt-develop/)》
+2013-05-09，这个软件已经有 ARM 版本，详见：《[开发 Windows RT 桌面应用（来自 Surface RT）](/2013/05/09/umutech-windows-rt-develop/
+)》

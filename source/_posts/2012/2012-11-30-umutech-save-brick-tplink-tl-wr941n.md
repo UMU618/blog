@@ -4,7 +4,8 @@ date: 2012-11-30 20:15:30
 description:
 categories: UMUTech
 tags:
-- Embedded
+- embedded
+- router
 ---
 死因：在官方 ROM 上 刷不了 Tomato，试着刷了 DD-WRT 后，再刷 Tomato，结果刷完 213 了……
 

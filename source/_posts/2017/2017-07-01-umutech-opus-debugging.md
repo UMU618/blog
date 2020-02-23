@@ -4,9 +4,10 @@ date: 2017-07-01 17:23:52
 description:
 categories: UMUTech
 tags:
-- Debug
-- ffmpeg
+- dev
+- debug
 - 流媒体
+- ffmpeg
 ---
 # 前情
 

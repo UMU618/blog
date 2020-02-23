@@ -4,7 +4,8 @@ date: 2020-01-08 17:59:01
 description:
 categories: UMUTech
 tags:
-- Rust
+- dev
+- rust
 - 简化
 ---
 结论先行：**减少代码嵌套就是降低复杂度。**

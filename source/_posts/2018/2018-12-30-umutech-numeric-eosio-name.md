@@ -4,7 +4,7 @@ date: 2018-12-30 21:37:01
 description: 
 categories: UMUTech
 tags:
-- Debug
+- debug
 - 调研
 - 区块链
 ---

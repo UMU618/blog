@@ -4,7 +4,8 @@ date: 2017-03-25 23:34:47
 description: 
 categories: UMUTech
 tags:
-- Server
+- op
+- windows
 - 调研
 ---
 2009-04-17 22:06 在百度空间上发表过一次，后来百度空间倒闭了……最近给自己家里搭建家庭文件共享服务器用到，所以在这边再发一次。

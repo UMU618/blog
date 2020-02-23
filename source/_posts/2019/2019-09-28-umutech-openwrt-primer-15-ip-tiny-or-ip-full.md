@@ -4,8 +4,8 @@ date: 2019-09-28 21:56:16
 description:
 categories: UMUTech
 tags:
-- Embedded
-- OpenWRT
+- embedded
+- openwrt
 ---
 # 起源
 

@@ -4,7 +4,8 @@ date: 2018-11-18 16:39:22
 description: 
 categories: UMUTech
 tags:
-- Debug
+- debug
+- windows
 ---
 稣习惯使用 Ctrl+Shift+A 或 Ctrl+F12 作为截屏热键，而微信 PC 版的默认截屏热键是 Alt+A。
 

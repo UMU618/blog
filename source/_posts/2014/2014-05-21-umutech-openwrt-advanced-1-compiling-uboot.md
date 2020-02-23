@@ -4,8 +4,8 @@ date: 2014-05-21 16:14:31
 description: 
 categories: UMUTech
 tags:
-- Embedded
-- OpenWRT
+- embedded
+- openwrt
 ---
 UMU 2010 年初就玩 OpenWRT/DD-WRT 了，蛋似编译东西还是初学者，本文纯属蛋疼的过程，欢迎批评教育，谢谢……
 

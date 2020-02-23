@@ -4,9 +4,9 @@ date: 2012-11-18 15:40:25
 description: 
 categories: UMUTech
 tags:
+- dev
+- windows
 - dotnet
-- Programming Windows
-- 开源
 ---
 为什么转？因为 JXR 格式在同等质量的情况下，存储空间比 JPEG 节约了 45-50%。
 

@@ -6,7 +6,7 @@ categories: 宇督观
 tags:
 - 数学
 - 做题
-- Debug
+- debug
 ---
 # 题目
 

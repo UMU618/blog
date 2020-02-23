@@ -4,7 +4,9 @@ date: 2013-03-26 23:24:30
 description: 
 categories: UMUTech
 tags:
-- Debug
+- dev
+- windows
+- debug
 ---
 # 发现问题，2012-12-11 18:16:00
 

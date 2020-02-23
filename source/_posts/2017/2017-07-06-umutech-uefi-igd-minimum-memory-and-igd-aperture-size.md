@@ -4,7 +4,8 @@ date: 2017-07-06 23:48:26
 description: 
 categories: UMUTech
 tags:
-- Server
+- op
+- windows
 - 调研
 ---
 今天进 UEFI 看到集显的两个设置选项：IGD Minimum Memory 和 IGD Aperture Size，想着 UMU 的 NUC 有 32G 内存，要不要改大点？然后搜一下他们的作用，结果发现**最好不要改……**

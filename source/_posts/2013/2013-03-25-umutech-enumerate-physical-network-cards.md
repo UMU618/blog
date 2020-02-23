@@ -4,7 +4,8 @@ date: 2013-03-25 15:25:41
 description: 
 categories: UMUTech
 tags:
-- Programming Windows
+- dev
+- windows
 - 调研
 ---
 　　其实目的是获取靠谱的 MAC 地址，但这个任务真蛋疼！不信您看看搜索出来的乐射……

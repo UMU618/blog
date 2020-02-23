@@ -4,7 +4,8 @@ date: 2019-07-30 23:25:57
 description:
 categories: UMUTech
 tags:
-- Debug
+- dev
+- debug
 ---
 # 常规教材
 

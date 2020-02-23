@@ -4,8 +4,8 @@ date: 2018-05-31 18:25:32
 description: 
 categories: UMUTech
 tags:
-- Server
-- MongoDB
+- dev
+- mongodb
 ---
 为了快速了解 MongoDB 选举机制，在网上找了一些文章来学习，后来发现里面提到的一些机制都过时了，尝试看代码了解，发现协议有 PV0 和 PV1 两种。
 

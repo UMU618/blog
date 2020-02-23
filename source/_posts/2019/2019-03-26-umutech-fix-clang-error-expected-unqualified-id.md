@@ -4,8 +4,10 @@ date: 2019-03-26 17:57:31
 description:
 categories: UMUTech
 tags:
+- dev
+- macOS
 - cpp
-- Debug
+- debug
 ---
 # 问题
 

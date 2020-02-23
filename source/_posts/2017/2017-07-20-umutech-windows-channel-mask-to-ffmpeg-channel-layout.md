@@ -4,9 +4,10 @@ date: 2017-07-20 16:02:47
 description:
 categories: UMUTech
 tags:
-- ffmpeg
-- Programming Windows
+- dev
+- windows
 - 流媒体
+- ffmpeg
 ---
 # 前情
 

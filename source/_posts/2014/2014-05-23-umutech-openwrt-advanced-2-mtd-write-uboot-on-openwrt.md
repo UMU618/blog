@@ -4,8 +4,8 @@ date: 2014-05-23 00:23:50
 description: 
 categories: UMUTech
 tags:
-- Embedded
-- OpenWRT
+- embedded
+- openwrt
 ---
 在上一篇《[跟 UMU 一起玩 OpenWRT（高级篇1）：编译不死 U-Boot](/2014/05/21/umutech-openwrt-advanced-1-compiling-uboot/)》介绍了如何编译不死 U-Boot，但是不死 U-Boot 的作者只介绍了用 TTL 线刷方法，UMU 可不想拆机，毕竟拆机感觉并不好……
 

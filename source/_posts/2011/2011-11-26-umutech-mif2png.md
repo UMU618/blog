@@ -4,9 +4,8 @@ date: 2011-11-26 00:27:00
 description: 
 categories: UMUTech
 tags:
+- dev
 - dotnet
-- Programming Windows
-- 开源
 ---
 2011-11-26 00:27 发布于百度空间，由于百度空间停运，搬到此处。
 

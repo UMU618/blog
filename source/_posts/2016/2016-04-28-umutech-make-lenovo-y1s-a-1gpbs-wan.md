@@ -4,8 +4,8 @@ date: 2016-04-28 00:34:07
 description: 
 categories: UMUTech
 tags:
-- Embedded
-- OpenWRT
+- embedded
+- openwrt
 ---
 # 需求
 

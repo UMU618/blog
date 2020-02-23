@@ -4,7 +4,8 @@ date: 2019-12-12 18:43:02
 description:
 categories: UMUTech
 tags:
-- Rust
+- dev
+- rust
 - 简化
 ---
 结论先行：**从语法上说，Rust 基本无敌。**

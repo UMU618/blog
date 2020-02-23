@@ -4,7 +4,8 @@ date: 2018-12-10 16:07:02
 description: 
 categories: UMUTech
 tags:
-- Debug
+- debug
+- macOS
 ---
 # 问题
 

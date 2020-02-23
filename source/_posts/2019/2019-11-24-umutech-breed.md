@@ -4,7 +4,8 @@ date: 2019-11-24 01:40:40
 description:
 categories: UMUTech
 tags:
-- Embedded
+- embedded
+- router
 ---
 # 极路由 1S
 

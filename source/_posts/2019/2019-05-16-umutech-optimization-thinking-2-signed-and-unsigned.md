@@ -4,8 +4,9 @@ date: 2019-05-16 23:07:02
 description: 
 categories: UMUTech
 tags:
+- dev
 - cpp
-- Debug
+- debug
 ---
 # 做题
 

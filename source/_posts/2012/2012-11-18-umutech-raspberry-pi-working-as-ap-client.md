@@ -4,7 +4,7 @@ date: 2012-11-18 23:21:09
 description: 
 categories: UMUTech
 tags:
-- Embedded
+- embedded
 ---
 # 需求
 

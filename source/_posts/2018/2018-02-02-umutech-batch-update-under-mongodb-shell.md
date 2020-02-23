@@ -4,12 +4,12 @@ date: 2018-02-02 17:57:47
 description: 
 categories: UMUTech
 tags:
-- Server
-- MongoDB
+- op
+- mongodb
 ---
 # 需求
 
-延长 mongodb 某集合里的“过期时间”字段。
+延长 MongoDB 某集合里的“过期时间”字段。
 
 # 风险分析
 

@@ -4,7 +4,9 @@ date: 2018-06-29 11:04:11
 description: 
 categories: UMUTech
 tags:
-- Debug
+- dev
+- windows
+- debug
 ---
 某游戏在 RemoteFX 远程桌面下无法正常运行。提示：
 

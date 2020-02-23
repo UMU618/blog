@@ -4,7 +4,7 @@ date: 2018-11-25 13:59:53
 description: 
 categories: 宇督观
 tags:
-- Debug
+- debug
 ---
 # 主题曲《像屎》
 

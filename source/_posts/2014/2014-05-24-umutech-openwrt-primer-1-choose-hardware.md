@@ -4,8 +4,8 @@ date: 2014-05-24 01:14:14
 description: 
 categories: UMUTech
 tags:
-- Embedded
-- OpenWRT
+- embedded
+- openwrt
 ---
 看了《跟hoowa学做智能路由》系列，<http://www.leiphone.com/diy-a-smart-router.html>，也想写点自己的经验，大家可以先看 hoowa 童鞋的，写得很好。UMU 用的硬件和他不同而已。
 
