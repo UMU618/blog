@@ -24,7 +24,7 @@ tags:
 
 当 IPv6 地址变化时，将地址发送到钉钉：<https://github.com/UMU618/openwrt-ipv6-addresses>
 
-# 安装
+# 安装与调试
 
 ## 1. 安装可执行程序
 
@@ -35,20 +35,20 @@ opkg install python3-base
 安装 `python3-base` 之后，就可以运行 `python3` 了。
 
 ```bash
-root@UHC5661:~# python3
+root@UMU:~# python3
 Could not find platform dependent libraries <exec_prefix>
 Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
 Python 3.7.6 (default, Feb 11 2020, 12:41:31)
 [GCC 7.5.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> import sys
->>> sys.modules
-{'sys': <module 'sys' (built-in)>, 'builtins': <module 'builtins' (built-in)>, '_frozen_importlib': <module '_frozen_importlib' (frozen)>, '_imp': <module '_imp' (built-in)>, '_thread': <module '_thread' (built-in)>, '_warnings': <module '_warnings' (built-in)>, '_weakref': <module '_weakref' (built-in)>, 'zipimport': <module 'zipimport' (built-in)>, '_frozen_importlib_external': <module '_frozen_importlib_external' (frozen)>, '_io': <module 'io' (built-in)>, 'marshal': <module 'marshal' (built-in)>, 'posix': <module 'posix' (built-in)>, 'encodings': <module 'encodings' from '/usr/lib/python3.7/encodings/__init__.pyc'>, 'codecs': <module 'codecs' from '/usr/lib/python3.7/codecs.pyc'>, '_codecs': <module '_codecs' (built-in)>, 'encodings.aliases': <module 'encodings.aliases' from '/usr/lib/python3.7/encodings/aliases.pyc'>, 'encodings.utf_8': <module 'encodings.utf_8' from '/usr/lib/python3.7/encodings/utf_8.pyc'>, '_signal': <module '_signal' (built-in)>, '__main__': <module '__main__' (built-in)>, 'encodings.latin_1': <module 'encodings.latin_1' from '/usr/lib/python3.7/encodings/latin_1.pyc'>, 'io': <module 'io' from '/usr/lib/python3.7/io.pyc'>, 'abc': <module 'abc' from '/usr/lib/python3.7/abc.pyc'>, '_abc': <module '_abc' (built-in)>, 'site': <module 'site' from '/usr/lib/python3.7/site.pyc'>, 'os': <module 'os' from '/usr/lib/python3.7/os.pyc'>, 'stat': <module 'stat' from '/usr/lib/python3.7/stat.pyc'>, '_stat': <module '_stat' (built-in)>, 'posixpath': <module 'posixpath' from '/usr/lib/python3.7/posixpath.pyc'>, 'genericpath': <module 'genericpath' from '/usr/lib/python3.7/genericpath.pyc'>, 'os.path': <module 'posixpath' from '/usr/lib/python3.7/posixpath.pyc'>, '_collections_abc': <module '_collections_abc' from '/usr/lib/python3.7/_collections_abc.pyc'>, '_sitebuiltins': <module '_sitebuiltins' from '/usr/lib/python3.7/_sitebuiltins.pyc'>, 'atexit': <module 'atexit' (built-in)>}
+>>> 
 ```
 
 用以下 Python 代码，打印目前已有的模块：
 
 ```python
+import sys
+
 # 打印的信息太长
 i = 0
 for m in sys.modules:
@@ -83,45 +83,45 @@ for m in sys.modules.values():
         start = s.find('(', end+1)
         end = s.find(')', start+1)
     v = s[start+1:end]
-    print('{0:2d} {1:32s} {2}'.format(i, k, v))
+    print('{0:2d} {1:28s} {2}'.format(i, k, v))
 ```
 
 结果为：
 
 ```
- 1 sys                              built-in
- 2 builtins                         built-in
- 3 _frozen_importlib                frozen
- 4 _imp                             built-in
- 5 _thread                          built-in
- 6 _warnings                        built-in
- 7 _weakref                         built-in
- 8 zipimport                        built-in
- 9 _frozen_importlib_external       frozen
-10 io                               built-in
-11 marshal                          built-in
-12 posix                            built-in
-13 encodings                        '/usr/lib/python3.7/encodings/__init__.pyc'
-14 codecs                           '/usr/lib/python3.7/codecs.pyc'
-15 _codecs                          built-in
-16 encodings.aliases                '/usr/lib/python3.7/encodings/aliases.pyc'
-17 encodings.utf_8                  '/usr/lib/python3.7/encodings/utf_8.pyc'
-18 _signal                          built-in
-19 __main__                         built-in
-20 encodings.latin_1                '/usr/lib/python3.7/encodings/latin_1.pyc'
-21 io                               '/usr/lib/python3.7/io.pyc'
-22 abc                              '/usr/lib/python3.7/abc.pyc'
-23 _abc                             built-in
-24 site                             '/usr/lib/python3.7/site.pyc'
-25 os                               '/usr/lib/python3.7/os.pyc'
-26 stat                             '/usr/lib/python3.7/stat.pyc'
-27 _stat                            built-in
-28 posixpath                        '/usr/lib/python3.7/posixpath.pyc'
-29 genericpath                      '/usr/lib/python3.7/genericpath.pyc'
-30 posixpath                        '/usr/lib/python3.7/posixpath.pyc'
-31 _collections_abc                 '/usr/lib/python3.7/_collections_abc.pyc'
-32 _sitebuiltins                    '/usr/lib/python3.7/_sitebuiltins.pyc'
-33 atexit                           built-in
+ 1 sys                          built-in
+ 2 builtins                     built-in
+ 3 _frozen_importlib            frozen
+ 4 _imp                         built-in
+ 5 _thread                      built-in
+ 6 _warnings                    built-in
+ 7 _weakref                     built-in
+ 8 zipimport                    built-in
+ 9 _frozen_importlib_external   frozen
+10 io                           built-in
+11 marshal                      built-in
+12 posix                        built-in
+13 encodings                    '/usr/lib/python3.7/encodings/__init__.pyc'
+14 codecs                       '/usr/lib/python3.7/codecs.pyc'
+15 _codecs                      built-in
+16 encodings.aliases            '/usr/lib/python3.7/encodings/aliases.pyc'
+17 encodings.utf_8              '/usr/lib/python3.7/encodings/utf_8.pyc'
+18 _signal                      built-in
+19 __main__                     built-in
+20 encodings.latin_1            '/usr/lib/python3.7/encodings/latin_1.pyc'
+21 io                           '/usr/lib/python3.7/io.pyc'
+22 abc                          '/usr/lib/python3.7/abc.pyc'
+23 _abc                         built-in
+24 site                         '/usr/lib/python3.7/site.pyc'
+25 os                           '/usr/lib/python3.7/os.pyc'
+26 stat                         '/usr/lib/python3.7/stat.pyc'
+27 _stat                        built-in
+28 posixpath                    '/usr/lib/python3.7/posixpath.pyc'
+29 genericpath                  '/usr/lib/python3.7/genericpath.pyc'
+30 posixpath                    '/usr/lib/python3.7/posixpath.pyc'
+31 _collections_abc             '/usr/lib/python3.7/_collections_abc.pyc'
+32 _sitebuiltins                '/usr/lib/python3.7/_sitebuiltins.pyc'
+33 atexit                       built-in
 ```
 
 下面来实现获取 IPv6 地址的功能：
@@ -148,7 +148,7 @@ with open('/proc/net/if_inet6') as f:
 
 ## 2. 安装轻量库
 
-UMU 打算使用 socket 模块的工具函数格式化 IPv6 地址，但目前我们的 `python3-base` 不带 socket 模块：
+UMU 打算使用 socket 模块的工具函数格式化 IPv6 地址，但目前已安装的 `python3-base` 不带 socket 模块：
 
 ```python
 >>> import socket
@@ -157,7 +157,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'socket'
 ```
 
-所以我们需要安装 `python3-light`：
+所以需要安装 `python3-light`：
 
 ```bash
 opkg install python3-light
@@ -169,7 +169,8 @@ opkg install python3-light
 import socket
 
 ip = '0618:0618:0618:0618:0000:0000:0000:0618'
-print(ip, '->', socket.inet_ntop(socket.AF_INET6, socket.inet_pton(socket.AF_INET6, ip)))
+print(ip, '->',
+    socket.inet_ntop(socket.AF_INET6, socket.inet_pton(socket.AF_INET6, ip)))
 ```
 
 以上代码打印：`0618:0618:0618:0618:0000:0000:0000:0618 -> 618:618:618:618::618`。
@@ -182,6 +183,6 @@ print(ip, '->', socket.inet_ntop(socket.AF_INET6, socket.inet_pton(socket.AF_INE
 opkg install python3
 ```
 
-PS: 不要以为只要上面这句就全装上了，前面的 `opkg install python3-base` 是必要的哦！如果只 `opkg install python3`，您运行 `/usr/bin/python3` 时，就会发现 `/usr/bin/python3` 并不存在。
+PS: 不要以为只要上面这句就全装上了，前面的 `opkg install python3-base` 是必要的！如果只装 `python3`，则 `/usr/bin/python3` 并不存在！
 
 （完）
