@@ -5,7 +5,7 @@ description:
 categories: UMUTech
 tags:
 - debug
-- macOS
+- macos
 ---
 # 问题
 
