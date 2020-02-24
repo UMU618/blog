@@ -4,7 +4,7 @@ date: 2018-12-11 12:04:28
 description: 
 categories: UMUTech
 tags:
-- op
+- ops
 - mongodb
 ---
 # 选型

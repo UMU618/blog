@@ -4,7 +4,7 @@ date: 2019-07-16 17:32:00
 description:
 categories: UMUTech
 tags:
-- op
+- ops
 - nodejs
 ---
 # 安装
