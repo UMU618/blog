@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - dev
 - windows
-- 流媒体
+- streaming-media
 - ffmpeg
 ---
 # 前情

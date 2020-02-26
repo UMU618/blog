@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - 作品
 - 调研
-- 流媒体
+- streaming-media
 ---
 # 实用参考
 

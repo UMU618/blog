@@ -7,7 +7,7 @@ tags:
 - dev
 - windows
 - 调研
-- 流媒体
+- streaming-media
 - ffmpeg
 - 作品
 ---

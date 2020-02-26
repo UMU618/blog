@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - dev
 - windows
-- 流媒体
+- streaming-media
 - ffmpeg
 ---
 一般情况下操作 AVAudioFifo/AVFrame 都是用全套 ffmpeg API，内部自己管理内存，不需要了解它们内部怎么组织内存。比如：

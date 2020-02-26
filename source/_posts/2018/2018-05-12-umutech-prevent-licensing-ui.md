@@ -4,7 +4,9 @@ date: 2018-05-12 17:12:29
 description: 
 categories: UMUTech
 tags:
-- 开源
+- dev
+- windows
+- cpp
 - 作品
 ---
 因为穷，没钱买正版 Windows 10，但也不用盗版，所以一直用试用版。

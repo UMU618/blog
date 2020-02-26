@@ -7,7 +7,7 @@ tags:
 - dev
 - windows
 - cpp
-- 流媒体
+- streaming-media
 - ffmpeg
 ---
 # 需求
