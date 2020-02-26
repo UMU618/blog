@@ -5,8 +5,8 @@ description:
 categories: UMUTech
 tags:
 - nodejs
-- 密码学
-- 区块链
+- cryptology
+- blockchain
 ---
 # 基本知识
 

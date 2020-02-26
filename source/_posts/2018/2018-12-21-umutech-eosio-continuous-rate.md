@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - 调研
 - 金融
-- 区块链
+- blockchain
 ---
 > 作者: UMU @ MEET.ONE 实验室
 

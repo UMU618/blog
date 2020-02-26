@@ -5,7 +5,7 @@ description:
 categories: UMUTech
 tags:
 - 调研
-- 区块链
+- blockchain
 ---
 > 作者: UMU @ MEET.ONE 实验室
 
@@ -67,4 +67,5 @@ db.transaction_traces.find({}, {"block_num" : 1, "block_time" : 1}, -1).sort({$n
 ```
 # 6. 修复丢失数据
 
-参考《[EOSIO MongoDB 插件系列：从 log 中找回丢](/2019/01/03/umutech-eosio-mongodb-plugin-find-lost-insertion-from-logs/)》
+参考《[EOSIO MongoDB 插件系列：从 log 中找回丢](/2019/01/03/umutech-eosio-mongodb-plugin-find-lost-insertion-from-logs/
+)》

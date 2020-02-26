@@ -5,7 +5,7 @@ description:
 categories: 诗盗
 tags:
 - 七律
-- 区块链
+- blockchain
 ---
 《#诗盗#·买币送禅》：天花娉婷坠如雨，帆冻阴飙吹不举。苦却乐，乐却苦，数字黄金忽如土。
 

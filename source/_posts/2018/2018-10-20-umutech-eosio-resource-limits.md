@@ -5,7 +5,7 @@ description:
 categories: UMUTech
 tags:
 - 调研
-- 区块链
+- blockchain
 - 金融
 ---
 本文为 MEET.ONE 发布的[《EOSIO CPU 资源分配原理分析》](https://github.com/meet-one/documentation/blob/master/EOSIO-CPU.md) 的个人版本，稣是其主要编辑之一。
