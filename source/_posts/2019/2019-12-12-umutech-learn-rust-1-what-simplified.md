@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - dev
 - rust
-- 简化
+- optimization
 ---
 结论先行：**从语法上说，Rust 基本无敌。**
 

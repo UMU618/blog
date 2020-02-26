@@ -20,6 +20,8 @@ tags:
 
 5. C、C++ 之流太难了！Go、Rust 还得编译，麻烦。
 
+6. Perl、Ruby 已没落。
+
 # 一个例子
 
 当 IPv6 地址变化时，将地址发送到钉钉：<https://github.com/UMU618/openwrt-ipv6-addresses>

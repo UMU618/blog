@@ -5,7 +5,7 @@ description:
 categories: UMUTech
 tags:
 - cpp
-- 简化
+- machine-learning
 ---
 
 《[人工神经网络训练方法——随机查找](/2018/07/05/umutech-train-ann-using-random-search/)》介绍的随机查找方法，有点盲人摸象，所以继续介绍主流的后向传播(BackPropagation)算法。

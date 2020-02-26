@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - dev
 - rust
-- 简化
+- optimization
 ---
 结论先行：**减少代码嵌套就是降低复杂度。**
 
