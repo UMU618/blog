@@ -4,7 +4,7 @@ date: 2019-10-03 13:20:44
 description:
 categories: 诗盗
 tags:
-- 五言
+- 七律
 - 挨踢
 - 喷
 ---
