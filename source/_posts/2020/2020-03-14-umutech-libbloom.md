@@ -60,7 +60,7 @@ int main()
 
 - bytes 是最容易理解的，4802 位需要 601 字节存储。
 
-- bits = bits per elem * entries，每个元素需要多少位 * 元素个数。
+- bits = bits per elem \* entries，每个元素需要多少位 \* 元素个数。
 
 - hash functions = ceil(-ln(error) / ln(2))
 
