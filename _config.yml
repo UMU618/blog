@@ -99,7 +99,7 @@ theme: landscape-plus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@git.coding.net:UMU618/umu618.coding.me.git
+  repository: git@git.coding.net:UMU618/umu618.coding.me/blog.git
   branch: master
 
 feed:
