@@ -1,10 +1,11 @@
 layout: post
-title: 关于 APFS Container
+title: macOS 研究经验【1】：关于 APFS Container
 date: 2020-03-15 23:25:53
 description:
 categories: UMUTech
 tags:
-- macOS
+- debug
+- macos
 - ops
 ---
 # 起因
