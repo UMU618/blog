@@ -24,6 +24,8 @@ rm registry.dat
 
 由于子公司、分公司众多，稣的服务器列表里有好多个项，想备份这个列表，发现还不是很容易！
 
+![ServerProfileManager](/images/20200318-0.jpg)
+
 首先，找到 `~/Library/Application Support/X-NG/ss-local-config.json`，但这个文件里只有当前选择的项。
 
 然后，就看代码吧！Swift 写的，应该还好：
