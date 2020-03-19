@@ -26,7 +26,7 @@ rm registry.dat
 
 ![ServerProfileManager](/images/20200318-0.jpg)
 
-首先，找到 `~/Library/Application Support/X-NG/ss-local-config.json`，但这个文件里只有当前选择的项。
+首先，找到 `~/Library/Application Support/X-NG/-local-config.json`，但这个文件里只有当前选择的项。
 
 然后，就看代码吧！Swift 写的，应该还好：
 
@@ -38,7 +38,7 @@ let keys = [
 根据代码线索找到：
 
 ```bash
-defaults read ~/Library/Preferences/com.qiuyuzhou.X-NG.plist
+defaults read ~/Library/Preferences/com.yuzhou.X-NG.plist
 ```
 
 哇~全部出来了！
