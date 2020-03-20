@@ -44,13 +44,11 @@ links:
   UMUTech: http://my.oschina.net/umu618
   叹为观止: http://blog.vichamp.com/
 
+disqus_shortname: umu618
 
-# Duoshuo
-#duoshuo_shortname: umu
-
-sohucs: false
+sohucs: true
 
 # Baidu share
-baidushare: false
+baidushare: true
 
 icp: 闽ICP备14015033号-1

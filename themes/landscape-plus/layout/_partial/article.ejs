@@ -43,27 +43,17 @@
   <% } %>
 </article>
 
+<!-- 百度广告 -->
 <script type="text/javascript">
-(function(){ 
-var appid = 'cytnUIVvU'; 
-var conf = 'prod_ec4a41b6dd2a5922bc15dea6d7b0cab4'; 
-var width = window.innerWidth || document.documentElement.clientWidth; 
-if (width < 960) { 
-window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();
+  (function() {
+      var s = "_" + Math.random().toString(36).slice(2);
+      document.write('<div style="" id="' + s + '"></div>');
+      (window.slotbydup = window.slotbydup || []).push({
+          id: "u3773347",
+          container:  s
+      });
+  })();
 </script>
-
-<script type="text/javascript">
-    (function() {
-        var s = "_" + Math.random().toString(36).slice(2);
-        document.write('<div style="" id="' + s + '"></div>');
-        (window.slotbydup = window.slotbydup || []).push({
-            id: "u3773347",
-            container:  s
-        });
-    })();
-</script>
-<!-- 多条广告如下脚本只需引入一次 -->
-<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" ></script>
 
 <% if (!index && post.comments && (config.sohucs || theme.sohucs)){ %>
   <section id="comments">
