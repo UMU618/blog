@@ -13,6 +13,8 @@ timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+## * fix config.url startswith slash #188
+## https://github.com/hexojs/hexo-util/pull/188
 url: //blog.umu618.com
 root: /
 permalink: :year/:month/:day/:title/
@@ -42,7 +44,7 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: true
+relative_link: false
 future: true
 highlight:
   enable: true

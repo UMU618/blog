@@ -46,7 +46,7 @@ date: 2019-04-13 17:47:50
 - 2013~2014 年，一个人维护快游，包括产品设计、UI 美工、开发、测试、客服、运维、采购，同时有限参与其它部门技术研究，TCP 协议栈优化、FEO，参与过 CATM、MAA 项目，其中 CATM 项目有个 BitComet 的逆向成果是本人业余时间独立完成的，后来发现比公司正规军出的成果更好（参考文章：[通过 BT 种子 Hash 值从 BitComet 服务器上下载种子文件](http://www.cnblogs.com/UMU618/articles/2568579.html)）； MAA 技术基础是本人在 github 上选型的 [AppProxyCap](https://github.com/UMU618/AppProxyCap) 改进而来。
 
 - 2010-05，创造公司第一个专利《一种在驱动层判断 TCP/IP 包所属进程的方法》，申请号
-CN201010188864.2，获得专利授权；共申请 15 个专利，仅 3 个失败。
+CN201010188864.2，获得专利授权；共申请 15 个专利，仅 3 个失败，具体请到[SooPAT 专利搜索](http://www.soopat.com/Home/Result?SearchWord=FMR%3A%28%E9%83%91%E6%98%8E%29+%E7%BD%91%E5%AE%BF&FMZL=Y&SYXX=Y&WGZL=Y&FMSQ=Y)查询。
 
 - 网宿科技期权激励对象，请看《[网宿科技股份有限公司首期股票期权激励计划激励对象名单](http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2011/2011-7/2011-07-07/746429.PDF)》，第三页，序号 63；
 
