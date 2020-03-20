@@ -8,14 +8,14 @@ tags:
 - windows
 - cpp
 ---
-# 前提
+## 前提
 
 XP 系统，程序使用了 Manifest 指定使用 Microsoft.Windows.Common-Controls 
 现象：Edit 控件处理 WM_CTLCOLOREDIT 改变颜色，问题出在 SetBkMode 设置透明后，控件删除字符时无法立刻刷新，即会残留。
 
-# 解決
+## 解決
 
-## 方法 1
+### 方法 1
 
 自残，别用 Microsoft.Windows.Common-Controls，删除类似下列的代码：
 
@@ -31,14 +31,14 @@ XP 系统，程序使用了 Manifest 指定使用 Microsoft.Windows.Common-Contr
 #endif
 ```
 
-## 方法 2
+### 方法 2
 
 放弃“透明”，采用“伪透明”——如果您的背景是纯色，用 SetBkColor 就行。
 
-## 方法 3（推荐）
+### 方法 3（推荐）
 
 检测到 XP 时，WM_CTLCOLOREDIT 返回画刷前，自己用 FillRect/Rectangle 涂一下……或者发一个 WM_ERASEBKGND，当然这个做法的前提是 WM_ERASEBKGND 的处理就是自己涂一下，如果就一句 return TRUE 那是等于啥也没干。 
 
-# 参考
+## 参考
 
 同样悲剧的一个描述：<http://zhidao.baidu.com/question/9749770.html>

@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - nodejs
 ---
-# 选型
+## 选型
 
 [mapbox](https://github.com/mapbox) / [sqlite3](https://github.com/mapbox/node-sqlite3): Asynchronous, non-blocking SQLite3 bindings for Node.js
 
@@ -16,9 +16,9 @@ tags:
 yarn add sqlite3
 ```
 
-# 常见操作
+## 常见操作
 
-## 创建数据库
+### 1. 创建数据库
 
 ```js
 const path = require('path')
@@ -51,7 +51,7 @@ db.serialize(() => {
 db.close()
 ```
 
-## 插入数据
+### 2. 插入数据
 
 ```js
 const items = [
@@ -78,7 +78,7 @@ db.serialize(() => {
 })
 ```
 
-## 查询
+### 3. 查询
 
 ```js
 db.serialize(() => {
@@ -94,7 +94,7 @@ db.serialize(() => {
 })
 ```
 
-## 更新
+### 4. 更新
 
 ```js
 db.run("UPDATE test SET state=1 WHERE state=0", (err) => {
@@ -106,6 +106,6 @@ db.run("UPDATE test SET state=1 WHERE state=0", (err) => {
   })
 ```
 
-# 参考
+## 参考
 
 <http://www.sqlitetutorial.net/sqlite-nodejs/>

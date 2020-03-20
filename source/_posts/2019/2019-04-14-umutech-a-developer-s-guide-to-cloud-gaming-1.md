@@ -8,7 +8,7 @@ tags:
 - 调研
 - streaming-media
 ---
-# 实用参考
+## 实用参考
 
 1. [云游戏的架构设计和技术实现](https://blog.csdn.net/RA681t58CJxsgCkJ31/article/details/79226317)
 
@@ -22,7 +22,7 @@ tags:
 
     <https://github.com/obsproject/obs-studio>
 
-# 服务器架构
+## 服务器架构
 
 - NVIDIA Grid 显卡
 
@@ -32,7 +32,7 @@ tags:
 
 一份授权 Windows 系统大约可以运行 40~50 个游戏实例。
 
-# 音频
+## 音频
 
 - 服务器上设置 48000Hz 采样率；
 
@@ -48,7 +48,7 @@ tags:
 
     2. Opus 是开源并免费的，AAC 好的编解码器都是收费的。
 
-# 流传输协议
+## 流传输协议
 
 - RTSP
 

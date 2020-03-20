@@ -7,7 +7,7 @@ tags:
 - ops
 - mongodb
 ---
-# 选型
+## 选型
 
 **系统：CentOS7。** 正像大部分国人喜欢用免费的 Windows 旗舰版，采用 RedHat 社区版，既有“企业级待遇”，又免费。实在是解决选择恐惧症必备良药……
 
@@ -27,7 +27,7 @@ WiredTiger Storage Engine](https://docs.mongodb.com/manual/core/wiredtiger/#stor
 **机器配置：某云服务器一台。** 16 Cores，256G RAM，启动盘 10G，额外八个 1T Disk。
 
 ```bash
-# lsblk
+$ lsblk
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0   10G  0 disk 
 └─sda1   8:1    0   10G  0 part /
@@ -41,9 +41,9 @@ sdh      8:112  0    1T  0 disk
 sdi      8:128  0    1T  0 disk 
 ```
 
-# 环境配置
+## 环境配置
 
-## 1. 设置 SE Linux
+### 1. 设置 SE Linux
 
 安装过程中，若您需要 reboot 系统，则每次 reboot 之后都要做一次：
 
@@ -51,7 +51,7 @@ sdi      8:128  0    1T  0 disk
 setenforce Permissive
 ```
 
-## 2. 关闭 TPH
+### 2. 关闭 TPH
 以下命令不是持久化改变，但比较容易说明改了啥，仅供参考：
 
 ```bash
@@ -73,7 +73,7 @@ transparent_hugepages=never' > /etc/tuned/no-thp/tuned.conf
 tuned-adm profile no-thp
 ```
 
-## 3. TCP 优化
+### 3. TCP 优化
 以下命令不是持久化改变，但比较容易说明优化了啥，仅供参考：
 
 ```bash
@@ -105,9 +105,9 @@ egrep "net.ipv4.$KEY" $FILE && sed -i -c "s/net\.ipv4\.$KEY.*/net\.ipv4\.$KEY = 
 sysctl -p 2>/tmp/sysctl.tmp
 ```
 
-# 安装步骤
+## 安装步骤
 
-## 1. 全局设置
+### 1. 全局设置
 
 ```bash
 PASSWORD=MEETONE_FAKE_PASSWORD
@@ -120,13 +120,13 @@ S_PORT=17087
 NUM_SHARD=7
 ```
 
-## 2. 防火墙例外
+### 2. 防火墙例外
 
 ```bash
 semanage port -a -t mongod_port_t -p tcp 17087-17095
 ```
 
-## 3. 分区
+### 3. 分区
 
 ```bash
 yum install -y xfsprogs
@@ -151,7 +151,7 @@ function InitDisk {
 InitDisk
 ```
 
-## 4. 安装 MongoDB Community Edition
+### 4. 安装 MongoDB Community Edition
 
 参考官网的安装文档：[Install MongoDB Community Edition on Red Hat Enterprise or CentOS Linux](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
 
@@ -168,7 +168,7 @@ yum install -y mongodb-org
 echo 'exclude=mongodb-org,mongodb-org-server,mongodb-org-shell,mongodb-org-mongos,mongodb-org-tools' >> /etc/yum.conf
 ```
 
-## 5. 初始化数据库目录
+### 5. 初始化数据库目录
 
 ```bash
 function InitDir {
@@ -190,7 +190,7 @@ function InitDir {
 InitDir
 ```
 
-## 6. 配置 MongoD 分片服务器
+### 6. 配置 MongoD 分片服务器
 
 ```bash
 function CreateShardConfig {
@@ -289,7 +289,7 @@ InitShard
 CreateShardUser
 ```
 
-## 7. 配置 MongDB Config Server
+### 7. 配置 MongDB Config Server
 
 ```bash
 function CreateConfigServerConfig {
@@ -363,7 +363,7 @@ echo "use admin;
 db.createUser({ \"user\": \"MongoAdmin\", \"pwd\": \"${PASSWORD}\", \"roles\": [\"root\"]});" | mongo --port $CS_PORT
 ```
 
-## 8. 配置 MongS
+### 8. 配置 MongS
 
 ```bash
 function CreateMongoSConfig {
@@ -445,7 +445,7 @@ systemctl restart mongos.service
 AddShards
 ```
 
-## 9. 【可选】配置 keyfile
+### 9. 【可选】配置 keyfile
 
 ```bash
 function ConfigKeyfile {
@@ -471,7 +471,7 @@ ConfigKeyfile
 RestartMongo
 ```
 
-## 10. 【可选】配置集合和创建索引
+### 10. 【可选】配置集合和创建索引
 
 ```mongo
 use EOS
@@ -495,7 +495,7 @@ sh.shardCollection("EOS.action_traces", {"_id" : 1},  true)
 sh.shardCollection("EOS.transaction_traces", {"_id" : 1},  true)
 ```
 
-## 11. 【可选】安装 EOSIO 1.5
+### 11. 【可选】安装 EOSIO 1.5
 
 ```bash
 wget https://github.com/eosio/eos/releases/download/v1.5.0/eosio-1.5.0-1.el7.x86_64.rpm

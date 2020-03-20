@@ -9,18 +9,18 @@ tags:
 - cpp
 - debug
 ---
-# 问题
+## 问题
 
 今天编译 [EOSIO](https://github.com/EOSIO)/[eos](https://github.com/EOSIO/eos) 出现一些 `error: expected unqualified-id`。
 
-# 环境
+## 环境
 
 - 操作系统：macOS Mojave
 - 编译器：AppleClang 10.0.1.10010046
 - SDK：MacOSX10.14.sdk
 - Boost：1.69.0（1.67.0 也有问题，干脆用这个版本）
 
-# 验证问题
+## 验证问题
 
 ```cpp
 #include <signal.h>
@@ -57,7 +57,7 @@ make[1]: *** [CMakeFiles/signal.dir/all] Error 2
 make: *** [all] Error 2
 ```
 
-# 解决
+## 解决
 
 去掉 `sigemptyset` 和 `sigaddset` 前面的 `::` 即可。因为他们是宏，宏都是全局的，用 `::` 修饰反而错了，严格！
 

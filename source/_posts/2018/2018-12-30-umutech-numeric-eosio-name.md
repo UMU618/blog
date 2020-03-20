@@ -11,13 +11,11 @@ tags:
 
 > 作者: UMU @ MEET.ONE 实验室
 
-# 问题
+## 问题
 
 2018 年最后一个工作日，智能合约开发小哥哥遇到一个奇怪的现象：某个账号给我们合约转账，在 EOS 浏览器上都可以找到记录，但用 `cleos get table` 在合约的 RAM 里找却找不到！
 
-# 解决
-
-## 观测
+## 现象
 
 了解具体情况后，注意到两个事实：
 
@@ -27,7 +25,7 @@ tags:
 
 这是 EOS 账号解析的问题，UMU 曾经给 EOS 提过一个相关的 issue：[get_table_by_scope parameter lower_bound is NOT properly converted, cause enumeration dead loop #5824](https://github.com/EOSIO/eos/issues/5824)，里面有问题产生原因和解决方案。
 
-## 原因
+## 分析
 
 eosio::name 本质是一个 uint64_t 数字的 base32 编码，编码形式是为了方便人类记忆。举个例子：
 

@@ -9,11 +9,11 @@ tags:
 - streaming-media
 - ffmpeg
 ---
-# 前情
+## 前情
 
 最近写录音程序，发现 MBP 的扬声器是 4 频道的，然后在抓音频保存时，Opus 编码器居然不支持 4 个频道，avcodec_open2() 会返回错误码 -22，Invalid argument。解决方法就是 resample 成 AV_CH_LAYOUT_STEREO。搞定后就顺便细研了这个 ChannelLayout，UMU 的代码里需要把微软 CoreAudio 的一些参数转成 ffmpeg 的，比如之前写的《[Windows 的 WAVEFORMATEX 转 ffmpeg 的 AVSampleFormat 类型](/2017/07/04/umutech-windows-waveformatex-to-ffmpeg-avsampleformat/)》，这次写 ChannelLayout 的转换。
 
-# 分析
+## 分析
 
 ffmpeg 的 channel layouts 定义：
 
@@ -107,7 +107,7 @@ ffmpeg 的频道位置信息：
 #define SPEAKER_TOP_BACK_RIGHT          0x20000
 ```
 
-# 结论
+## 结论
 
 经过对比可以发现两者是一致的，只是微软的 dwChannelMask 是 DWORD，ffmpeg 用的是 int64_t。所以我们可以写个函数来转换他们：
 

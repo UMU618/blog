@@ -8,15 +8,15 @@ tags:
 - cryptology
 - blockchain
 ---
-# 前情
+## 前情
 
 上篇《[基于 ECC 的私钥转为公钥的过程](/2019/08/15/umutech-eosio-private-key-to-public-key/)》讲到求椭圆曲线上的点时，用的是基于 Python 的 [SAGE][sage]。为了方便 Node.js 程序员理解和实现完整流程代码，本篇用 Node.js 库实现椭圆曲线点的计算。
 
-# 用 Node.js 求椭圆曲线的点
+## 用 Node.js 求椭圆曲线的点
 
 库的选型考虑 [eosjs](https://github.com/EOSIO/eosjs) 用的 [ecurve](https://github.com/cryptocoinjs/ecurve) 和 [elliptic](https://github.com/indutny/elliptic)。
 
-## 1. ecurve
+### 1. ecurve
 
 ```js
 const ecurve = require('ecurve')
@@ -31,7 +31,7 @@ pub.affineY.isEven()
 
 得到 x 值为 `c0ded2bc1f1305fb0faac5e6c03ee3a1924234985427b6167ca569d13df435cf`，y 为偶数，和 [SAGE][sage] 计算结果一样。
 
-## 2. elliptic
+### 2. elliptic
 
 流程基本一样，所以这里给出完整转换代码。
 
@@ -78,11 +78,11 @@ console.log(privateKey)
 console.log(publicKey)
 ```
 
-## 3. 对比
+### 3. 对比
 
 elliptic 比较好用，比较快。
 
-# 代码
+## 代码
 
 <https://github.com/UMU618/secp256k1-tools>
 

@@ -6,7 +6,7 @@ categories: 宇督观
 tags:
 - debug
 ---
-# 主题曲《像屎》
+## 1. 主题曲《像屎》
 
 > 实习生黑锅
 > 是很遥远的事情
@@ -23,15 +23,15 @@ tags:
 > 竟不见有心人去改
 > 庸才占着茅坑前途不在
 
-# 百度分享不支持 HTTPS
+## 2. 百度分享不支持 HTTPS
 
 [百度分享](http://share.baidu.com/code)不支持 HTTPS 的解决方案：[https://github.com/hrwhisper/baiduShare](https://github.com/hrwhisper/baiduShare)，最早是 2016-07-09 发布，说明百度分享不支持 HTTPS 已经两年以上。
 
-## 结论
+### 结论
 
 百度可能听不进用户的话，用户宁愿自己解决问题……稣也亲自反馈过，应该是被无视了，至今还没官方支持！
 
-# Linux 内核代码风格翻译错误
+## 3. Linux 内核代码风格翻译错误
 
 [Linux 内核代码风格 v4.19](https://www.kernel.org/doc/html/v4.19/translations/zh_CN/coding-style.html#id12)
 
@@ -60,6 +60,6 @@ static inline void *kcalloc(size_t n, size_t size, gfp_t flags)
 
 “零长数组”应该是指：`char u[0];`
 
-## 结论
+### 结论
 
 疑智商太高，学习太快，中国的内核开发者都不屑看翻译的文档。

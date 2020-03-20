@@ -5,23 +5,23 @@ description:
 categories:
 tags:
 ---
-# 需求
+## 需求
 
 用户可能因为资源（NET 和 CPU）匮乏，无法愉快地使用 EOS 智能合约。
 
-# 解决思路
+## 解决思路
 
 智能合约承担事务的开销（NET 和 CPU）。
 
-# 具体方案
+## 具体方案
 
-## 1. ONLY_BILL_FIRST_AUTHORIZER 特性
+### 1. ONLY_BILL_FIRST_AUTHORIZER 特性
 
 eos 1.8 的 ONLY_BILL_FIRST_AUTHORIZER 特性，通过只向事务的首个授权方收费的方式，部分地解决这个问题。这一特性允许应用提供者对用户的每一笔事务进行联合签名，通过这一方式从公共池中支付事务的开销。
 
 缺陷：联合签名操作门槛高，安全性堪忧。
 
-## 2. 合约调用 accept_charges
+### 2. 合约调用 accept_charges
 
 [Contracts Paying Transaction Costs][cptc] 提出一种无需联合签名的方法（注意：目前还只是提案，尚未实现）。
 

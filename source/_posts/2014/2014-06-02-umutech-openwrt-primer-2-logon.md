@@ -7,7 +7,7 @@ tags:
 - embedded
 - openwrt
 ---
-# 登录
+## 登录
 
 刚刚刷好 OpenWRT 的 DIR-505，默认没有开启 WiFi，所以只能用网线连接，连起来后，将电脑的网卡配置为 192.168.1.X，或者自动获得地址也行。
 
@@ -30,7 +30,7 @@ ssh 192.168.1.1
 /etc/init.d/dropbear start
 ```
 
-# 开启 WiFi
+## 开启 WiFi
 
 用有线连接比较麻烦，接下来开启 WiFi，实现无线连接：
 
@@ -43,7 +43,7 @@ uci commit wireless;
 wifi
 ```
 
-# 改时区
+## 改时区
 
 时间都用网络同步，所以使用正确的时区很重要，要改为当地的时区，比如 UMU 使用台北时间：
 
@@ -55,7 +55,7 @@ uci commit system;
 echo CST-8 > /etc/TZ;
 ```
 
-# 改机器名
+## 改机器名
 
 个性化，非必要：
 
@@ -68,7 +68,7 @@ uci commit system;
 /etc/init.d/dnsmasq restart;
 ```
 
-# 改欢迎语
+## 改欢迎语
 
 个性化，非必要：
 

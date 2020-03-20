@@ -8,7 +8,7 @@ tags:
 - cpp
 - optimization
 ---
-# 做题
+## 做题
 
 以下代码打印什么？
 
@@ -24,7 +24,7 @@ else {
 
 答案是：`<= -1`，因为 sizeof (int) 是无符号的，把 `auto` 改为 `int` 则结果是 `> -1`。
 
-# 本质论
+## 本质论
 
 当我们声明 `unsigned/signed int count` 时，`unsigned/signed` 是变量 `count` 的使用属性，`int` 是其容量属性。
 
@@ -38,6 +38,6 @@ else {
 
 这也是 JSON 文本转对象后，要自己选择数据类型的原因，因为 JSON 文本没表示符号的语法。
 
-# 结论
+## 结论
 
 **优化思路：理解本质，就能了解限制和优化方向。**

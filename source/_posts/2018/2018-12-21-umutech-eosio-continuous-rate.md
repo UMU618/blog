@@ -10,7 +10,7 @@ tags:
 ---
 > 作者: UMU @ MEET.ONE 实验室
 
-# 问题
+## 问题
 
 在 `eosio.contracts/eosio.system/src/producer_pay.cpp` 中有这样一行代码：
 
@@ -26,7 +26,7 @@ const double   continuous_rate       = 0.04879;          // 5% annual rate
 
 然而，并没有解释具体算法……
 
-# 求解
+## 求解
 
 - 假设通胀率是“每日结算”的，记为 daily_rate，则：
 
@@ -58,6 +58,6 @@ continuous_rate = ln(1 + annual_rate)
 
 把 5% 代入 annual_rate，`continuous_rate = 0.048790164169432`
 
-# 参考
+## 参考
 
 \#1537 [DAWN-651 ⁃ setting correct per-block "continuous inflation" so annual inflation is 5%](https://github.com/EOSIO/eos/issues/1537)

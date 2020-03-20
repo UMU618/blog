@@ -9,13 +9,13 @@ tags:
 - streaming-media
 - ffmpeg
 ---
-# 前情
+## 前情
 
 最近参考 ffmpeg 的 transcoding_aac 示例代码，写了一个 transcoding_opus，并拿 MP3 测试转码，结果发现转完的 opus 文件的 SampleFormat 和指定的并不一样。UMU 的代码是把源文件解码出来的 sample 先 resample 成 AV_SAMPLE_FMT_S16 格式，然后再交给 opus encoder 去编码的，但是编完用 ffprobe 查看，发现 SampleFormat 变成 AV_SAMPLE_FMT_FLTP。
 
 **那么第一个问题来了，为什么会这样？**
 
-# 分析
+## 分析
 
 开始研究，首先 UMU 把 opus encoder 支持的 sample_fmt 打印出来，发现只有两种：AV_SAMPLE_FMT_S16、AV_SAMPLE_FMT_FLT，压根就没有 AV_SAMPLE_FMT_FLTP，强行指定 AV_SAMPLE_FMT_FLTP 之后，直接报错，不支持这种 sample_fmt。
 
@@ -78,7 +78,7 @@ AVCodec *output_codec = avcodec_find_encoder_by_name("opus");
 
 **那么，第二个问题顺势而来——哪个比较牛？**
 
-# 结论
+## 结论
 
 用 AV_SAMPLE_FMT_FLTP 后 frame_size 是 120，用其它是 960，frame_size 小有小的好处，比如在做实时编码直播时，理论延迟会更小。
 

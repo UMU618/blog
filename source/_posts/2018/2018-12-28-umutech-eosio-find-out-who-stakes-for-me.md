@@ -9,13 +9,13 @@ tags:
 ---
 > 作者: UMU @ MEET.ONE 实验室
 
-# 问题
+## 问题
 
 很多 EOS 浏览器都只能显示别人给我抵押了多少 EOS，但不能看到是哪个账号帮我抵押的。
 
-# 分析
+## 分析
 
-## 1. 看抵押的实现代码
+### 1. 看抵押的实现代码
 
 从 `eosio.contracts/eosio.system/src/delegate_bandwidth.cpp` 的 `delegatebw` 函数开始分析。
 
@@ -28,7 +28,7 @@ auto itr = del_tbl.find( receiver.value );
 
 scope 是 from，而 from 就是要求的未知项，直接粉碎我们用这路线继续求解的可能。
 
-## 2. 找交易记录
+### 2. 找交易记录
 
 MEET.ONE 之前发布过几篇关于 MongoDB 插件的文章，这些积累为我们继续求解提供了很大便利。
 

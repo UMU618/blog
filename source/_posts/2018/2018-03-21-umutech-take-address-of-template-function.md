@@ -10,7 +10,7 @@ tags:
 ---
 最近用 WTL 写 Ribbon 界面，发现一个坑。
 
-# 先看 WTL9.1 的代码
+## 先看 WTL9.1 的代码
 
 ```
 static void (CharFormat::*Getk_[])(IPropertyStore*) = 
@@ -55,7 +55,7 @@ void Getk_MaskEffect(IPropertyStore* pStore)
 
 然后根据错误提示搜到：Cannot take address of template function，<https://gcc.gnu.org/bugzilla/show_bug.cgi?id=39018>，翻译一下：模版函数的地址转化，分两步走，第一步先转具化，第二步转目标类型，这样可以；直接转过去不可以！
 
-# 再来看看 WTL10 怎么解决这个问题的！
+## 再来看看 WTL10 怎么解决这个问题的！
 
 ```
 static void (CharFormat::*Getk_[])(IPropertyStore*) = 

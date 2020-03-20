@@ -7,7 +7,7 @@ tags:
 - ops
 - mongodb
 ---
-# 现象
+## 现象
 
 db.stats() 的各种 Size 需要理理，先看例子：
 
@@ -25,7 +25,7 @@ db.stats() 的各种 Size 需要理理，先看例子：
 1707216896
 ```
 
-# 概念解释
+## 概念解释
 
 db.action_traces.stats() 里的 size 就是 db.action_traces.dataSize()，也就是数据本身的逻辑大小。
 
@@ -35,7 +35,7 @@ db.action_traces.stats() 里的 size 就是 db.action_traces.dataSize()，也就
 
 注意：索引有时会比数据本身还大……
 
-# 参考
+## 参考
 
 [db.collection.stats() — MongoDB Manual](https://docs.mongodb.com/manual/reference/method/db.collection.stats/index.html)
 

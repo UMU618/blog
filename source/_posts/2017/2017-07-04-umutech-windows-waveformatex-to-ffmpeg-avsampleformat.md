@@ -10,19 +10,19 @@ tags:
 - streaming-media
 - ffmpeg
 ---
-# 需求
+## 需求
 
 Windows 平台，录音。
 
-# 任务
+## 任务
 
 用 Windows 的 IAudioCaptureClient 对象采集音频，然后用 ffmpeg 编码。
 
-# 困难
+## 困难
 
 一些类型定义不一样，比如 SampleFormat。
 
-# 解决方案
+## 解决方案
 
 ```cpp
 inline AVSampleFormat GetSampleFormat(const WAVEFORMATEX *wave_format)

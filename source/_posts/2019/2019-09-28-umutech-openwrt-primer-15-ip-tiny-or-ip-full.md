@@ -7,11 +7,11 @@ tags:
 - embedded
 - openwrt
 ---
-# 起源
+## 起源
 
 今天看到有网文《[iptables+tproxy实现ss-redir的UDP转发的方法](https://blog.csdn.net/lvshaorong/article/details/53203674)》说：“OpenWrt 做 UDP 转发需要的依赖是：iptables-mod-tproxy, kmod-ipt-tproxy 和 ip-full”。使用 `opkg install ip` 安装的默认是 ip-tiny，一般情况下都是够用的，不禁想弄明白两者有何区别。
 
-# 探索
+## 探索
 
 拿 `ip` 命令对比测试：
 
@@ -45,6 +45,6 @@ OBJECT := { link | address | addrlabel | route | rule | neigh | ntable |
 > Policy Database). It is also used for the IP Payload Compression
 > Protocol and features of Mobile IPv6.
 
-# 结论
+## 结论
 
 实际上，转发普通 UDP 包，并不需要 ip-full，ip-tiny 即可。

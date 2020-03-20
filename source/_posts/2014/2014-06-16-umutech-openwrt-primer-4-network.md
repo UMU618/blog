@@ -7,11 +7,11 @@ tags:
 - embedded
 - openwrt
 ---
-# 前情
+## 前情
 
 在上篇《[跟 UMU 一起玩 OpenWRT（入门篇3）：工作模式开关](/2014/06/05/umutech-openwrt-primer-3-gpio-switch/)》中介绍了如何通过 GPIO 读取获得当前工作模式，现在来实现这个开关的功能。
 
-# 配置开机启动脚本
+## 配置开机启动脚本
 
 主要配置 rc.local 脚本，内容如下：
 
@@ -54,7 +54,7 @@ fi
 exit 0
 ```
 
-# 根据工作模式配置网络
+## 根据工作模式配置网络
 
 上一步加的代码是，开机自动复制配置文件覆盖到 /etc/config/ 下，配置文件不需要全部，只要 firewall、network 和 wireless 就行了。按工作模式命名，创建三个目录：
 
@@ -66,7 +66,7 @@ mkdir /etc/config/hotspot
 
 后面，我们会把配置文件写好了，放在这些目录里。
 
-## ap 模式
+### ap 模式
 
 下面以 ap 为例，此模式是网口做 WAN，无线做 LAN，WAN 以 ADSL 接入为例，其它情况自行变通：
 
@@ -95,7 +95,7 @@ cp /etc/config/network /etc/config/ap/
 cp /etc/config/wireless /etc/config/ap/
 ```
 
-## repeater 模式
+### repeater 模式
 
 再来说一下 repeater，网口做 LAN，无线做一个 AP Client 和一个 AP。注意，以下命令以初始化的配置文件为基础，请事先备份、还原，不要在配置过前面的 ap 模式后直接继续配置，可能会有问题。
 

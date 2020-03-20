@@ -6,7 +6,7 @@ categories: UMUTech
 tags:
 - embedded
 ---
-# 需求
+## 需求
 
 两个困境：
 
@@ -16,7 +16,7 @@ tags:
 
 还没有树莓派的时候，UMU 用笔记本上的 Windows 的 ICS 功能给它提供网络，当然这方法很不好，于是有了现在的方案。
 
-# 解决
+## 解决
 
 仔细查看了树莓派支持的 USB WiFi Adapters 列表，挑选了 TP-LINK TL-WN823N（RT8192CU 芯片），这个在 Raspbian 上是 Work out-of-box。Mercury 150Mbps MW150U（Realtek RTL8188CU 芯片）也可以。
 

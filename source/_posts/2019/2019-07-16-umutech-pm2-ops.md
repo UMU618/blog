@@ -7,7 +7,7 @@ tags:
 - ops
 - nodejs
 ---
-# 安装
+## 安装
 
 比较多的文章推荐用 npm 安装，但 [UMU](https://blog.umu618.com/) 更推荐 yarn。
 
@@ -28,7 +28,7 @@ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 yarn global add pm2
 ```
 
-# 运行
+## 运行
 
 不熟悉 yarn 的话，装完一头雾水，装到哪了？用以下命令显示：
 
@@ -47,6 +47,6 @@ yarn global bin
 `yarn global bin`/pm2 start my-program.js
 ```
 
-# 安全建议
+## 安全建议
 
 **root 身份能不用则不用。**

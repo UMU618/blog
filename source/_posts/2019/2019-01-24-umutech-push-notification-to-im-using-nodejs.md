@@ -11,7 +11,7 @@ tags:
 ---
 > 作者: UMU @ MEET.ONE 实验室
 
-# 钉钉
+## 钉钉
 
 1. 选择要接受通知的群，群设置 - 群机器人 - 添加机器人；
 
@@ -40,7 +40,7 @@ fetch(webhook_url, {
 })
 ```
 
-# Telegram
+## Telegram
 
 1. 添加 [@BotFather](https://telegram.me/BotFather)，发送 /newbot 命令，随提示逐步建立一个机器人，得到这个机器人的 token，记为 bot_token。
 

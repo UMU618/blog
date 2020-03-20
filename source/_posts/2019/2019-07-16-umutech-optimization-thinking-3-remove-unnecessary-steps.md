@@ -9,11 +9,11 @@ tags:
 - optimization
 - blockchain
 ---
-# 故事
+## 故事
 
 四月底给 [EOSIO](https://github.com/EOSIO) / [eos](https://github.com/EOSIO/eos) 提了一个[优化 MongoDB 插件性能的 PR](https://github.com/EOSIO/eos/pull/7207)，被连续感谢好几个 [Release](https://github.com/EOSIO/eos/releases/tag/v1.8.0)。
 
-# 分析
+## 分析
 
 原先的流程：fc::variant -> JSON string -> BSON，实现起来很简单，因为 JSON 是很常见的，fc::variant 和 BSON 都有到 JSON 的转化，所以实现代码很简单，一行两个函数。
 

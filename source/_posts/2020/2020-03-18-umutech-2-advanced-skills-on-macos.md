@@ -7,7 +7,7 @@ tags:
 - debug
 - macos
 ---
-# 1. Beyond Compare
+## 1. Beyond Compare
 
 BC 试用版过期，思考 3 秒钟：~~稣太穷，买不起！~~
 
@@ -20,7 +20,7 @@ cd ~/Library/Application Support/Beyond Compare
 rm registry.dat
 ```
 
-# 2. X-NG
+## 2. X-NG
 
 由于子公司、分公司众多，稣的服务器列表里有好多个项，想备份这个列表，发现还不是很容易！
 

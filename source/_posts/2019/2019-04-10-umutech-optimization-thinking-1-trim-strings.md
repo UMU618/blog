@@ -7,7 +7,7 @@ tags:
 - dev
 - optimization
 ---
-# In place 版本
+## In place 版本
 
 传入的字符串将被改变。
 
@@ -41,7 +41,7 @@ trim(string& str) {
 
 **优化思路：尽量减少复制，调整顺序也是优化手段。**
 
-# Copy 版本
+## Copy 版本
 
 传入的字符串不会被改变，返回一个新的字符串。
 
@@ -69,7 +69,7 @@ string trim_copy(const string& str) {
 
 **优化思路：尽量减少复制。**
 
-# move
+## move
 
 strlen、strcpy、memmove 这类函数，都有一个优化思路：机器字长对齐，一次处理一个机器字。对于长字符串，效果显著。
 

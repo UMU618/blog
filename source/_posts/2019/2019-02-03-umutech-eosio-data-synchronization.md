@@ -13,37 +13,37 @@ tags:
 
 最近三个月尝试各种方案把 EOSIO 链上交易数据同步到数据库中，踩了不少坑，现总结一下经验。
 
-# 1. 使用 MongoDB 插件同步 transaction_traces 和 action_traces
+## 1. 使用 MongoDB 插件同步 transaction_traces 和 action_traces
 
 原始需求是要链上交易数据，所以先是把 transaction_traces 和 action_traces 都同步。
 
 **踩坑**：无奈地发现速度跟不上，服务器的时间成本比较高，只能舍弃。
 
-# 2. 使用 MongoDB 插件同步 transaction_traces
+## 2. 使用 MongoDB 插件同步 transaction_traces
 
 研究插件代码，发现 action_traces 是从 transaction_traces 拆出来的，是重复的，所以把 action_traces 去掉，这次成功追上主网区块高度。
 
 **踩坑**：transaction_traces 在查询 actions 时不太方便，因为 actions 是放到 transaction_traces 内部的一个数组，要查询具体一个 action 就得分两步走，先在 MongoDB 查询出某个 trx，然后再 actions 数组里遍历。数据库使用端的工程师觉得这样太麻烦，无奈继续放弃这到手的肥肉。
 
-# 3. 使用 MongoDB 插件同步 action_traces
+## 3. 使用 MongoDB 插件同步 action_traces
 
 明确 action_traces 才是客户端想要的后，就只同步 action_traces。
 
 **踩坑**：action_traces 条数比 transaction_traces 多了三倍以上，又出现追不上区块的问题……
 
-# 4. 使用 MongoDB 插件同步 action_traces，但只要 transfer 数据
+## 4. 使用 MongoDB 插件同步 action_traces，但只要 transfer 数据
 
 客户端最关心的是 transfer 数据，既然跟不上，就舍弃其它数据。
 
 **踩坑**：舍弃的数据后期不好补。
 
-# 5. 考虑 kafka_plugin
+## 5. 考虑 kafka_plugin
 
 有人说 kafka_plugin 同步数据很快，可以追上主网区块。
 
 **踩坑**：从 kafka_plugin 代码就能看出它没有处理 action_traces，如果还要去后端再拿出来处理，再插入到 MongoDB 里，那开发成本和服务器成本一样又上去了。
 
-# 6. 从 2019 年的区块开始同步
+## 6. 从 2019 年的区块开始同步
 
 从 35058781 块开始，插入数据库。之前的区块（1 - 35058780）处理后，仅插入数据量相对很小的 account_controls、accounts、pub_keys，其它数据量大的表不插入。
 
@@ -53,7 +53,7 @@ tags:
 
 - 在 1 开始的早期区块阶段，同时插入 transaction_traces 和 action_traces，并不能看出比只插入 action_traces 慢，说明 MongoDB 端压力很小。
 
-# 7. 结论
+## 7. 结论
 
 - 要追上主网区块高度，nodeos 机器性能要好，2.5GHz CPU 不够用。之前听闻 BOS 要求 BP 使用 4.0GHz 的 CPU，现在看起来也是有道理的……以性能成本换取时间。
 

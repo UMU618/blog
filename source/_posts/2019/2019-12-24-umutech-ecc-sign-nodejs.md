@@ -8,15 +8,15 @@ tags:
 - cryptology
 - blockchain
 ---
-# 前情
+## 前情
 
 上篇《[ECC Node.js](/2019/08/16/umutech-ecc-nodejs/)》讲解椭圆曲线点的计算。本篇分析椭圆曲线签名算法。
 
-# 代码
+## 代码
 
 <https://github.com/UMU618/secp256k1-tools>
 
-# 范例数据
+## 范例数据
 
 已知，待签名数据为：
 
@@ -56,7 +56,7 @@ Uint8Array [
 
 签名的字符串形式为：`SIG_K1_Gg74ULRryVHxYZvMRLJgTrAZW6PZGC5SYfUiswtMJxBwfTTnGEnTejeWXopL2oSs8EZD7mqAC8mCps6VKq95Bgic9tGNHJ`
 
-# 分析
+## 分析
 
 数值全部使用 16 进制表示。
 
@@ -127,7 +127,7 @@ result.getX().toString(16)
 result.getY().toString(16)
 ```
 
-# 数学原理
+## 数学原理
 
 参考：[椭圆曲线加密和签名算法](https://blog.csdn.net/gao131360144/article/details/79978516)
 

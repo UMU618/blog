@@ -10,7 +10,7 @@ tags:
 
 《[人工神经网络训练方法——随机查找](/2018/07/05/umutech-train-ann-using-random-search/)》介绍的随机查找方法，有点盲人摸象，所以继续介绍主流的后向传播(BackPropagation)算法。
 
-# 填坑
+## 填坑
 
 先给随机查找做个优化！上篇中的激活函数统一使用 ReLU，其实这是不好的，输出层可以改为 Sigmoid 或 Tanh：
 
@@ -34,7 +34,7 @@ double AnnRun(const double x[2], double* w) {
 
 原因很简单，我们已经知道 Xor 的结果不是 0 就是 1，用 ReLU 是可能大于 1 的，而 Sigmoid 和 Tanh 不会大于 1。
 
-# 后向传播
+## 后向传播
 
 理论学习：[《如何直观地解释 back propagation 算法？》](https://www.zhihu.com/question/27239198)
 

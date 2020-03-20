@@ -8,7 +8,7 @@ tags:
 - openwrt
 - python
 ---
-# 为什么 Python3？
+## 为什么 Python3？
 
 1. Shell 不适合某些复杂运算，尤其是 OpenWRT 用的 ash。
 
@@ -22,13 +22,13 @@ tags:
 
 6. Perl、Ruby 已没落。
 
-# 一个例子
+## 一个例子
 
 当 IPv6 地址变化时，将地址发送到钉钉：<https://github.com/UMU618/openwrt-ipv6-addresses>
 
-# 安装与调试
+## 安装与调试
 
-## 1. 安装可执行程序
+### 1. 安装可执行程序
 
 ```bash
 opkg install python3-base
@@ -51,13 +51,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```python
 import sys
 
-# 打印的信息太长
+## 打印的信息太长
 i = 0
 for m in sys.modules:
     i += 1
     print('{0:2d} {1:32s} {2}'.format(i, m, sys.modules[m]))
 
-# 不精准
+## 不精准
 i = 0
 for m in sys.modules.values():
     i += 1
@@ -69,7 +69,7 @@ for m in sys.modules.values():
         v = ''
     print('{0:2d} {1:32s} {2}'.format(i, m.__name__, v))
 
-# 推荐使用
+## 推荐使用
 i = 0
 for m in sys.modules.values():
     i += 1
@@ -148,7 +148,7 @@ with open('/proc/net/if_inet6') as f:
 
 以上代码有个“美中不足”：只能打印地址的“首选格式”，不支持“压缩格式”。下面改进！
 
-## 2. 安装轻量库
+### 2. 安装轻量库
 
 UMU 打算使用 socket 模块的工具函数格式化 IPv6 地址，但目前已安装的 `python3-base` 不带 socket 模块：
 
@@ -177,7 +177,7 @@ print(ip, '->',
 
 以上代码打印：`0618:0618:0618:0618:0000:0000:0000:0618 -> 618:618:618:618::618`。
 
-## 3. 全量安装
+### 3. 全量安装
 
 如果 `python3-light` 还不能满足您，推荐来个全家桶：
 

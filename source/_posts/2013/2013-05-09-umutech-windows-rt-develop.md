@@ -8,7 +8,7 @@ tags:
 - windows
 - 作品
 ---
-# 闲谈
+## 闲谈
 
 这篇文章是用 Surface RT 写的。先喷一下这设备不爽的地方！
 
@@ -30,11 +30,11 @@ tags:
 
 3. VS2012 自带的 ARM lib 缺失。
 
-# 开始折腾
+## 开始折腾
 
 下面就是简单介绍一下如何突破这三个封锁：
 
-## 1. 解锁签名限制
+### 1. 解锁签名限制
 
 RT Jailbreak Tool By Netham45, Version 1.20
 
@@ -42,7 +42,7 @@ RT Jailbreak Tool By Netham45, Version 1.20
 
 另外，有很多开源软件已经移植，在开发自己的程序之前，可以先试试，Desktop apps ported to Windows RT：<http://forum.xda-developers.com/showthread.php?t=2092348>
 
-## 2. 开启 VS2012 的 ARM 支持
+### 2. 开启 VS2012 的 ARM 支持
 
 来自 <http://stackoverflow.com/questions/11151474/can-arm-desktop-programs-be-built-using-visual-studio-2012> 的答案
 
@@ -64,7 +64,7 @@ RT Jailbreak Tool By Netham45, Version 1.20
 
 某些工程需要强制定义 _ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE 才可以。
 
-## 3.获取更多的 ARM libs
+### 3.获取更多的 ARM libs
 
 开源工具应运而生：<https://github.com/peterdn/dll2lib>
 

@@ -53,12 +53,12 @@ uci commit
 
 ```bash
 echo "key 内容" >> ~/.ssh/authorized_keys
-# 或者
+## 或者
 #cat pubkey >> ~/.ssh/authorized_keys
 chmod 0700 ~/.ssh/
 chmod 0600 ~/.ssh/authorized_keys
 vi /etc/ssh/sshd_config
-# 改为允许证书登录
+## 改为允许证书登录
 service sshd restart
 ```
 

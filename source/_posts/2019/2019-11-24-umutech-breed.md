@@ -7,7 +7,7 @@ tags:
 - embedded
 - router
 ---
-# 极路由 1S
+## 极路由 1S
 
 1S 有两款硬件：hc5661 和 hc5661a，刷错变砖，而且要刷的文件名有点迷惑性，意不意外？
 
@@ -65,7 +65,7 @@ Writing from ./breed-mt7620-hiwifi-hc5761.bin to u-boot ...
 | 编译日期 | 2018-12-29 [git-135bed9] |
 | 版本 | 1.1 (r1266) |
 
-# 极路由 3
+## 极路由 3
 
 版本 HC5861 - 1.4.10.20837s，一样能开发者解锁后直接刷。这种不保护 bootloader 的 ROM，也是醉了，真香……已经过保，也不想恢复官方 ROM，直接刷 BREED，再刷 OpenWRT 18.06.5。
 
@@ -117,11 +117,11 @@ BREED 信息：
 
 嗯……这款路由器就是骗钱的。
 
-# Lenovo Y1S
+## Lenovo Y1S
 
 这款最简单，直接捅菊花进官方恢复模式，刷这个文件：<https://breed.hackpascal.net/breed-mt7620-lenovo-y1s.bin>！
 
-# Newifi D1
+## Newifi D1
 
 先官方 ROM 降级：xCloudOS_newifi-d1_Build20150922_v0.0.4.3500_beta_sign.bin 或更早的 xCloudOS_newifi-d1_Build_v0.0.4.2100_beta_sign.bin，自寻下载。
 
@@ -130,7 +130,7 @@ BREED 信息：
 0.0.4.3500, r33798 的版本，布局如下：
 
 ```bash
-# cat /proc/mtd
+## cat /proc/mtd
 dev:    size   erasesize  name
 mtd0: 00030000 00010000 "u-boot"
 mtd1: 00010000 00010000 "u-boot-env"
@@ -162,7 +162,7 @@ fullflash = u-boot + u-boot-env + firmware
 
 值得注意的是：刷完 BREED，**捅菊花的位置变了**，不再是捅原来的菊花……而是天线下方那个红十字按钮，这原是用于 WPS 的。
 
-# Newifi D2
+## Newifi D2
 
 访问 <http://192.168.99.1/newifi/ifiwen_hss.html> 开启 SSHD，查看分区布局：
 
