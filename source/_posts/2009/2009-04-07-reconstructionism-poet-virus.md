@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·毒
 date: 2009-04-07 16:08:49

@@ -1,3 +1,4 @@
+---
 layout: post
 title: EOSIO 资源分配机制
 date: 2018-10-20 15:53:38

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·电机
 date: 2014-05-06 15:57:06

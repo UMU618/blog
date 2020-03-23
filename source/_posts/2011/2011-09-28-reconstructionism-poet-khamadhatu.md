@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·欲界
 date: 2011-09-28 10:05:49

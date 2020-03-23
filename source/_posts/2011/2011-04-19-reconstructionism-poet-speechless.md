@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·无语
 date: 2011-04-19 21:31:33

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·诗链
 date: 2010-02-24 15:18:21

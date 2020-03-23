@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·缩减
 date: 2018-07-24 08:49:00

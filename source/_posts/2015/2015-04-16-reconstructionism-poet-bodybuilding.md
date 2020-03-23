@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·搞基记
 date: 2015-04-16 23:20:25

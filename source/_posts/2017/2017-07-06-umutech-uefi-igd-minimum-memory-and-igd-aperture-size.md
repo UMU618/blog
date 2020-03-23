@@ -1,3 +1,4 @@
+---
 layout: post
 title: UEFI 里的 IGD Minimum Memory 和 IGD Aperture Size
 date: 2017-07-06 23:48:26

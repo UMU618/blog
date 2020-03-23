@@ -1,3 +1,4 @@
+---
 layout: post
 title: 如何翻墙？
 date: 2011-02-25 22:45:45

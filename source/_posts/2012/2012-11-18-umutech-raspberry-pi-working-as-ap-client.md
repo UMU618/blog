@@ -1,3 +1,4 @@
+---
 layout: post
 title: 用树莓派 + USB 无线网卡做了一个蛋疼的 AP Client
 date: 2012-11-18 23:21:09

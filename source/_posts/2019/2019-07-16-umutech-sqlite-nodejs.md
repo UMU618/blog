@@ -1,3 +1,4 @@
+---
 layout: post
 title: SQLite Node.js
 date: 2019-07-16 17:46:52
@@ -12,7 +13,7 @@ tags:
 
 安装：
 
-```bash
+```shell
 yarn add sqlite3
 ```
 

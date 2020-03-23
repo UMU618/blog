@@ -1,3 +1,4 @@
+---
 layout: post
 title: 程序员鼓励师系列：EOSIO 智能合约开发从入门到入定
 date: 2019-01-04 22:25:47
@@ -56,7 +57,7 @@ error: cannot use 'try' with exceptions disabled
 
 如果您学过 Golang、Rust 可能会注意到，它们可以编译成 WASM 文件。比如 Golang 的编译命令为：
 
-```bash
+```shell
 GOOS=js GOARCH=wasm go build -o hello.wasm
 ```
 

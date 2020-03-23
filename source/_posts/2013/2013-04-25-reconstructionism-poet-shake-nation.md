@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·震邦
 date: 2013-04-25 17:10:13

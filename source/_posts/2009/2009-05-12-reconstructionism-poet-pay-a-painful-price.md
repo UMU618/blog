@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·惨付
 date: 2009-05-12 12:08:21

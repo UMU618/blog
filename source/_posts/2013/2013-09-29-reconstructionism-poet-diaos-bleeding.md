@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·屌丝红
 date: 2013-09-29 14:45:10

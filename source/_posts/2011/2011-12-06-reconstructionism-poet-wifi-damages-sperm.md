@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·Wi-Fi 杀精
 date: 2011-12-06 10:24:50

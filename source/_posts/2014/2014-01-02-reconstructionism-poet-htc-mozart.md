@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·HTC Mozart 当闹钟
 date: 2014-01-02 09:19:19

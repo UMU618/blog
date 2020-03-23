@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·泡温泉
 date: 2017-10-05 20:11:34

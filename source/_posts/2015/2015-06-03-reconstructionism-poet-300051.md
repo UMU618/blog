@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·妖股
 date: 2015-06-03 22:38:02

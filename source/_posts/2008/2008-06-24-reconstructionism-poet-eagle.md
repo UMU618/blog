@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·鹰
 date: 2008-06-24 09:30:25

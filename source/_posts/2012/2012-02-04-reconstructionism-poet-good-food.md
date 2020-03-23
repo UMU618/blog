@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·青家菜
 date: 2012-02-04 20:23:29

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·蛋定
 date: 2009-09-21 14:32:54

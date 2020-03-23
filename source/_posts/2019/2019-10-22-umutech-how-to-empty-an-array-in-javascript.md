@@ -1,3 +1,4 @@
+---
 layout: post
 title: How to empty an array in JavaScript?
 date: 2019-10-22 19:12:04

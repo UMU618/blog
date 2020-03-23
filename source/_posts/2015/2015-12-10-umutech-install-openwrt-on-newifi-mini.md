@@ -1,3 +1,4 @@
+---
 layout: post
 title: newifi mini 刷 OpenWRT
 date: 2015-12-10 16:33:42

@@ -1,3 +1,4 @@
+---
 layout: post
 title: EOSIO MongoDB 插件系列：从 log 中找回丢失的插入记录
 date: 2019-01-03 11:58:24
@@ -19,13 +20,13 @@ nodeos 会将插入语句连同错误原因等信息一起写入 log，这给了
 
 ### 1. 找出所有失败记录
 
-```bash
+```shell
 grep 'mongo exception, trans_traces insert:' *.log > lost.txt
 ```
 
 ### 2. 从 log 生成 mongo script
 
-```bash
+```shell
 echo 'print("++++");
 var eos = db.getSiblingDB("EOS");' > lost.js
 
@@ -36,6 +37,6 @@ echo 'print("----");' >> lost.js
 
 ### 3. 导入 MongoDB
 
-```bash
+```shell
 nohup mongo mongodb://$user:$password@127.0.0.1:$port/admin lost.js > lost.log
 ```

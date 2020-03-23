@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·慎炒股
 date: 2013-11-21 13:54:19

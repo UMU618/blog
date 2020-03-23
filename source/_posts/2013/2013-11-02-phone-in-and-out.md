@@ -1,3 +1,4 @@
+---
 layout: post
 title:  机机进进出出
 date: 2013-11-02 16:54:00

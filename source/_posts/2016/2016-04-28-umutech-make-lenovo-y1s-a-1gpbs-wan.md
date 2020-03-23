@@ -1,3 +1,4 @@
+---
 layout: post
 title: Lenovo Y1S 千兆 LAN 改 WAN
 date: 2016-04-28 00:34:07

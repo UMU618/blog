@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗#·转机
 date: 2014-04-05 18:00

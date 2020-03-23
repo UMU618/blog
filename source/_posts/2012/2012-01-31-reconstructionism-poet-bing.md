@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·世人都有 Bing
 date: 2012-01-31 17:47:00

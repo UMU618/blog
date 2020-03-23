@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·青春
 date: 2014-07-05 22:42:56

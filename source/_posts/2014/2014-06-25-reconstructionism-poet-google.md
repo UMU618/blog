@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·古割
 date: 2014-06-25 14:03:22

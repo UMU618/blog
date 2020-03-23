@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·五寸
 date: 2012-01-26 09:26:32

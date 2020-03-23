@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·春江花月夜
 date: 2010-03-15 11:05

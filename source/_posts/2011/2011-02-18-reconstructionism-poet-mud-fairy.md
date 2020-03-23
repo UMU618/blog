@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·泥巴仙
 date: 2011-02-18 22:35:10

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·没得匹
 date: 2013-07-18 20:32:03

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（高级篇1）：编译不死 U-Boot
 date: 2014-05-21 16:14:31

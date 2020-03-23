@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·快游
 date: 2010-06-21 16:41:16

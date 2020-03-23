@@ -1,3 +1,4 @@
+---
 layout: post
 title: EOSIO MongoDB 插件系列：管理技巧
 date: 2019-01-03 14:45:22
@@ -33,19 +34,19 @@ abi-serializer-max-time-ms = 15000
 
 启动脚本 /home/ubuntu/shell/continue.sh：
 
-```bash
+```shell
 nohup /usr/local/eosio/bin/nodeos --config-dir /home/ubuntu/nodeos/config-dir --data-dir /home/ubuntu/nodeos/data-dir > /home/ubuntu/shell/`date +%Y-%m-%d_%H-%M`.log 2>&1 &
 ```
 
 守护脚本 /home/ubuntu/shell/autorun.sh：
 
-```bash
+```shell
 ps -C nodeos || /home/ubuntu/shell/continue.sh
 ```
 
 添加到计划任务，运行 `sudo crontab -e`，输入下行并保存、退出：
 
-```bash
+```shell
 * * * * * /home/ubuntu/shell/autorun.sh
 ```
 

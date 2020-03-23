@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·挨踢
 date: 2012-06-16 23:52:59

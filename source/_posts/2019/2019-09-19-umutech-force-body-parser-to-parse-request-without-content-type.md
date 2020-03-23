@@ -1,3 +1,4 @@
+---
 layout: post
 title: 强制 body-parser 解析无 Content-Type 请求
 date: 2019-09-19 22:59:56
@@ -62,7 +63,7 @@ app.use(bodyParser.json())
 
 使用以下命令启动服务：
 
-```bash
+```shell
 DEBUG=body-parser:* node app.js
 ```
 

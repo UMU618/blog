@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·手贱
 date: 2009-04-15 20:39:37

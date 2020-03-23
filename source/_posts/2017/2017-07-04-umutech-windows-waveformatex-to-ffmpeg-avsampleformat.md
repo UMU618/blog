@@ -1,3 +1,4 @@
+---
 layout: post
 title: Windows 的 ChannelMask 转 ffmpeg 的 ChannelLayout
 date: 2017-07-04 20:46:31

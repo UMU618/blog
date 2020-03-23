@@ -1,3 +1,4 @@
+---
 layout: post
 title: Windows 8 和 OpenWRT 下查看 WiFi 属性
 date: 2014-06-26 20:30:15
@@ -16,6 +17,6 @@ netsh wlan show networks mode=bssid
 
 OpenWRT 上是：
 
-```bash
+```shell
 iw dev wlan0 scan
 ```

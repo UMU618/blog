@@ -1,3 +1,4 @@
+---
 layout: post
 title: 为 EOSIO MongoDB 插件搭建高可用集群
 date: 2018-12-11 12:04:28
@@ -5,6 +6,7 @@ description:
 categories: UMUTech
 tags:
 - ops
+- linux
 - mongodb
 ---
 ## 选型
@@ -26,7 +28,7 @@ WiredTiger Storage Engine](https://docs.mongodb.com/manual/core/wiredtiger/#stor
 
 **机器配置：某云服务器一台。** 16 Cores，256G RAM，启动盘 10G，额外八个 1T Disk。
 
-```bash
+```shell
 $ lsblk
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0   10G  0 disk 
@@ -47,21 +49,21 @@ sdi      8:128  0    1T  0 disk
 
 安装过程中，若您需要 reboot 系统，则每次 reboot 之后都要做一次：
 
-```bash
+```shell
 setenforce Permissive
 ```
 
 ### 2. 关闭 TPH
 以下命令不是持久化改变，但比较容易说明改了啥，仅供参考：
 
-```bash
+```shell
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
 ```
 
 根据 [Disable Transparent Huge Pages (THP)](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/index.html#red-hat-centos-7)，真正使用的是：
 
-```bash
+```shell
 mkdir -p /etc/tuned/no-thp
 
 echo '[main]
@@ -76,7 +78,7 @@ tuned-adm profile no-thp
 ### 3. TCP 优化
 以下命令不是持久化改变，但比较容易说明优化了啥，仅供参考：
 
-```bash
+```shell
 echo 120 > /proc/sys/net/ipv4/tcp_keepalive_time
 echo 3 > /proc/sys/net/ipv4/tcp_fin_timeout
 echo 3 > /proc/sys/net/ipv4/tcp_orphan_retries
@@ -84,7 +86,7 @@ echo 3 > /proc/sys/net/ipv4/tcp_orphan_retries
 
 真正使用的是：
 
-```bash
+```shell
 FILE=/etc/sysctl.conf
 cp $FILE ${FILE}_`date +%Y%m%d%H%M`
 
@@ -109,7 +111,7 @@ sysctl -p 2>/tmp/sysctl.tmp
 
 ### 1. 全局设置
 
-```bash
+```shell
 PASSWORD=MEETONE_FAKE_PASSWORD
 
 PREFIX=/disk
@@ -122,13 +124,13 @@ NUM_SHARD=7
 
 ### 2. 防火墙例外
 
-```bash
+```shell
 semanage port -a -t mongod_port_t -p tcp 17087-17095
 ```
 
 ### 3. 分区
 
-```bash
+```shell
 yum install -y xfsprogs
 
 function InitDisk {
@@ -155,7 +157,7 @@ InitDisk
 
 参考官网的安装文档：[Install MongoDB Community Edition on Red Hat Enterprise or CentOS Linux](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
 
-```bash
+```shell
 echo '[mongodb-org-4.0]
 name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.0/x86_64/
@@ -170,7 +172,7 @@ echo 'exclude=mongodb-org,mongodb-org-server,mongodb-org-shell,mongodb-org-mongo
 
 ### 5. 初始化数据库目录
 
-```bash
+```shell
 function InitDir {
   rm -rf ${PREFIX}0/mongod_conf_data ${PREFIX}0/mongo_log
   for ((i = 1; i <= $NUM_SHARD; ++i)); do
@@ -192,7 +194,7 @@ InitDir
 
 ### 6. 配置 MongoD 分片服务器
 
-```bash
+```shell
 function CreateShardConfig {
   for ((i = 1; i <= $NUM_SHARD; ++i)); do
     echo "shardsvr=true
@@ -291,7 +293,7 @@ CreateShardUser
 
 ### 7. 配置 MongDB Config Server
 
-```bash
+```shell
 function CreateConfigServerConfig {
   FILE=/etc/mongod.conf
 
@@ -365,7 +367,7 @@ db.createUser({ \"user\": \"MongoAdmin\", \"pwd\": \"${PASSWORD}\", \"roles\": [
 
 ### 8. 配置 MongS
 
-```bash
+```shell
 function CreateMongoSConfig {
   FILE=/etc/mongos.conf
 
@@ -447,7 +449,7 @@ AddShards
 
 ### 9. 【可选】配置 keyfile
 
-```bash
+```shell
 function ConfigKeyfile {
   FILE=/etc/mongodb-keyfile
   openssl rand -base64 745 > $FILE
@@ -497,7 +499,7 @@ sh.shardCollection("EOS.transaction_traces", {"_id" : 1},  true)
 
 ### 11. 【可选】安装 EOSIO 1.5
 
-```bash
+```shell
 wget https://github.com/eosio/eos/releases/download/v1.5.0/eosio-1.5.0-1.el7.x86_64.rpm
 rpm -ivh ./eosio-1.5.0-1.el7.x86_64.rpm --nodeps
 ```

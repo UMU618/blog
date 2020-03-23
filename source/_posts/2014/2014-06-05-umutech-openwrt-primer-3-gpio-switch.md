@@ -1,3 +1,4 @@
+---
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇3）：工作模式开关
 date: 2014-06-05 19:00:48
@@ -9,7 +10,7 @@ tags:
 ---
 DIR-505 有一个工作模式开关，可以设定三个模式，但刷了 OpenWRT 后，默认没有任何功能，我们可以利用 GPIO 读取获得开关的位置。
 
-```bash
+```shell
 #!/bin/sh
 
 read_gpio() {

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·黄米
 date: 2014-05-04 23:55:04

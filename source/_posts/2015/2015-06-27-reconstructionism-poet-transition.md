@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·变
 date: 2015-06-27 01:13:04

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·法克墙
 date: 2011-11-19 12:44:02

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·墨客
 date: 2012-01-27 02:56:00

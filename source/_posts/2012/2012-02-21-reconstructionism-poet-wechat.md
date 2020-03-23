@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·微信
 date: 2012-02-21 22:19:44

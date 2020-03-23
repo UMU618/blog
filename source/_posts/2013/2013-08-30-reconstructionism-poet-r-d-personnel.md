@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·研发客
 date: 2013-08-30 15:54:31

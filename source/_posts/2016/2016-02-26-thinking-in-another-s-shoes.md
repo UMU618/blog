@@ -1,3 +1,4 @@
+---
 layout: post
 title: 换位思考
 date: 2016-02-26 00:36:31

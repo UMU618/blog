@@ -1,3 +1,4 @@
+---
 layout: post
 title: 学习 Rust【1】简化掉什么？
 date: 2019-12-12 18:43:02

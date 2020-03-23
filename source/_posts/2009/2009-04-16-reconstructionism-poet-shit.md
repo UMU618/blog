@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·屎神
 date: 2009-04-16 12:59:00

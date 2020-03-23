@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·晒机
 date: 2013-07-23 09:31:27

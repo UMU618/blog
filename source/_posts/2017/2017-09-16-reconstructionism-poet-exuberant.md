@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·精神
 date: 2017-09-16 02:06:00

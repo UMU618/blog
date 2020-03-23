@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·乞丐衣
 date: 2009-04-13 11:35:58

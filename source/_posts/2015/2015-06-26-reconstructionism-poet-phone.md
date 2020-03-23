@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·魅蓝骄
 date: 2015-06-26 10:03:11

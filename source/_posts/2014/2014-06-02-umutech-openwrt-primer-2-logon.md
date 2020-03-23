@@ -1,3 +1,4 @@
+---
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇2）：连上路由器
 date: 2014-06-02 01:00:35
@@ -13,19 +14,19 @@ tags:
 
 默认也没有开启 SSH，只能用 `telnet 192.168.1.1` 来连，连上后改 root 密码：
 
-```bash
+```shell
 passwd root
 ```
 
 改好密码后，先不要关闭 telnet，因为一关闭，下次就连不上了。马上用 SSH 客户端（推荐使用 putty，文件复制、编辑则推荐 winscp）连一下路由器：
 
-```bash
+```shell
 ssh 192.168.1.1
 ```
 
 如果连接失败，需要在 telnet 会话下开启 SSH 服务：
 
-```bash
+```shell
 /etc/init.d/dropbear enable
 /etc/init.d/dropbear start
 ```
@@ -34,7 +35,7 @@ ssh 192.168.1.1
 
 用有线连接比较麻烦，接下来开启 WiFi，实现无线连接：
 
-```bash
+```shell
 uci set wireless.@wifi-device[0].disabled=0;
 uci set wireless.@wifi-iface[0].ssid='umu618.com';
 uci set wireless.@wifi-iface[0].encryption='psk2+ccmp';
@@ -47,7 +48,7 @@ wifi
 
 时间都用网络同步，所以使用正确的时区很重要，要改为当地的时区，比如 UMU 使用台北时间：
 
-```bash
+```shell
 uci set system.@system[0].zonename='Asia/Taipei';
 uci set system.@system[0].timezone='CST-8';
 uci commit system;
@@ -59,7 +60,7 @@ echo CST-8 > /etc/TZ;
 
 个性化，非必要：
 
-```bash
+```shell
 echo 'DIR-505' > /proc/sys/kernel/hostname;
 
 uci set system.@system[0].hostname='DIR-505';
@@ -72,6 +73,6 @@ uci commit system;
 
 个性化，非必要：
 
-```bash
+```shell
 vi /etc/banner
 ```

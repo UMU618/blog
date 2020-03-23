@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·洗脑
 date: 2015-02-26 18:24:54

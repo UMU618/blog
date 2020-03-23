@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·燬仙
 date: 2010-07-20 22:04:42

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇14）：PPTP 穿透
 date: 2017-08-15 00:49:39
@@ -11,7 +12,7 @@ tags:
 
 官方就有解决方案，简单地说是运行一下两条：
 
-```bash
+```shell
 opkg update
 opkg install kmod-nf-nathelper-extra
 ```

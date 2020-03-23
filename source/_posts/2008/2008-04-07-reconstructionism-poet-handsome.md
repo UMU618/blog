@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·炎刀
 date: 2008-04-07 21:43:55

@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·死宅
 date: 2013-11-09 19:09:21

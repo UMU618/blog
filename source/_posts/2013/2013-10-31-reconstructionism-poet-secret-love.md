@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·暗链
 date: 2013-10-31 00:07:35

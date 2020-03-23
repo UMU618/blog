@@ -1,3 +1,4 @@
+---
 layout: post
 title: EOSIO 1.5.0 MongoDB 插件搭配 MongoDB 4.0.4
 date: 2018-12-16 23:04:42
@@ -5,6 +6,7 @@ description:
 categories: UMUTech
 tags:
 - debug
+- linux
 - mongodb
 - blockchain
 ---
@@ -29,7 +31,7 @@ tags:
 
 - Ubuntu 操作参考：
 
-```bash
+```shell
 sed -i 's/releases\/v3.3/releases\/stable/;s/1\.10\.2/1\.13\.0/g' scripts/eosio_build_ubuntu.sh
 
 ## 编译前
@@ -56,6 +58,6 @@ Version: 3.4.0
 
 以上方法不适用于 v1.7.0，新版 eos 已经使用新版 mongo-c-driver 和 MongoDB C++11 Driver，唯一需要改的是 `eos/scripts/eosio_build.sh` 的这行：
 
-```bash
+```shell
 export MONGODB_VERSION=4.0.6 #3.6.3
 ```

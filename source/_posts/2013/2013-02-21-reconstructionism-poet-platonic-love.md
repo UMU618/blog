@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·鲸神链
 date: 2013-02-21 09:05:11

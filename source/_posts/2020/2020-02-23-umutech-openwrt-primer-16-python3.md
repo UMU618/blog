@@ -1,3 +1,4 @@
+---
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇16）：Python3
 date: 2020-02-23 18:17:39
@@ -30,13 +31,13 @@ tags:
 
 ### 1. 安装可执行程序
 
-```bash
+```shell
 opkg install python3-base
 ```
 
 安装 `python3-base` 之后，就可以运行 `python3` 了。
 
-```bash
+```shell
 root@UMU:~# python3
 Could not find platform dependent libraries <exec_prefix>
 Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
@@ -161,7 +162,7 @@ ModuleNotFoundError: No module named 'socket'
 
 所以需要安装 `python3-light`：
 
-```bash
+```shell
 opkg install python3-light
 ```
 
@@ -181,7 +182,7 @@ print(ip, '->',
 
 如果 `python3-light` 还不能满足您，推荐来个全家桶：
 
-```bash
+```shell
 opkg install python3
 ```
 

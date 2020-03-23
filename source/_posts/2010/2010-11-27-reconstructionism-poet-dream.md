@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·梦
 date: 2010-11-27 00:34

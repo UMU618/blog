@@ -1,3 +1,4 @@
+---
 layout: post
 title: 公司不是家庭
 date: 2019-04-05 23:00:10

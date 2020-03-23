@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·ZZB
 date: 2011-09-04 16:48:26

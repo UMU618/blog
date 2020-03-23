@@ -1,3 +1,4 @@
+---
 layout: post
 title: Node.js 程序员的 C++ 进修指南【1】：SetTimeout
 date: 2020-02-11 21:49:15
@@ -53,7 +54,7 @@ setTimeout(() => {
 
 - 安装 clang++ 和 cmake：
 
-```bash
+```shell
 brew install llvm
 brew install cmake
 ```
@@ -133,7 +134,7 @@ target_compile_features(set_timeout PRIVATE cxx_auto_type)
 
 - 编译：
 
-```bash
+```shell
 ## cd to source code directory
 cmake .
 make
@@ -147,7 +148,7 @@ make
 
 - 安装 boost，目前是 1.72.0 版：
 
-```bash
+```shell
 brew install boost
 ```
 

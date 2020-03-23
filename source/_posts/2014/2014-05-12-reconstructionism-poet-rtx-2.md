@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·RTX2
 date: 2014-05-12 12:48:26

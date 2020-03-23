@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·菊花爆
 date: 2013-10-15 14:39:34

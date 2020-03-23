@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗·帅富高
 date: 2013-11-20 19:21:02

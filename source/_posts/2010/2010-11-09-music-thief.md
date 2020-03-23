@@ -1,3 +1,4 @@
+---
 layout: post
 title: 诗盗与音盗
 date: 2010-11-09 13:16:17

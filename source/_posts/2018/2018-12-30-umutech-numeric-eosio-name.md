@@ -1,3 +1,4 @@
+---
 layout: post
 title: 纯数字 EOS 账号
 date: 2018-12-30 21:37:01
