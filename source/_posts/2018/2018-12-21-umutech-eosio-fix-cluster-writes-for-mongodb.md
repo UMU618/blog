@@ -23,7 +23,7 @@ tags:
 
 反复测试发现，总是同一个地方抛出异常：
 
-```
+```cpp
    // insert action_traces
    if( write_atraces ) {
       try {

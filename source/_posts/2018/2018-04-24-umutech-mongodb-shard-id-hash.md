@@ -9,7 +9,7 @@ tags:
 - cpp
 - mongodb
 ---
-```
+```cpp
 #include <functional>
 #include <iomanip>
 #include <iostream>

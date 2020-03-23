@@ -57,7 +57,7 @@ error: cannot use 'try' with exceptions disabled
 
 如果您学过 Golang、Rust 可能会注意到，它们可以编译成 WASM 文件。比如 Golang 的编译命令为：
 
-```shell
+```sh
 GOOS=js GOARCH=wasm go build -o hello.wasm
 ```
 

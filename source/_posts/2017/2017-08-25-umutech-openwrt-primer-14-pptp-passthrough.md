@@ -12,7 +12,7 @@ tags:
 
 官方就有解决方案，简单地说是运行一下两条：
 
-```shell
+```sh
 opkg update
 opkg install kmod-nf-nathelper-extra
 ```

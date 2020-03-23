@@ -16,7 +16,7 @@ tags:
 
 主要配置 rc.local 脚本，内容如下：
 
-```shell
+```sh
 read_gpio() {
 	(echo $1 > /sys/class/gpio/export) >& /dev/null
 	(echo "in" > /sys/class/gpio/gpio$1/direction) >& /dev/null
@@ -59,7 +59,7 @@ exit 0
 
 上一步加的代码是，开机自动复制配置文件覆盖到 /etc/config/ 下，配置文件不需要全部，只要 firewall、network 和 wireless 就行了。按工作模式命名，创建三个目录：
 
-```shell
+```sh
 mkdir /etc/config/ap
 mkdir /etc/config/repeater
 mkdir /etc/config/hotspot
@@ -71,7 +71,7 @@ mkdir /etc/config/hotspot
 
 下面以 ap 为例，此模式是网口做 WAN，无线做 LAN，WAN 以 ADSL 接入为例，其它情况自行变通：
 
-```shell
+```sh
 uci set wireless.@wifi-device[0].disabled=0;
 uci set wireless.@wifi-iface[0].ssid='umu618.com';
 uci set wireless.@wifi-iface[0].encryption='psk2+ccmp';
@@ -100,7 +100,7 @@ cp /etc/config/wireless /etc/config/ap/
 
 再来说一下 repeater，网口做 LAN，无线做一个 AP Client 和一个 AP。注意，以下命令以初始化的配置文件为基础，请事先备份、还原，不要在配置过前面的 ap 模式后直接继续配置，可能会有问题。
 
-```shell
+```sh
 uci add network interface
 uci rename network.@interface[-1]='wwan'
 uci set network.@interface[-1].proto='dhcp'

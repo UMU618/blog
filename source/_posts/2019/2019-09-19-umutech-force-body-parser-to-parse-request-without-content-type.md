@@ -63,7 +63,7 @@ app.use(bodyParser.json())
 
 使用以下命令启动服务：
 
-```shell
+```sh
 DEBUG=body-parser:* node app.js
 ```
 

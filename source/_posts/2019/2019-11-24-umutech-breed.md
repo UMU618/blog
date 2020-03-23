@@ -20,7 +20,7 @@ tags:
 
 这里以 hc5661 为例，版本是：HC5661 - 1.4.11.21001s，破解式 root 或开发者解锁后，可以直接 `mtd unlock u-boot`，开不开心？
 
-```shell
+```sh
 BusyBox v1.22.1 (2018-05-10 05:32:57 CST) built-in shell (ash)
 Enter 'help' for a list of built-in commands.
 
@@ -70,7 +70,7 @@ Writing from ./breed-mt7620-hiwifi-hc5761.bin to u-boot ...
 
 版本 HC5861 - 1.4.10.20837s，一样能开发者解锁后直接刷。这种不保护 bootloader 的 ROM，也是醉了，真香……已经过保，也不想恢复官方 ROM，直接刷 BREED，再刷 OpenWRT 18.06.5。
 
-```shell
+```sh
 BusyBox v1.22.1 (2018-03-10 04:32:13 CST) built-in shell (ash)
 Enter 'help' for a list of built-in commands.
 
@@ -130,7 +130,7 @@ BREED 信息：
 
 0.0.4.3500, r33798 的版本，布局如下：
 
-```shell
+```sh
 ## cat /proc/mtd
 dev:    size   erasesize  name
 mtd0: 00030000 00010000 "u-boot"
@@ -146,7 +146,7 @@ mtd8: 00020000 00010000 "panic_oops"
 
 网上的刷机教程如下：
 
-```shell
+```sh
 cd /tmp
 wget https://breed.hackpascal.net/breed-mt7621-newifi-d1.bin --no-check-certificate
 dd if=/dev/zero bs=1024 count=192 | tr "\000" "\377" >breed_192.bin
@@ -167,7 +167,7 @@ fullflash = u-boot + u-boot-env + firmware
 
 访问 <http://192.168.99.1/newifi/ifiwen_hss.html> 开启 SSHD，查看分区布局：
 
-```shell
+```sh
 BusyBox v1.24.1 (2018-02-27 16:23:44 CST) built-in shell (ash)
 
 

@@ -17,6 +17,6 @@ netsh wlan show networks mode=bssid
 
 OpenWRT 上是：
 
-```shell
+```sh
 iw dev wlan0 scan
 ```

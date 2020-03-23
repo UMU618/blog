@@ -13,7 +13,7 @@ tags:
 
 安装：
 
-```shell
+```sh
 yarn add sqlite3
 ```
 

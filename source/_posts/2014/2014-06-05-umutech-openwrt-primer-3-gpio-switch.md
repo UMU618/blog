@@ -10,7 +10,7 @@ tags:
 ---
 DIR-505 有一个工作模式开关，可以设定三个模式，但刷了 OpenWRT 后，默认没有任何功能，我们可以利用 GPIO 读取获得开关的位置。
 
-```shell
+```sh
 #!/bin/sh
 
 read_gpio() {

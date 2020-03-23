@@ -18,7 +18,7 @@ tags:
 
 以下脚本适用于 macOS Mojave 系统，其它系统请自行做相应修改。
 
-```shell
+```sh
 ln -s /usr/local/include/boost /usr/local/Cellar/boost/1.67.0_1/include/boost 
 
 ln -f /usr/local/Cellar/boost/1.67.0_1/lib/libboost_atomic-mt.a /usr/local/lib/libboost_atomic-mt.a

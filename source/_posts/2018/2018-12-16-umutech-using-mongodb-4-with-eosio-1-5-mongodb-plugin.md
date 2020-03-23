@@ -31,17 +31,17 @@ tags:
 
 - Ubuntu 操作参考：
 
-```shell
+```sh
 sed -i 's/releases\/v3.3/releases\/stable/;s/1\.10\.2/1\.13\.0/g' scripts/eosio_build_ubuntu.sh
 
-## 编译前
+# 编译前
 grep "Version:" /usr/local/lib/pkgconfig/libmongocxx-static.pc
 Version: 3.3.2-pre
 
-## 编译
+# 编译
 ./eosio_build.sh
 
-## 编译后
+# 编译后
 grep "Version:" /usr/local/lib/pkgconfig/libmongocxx-static.pc
 Version: 3.4.0
 ```
@@ -58,6 +58,6 @@ Version: 3.4.0
 
 以上方法不适用于 v1.7.0，新版 eos 已经使用新版 mongo-c-driver 和 MongoDB C++11 Driver，唯一需要改的是 `eos/scripts/eosio_build.sh` 的这行：
 
-```shell
+```sh
 export MONGODB_VERSION=4.0.6 #3.6.3
 ```

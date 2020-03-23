@@ -54,7 +54,7 @@ setTimeout(() => {
 
 - 安装 clang++ 和 cmake：
 
-```shell
+```sh
 brew install llvm
 brew install cmake
 ```
@@ -134,7 +134,7 @@ target_compile_features(set_timeout PRIVATE cxx_auto_type)
 
 - 编译：
 
-```shell
+```sh
 ## cd to source code directory
 cmake .
 make
@@ -148,7 +148,7 @@ make
 
 - 安装 boost，目前是 1.72.0 版：
 
-```shell
+```sh
 brew install boost
 ```
 

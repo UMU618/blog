@@ -20,7 +20,7 @@ tags:
 
 以下命令 UMU 经常看到，其实它可以用 `grep UMU test` 来优化，减少一次管道交互。
 
-```shell
+```sh
 cat test | grep UMU
 ```
 
@@ -28,7 +28,7 @@ cat test | grep UMU
 
 再看下面例子是从一个命令行里移除 A 和 C 两个选项：
 
-```shell
+```sh
 cmd="EXE A=1 B=2 C=3 D=4"
 removed=$(echo $cmd | sed -e 's/ A=[^ ]*//' | sed -e 's/ C=[^ ]*//')
 echo $removed

@@ -16,7 +16,7 @@ tags:
 
 ### CentOS
 
-```shell
+```sh
 $ cat /etc/centos-release
 CentOS Linux release 7.7.1908 (Core)
 
@@ -29,7 +29,7 @@ chsh: shell must be a full path name
 
 ### Ubuntu
 
-```shell
+```sh
 $ cat /etc/lsb-release
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=18.04
