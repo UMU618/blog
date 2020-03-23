@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows 8 和 OpenWRT 下查看 WiFi 属性
-date: 2014-06-26 20:30:15
+date: 2014-05-14 18:39:33
 description: 
 categories: UMUTech
 tags:
