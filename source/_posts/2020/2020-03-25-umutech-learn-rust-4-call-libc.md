@@ -5,6 +5,7 @@ date: 2020-03-25 13:04:28
 categories: UMUTech
 tags:
 - dev
+- linux
 - rust
 ---
 ## 问题
@@ -41,4 +42,4 @@ fn main() {
 }
 ```
 
-3. macOS 测试通过。
+3. macOS **也**测试通过。
