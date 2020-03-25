@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·诗链
 date: 2010-02-24 15:18:21
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·有钱买车没钱养
 date: 2014-09-01 13:23:30
-description: 
 categories: 诗盗
 tags:
 - 五言

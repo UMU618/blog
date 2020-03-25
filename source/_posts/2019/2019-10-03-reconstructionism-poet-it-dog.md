@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·挨踢狗
 date: 2019-10-03 13:20:44
-description:
 categories: 诗盗
 tags:
 - 五言

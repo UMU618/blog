@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·魔性山军犬养殖训练基地
 date: 2019-01-30 13:21:22
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 信
 date: 2014-03-03 23:34:00
-description: 
 categories: 吓醒
 tags:
 - 鲸神魂裂

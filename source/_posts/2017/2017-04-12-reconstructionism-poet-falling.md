@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·科技傲娇爹
 date: 2017-04-12 10:01:00
-description: 
 categories: 诗盗
 tags:
 - 七律

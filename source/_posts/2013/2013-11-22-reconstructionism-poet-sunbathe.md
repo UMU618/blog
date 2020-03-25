@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·日光浴
 date: 2013-11-22 19:50:10
-description: 
 categories: 诗盗
 tags:
 - 词

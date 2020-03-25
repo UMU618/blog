@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·天下澡雪
 date: 2015-12-02 18:27:23
-description: 
 categories: 诗盗
 tags:
 - 词

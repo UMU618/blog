@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·我类么张
 date: 2020-03-17 19:51:00
-description:
 categories: 诗盗
 tags:
 - 七律

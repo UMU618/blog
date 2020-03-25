@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·某些节约是另一种浪费
 date: 2014-05-22 21:56:34
-description: 
 categories: 诗盗
 tags:
 - 五言

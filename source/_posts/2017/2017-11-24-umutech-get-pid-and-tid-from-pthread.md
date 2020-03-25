@@ -2,7 +2,6 @@
 layout: post
 title: 从 pthread_t 获得 PID 和 TID
 date: 2017-11-24 10:37:23
-description: 
 categories: UMUTech
 tags:
 - c

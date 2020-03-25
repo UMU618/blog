@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·逼制主义社会
 date: 2013-03-13 10:38:14
-description: 
 categories: 诗盗
 tags:
 - 七律

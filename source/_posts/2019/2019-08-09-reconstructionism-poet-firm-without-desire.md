@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·无欲则刚
 date: 2019-08-09 01:15:00
-description:
 categories: 诗盗
 tags:
 - 七律

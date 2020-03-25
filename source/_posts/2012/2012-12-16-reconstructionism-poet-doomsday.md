@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·世界末日
 date: 2012-12-16 14:21:00
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·锤牛手机
 date: 2014-10-27 15:51:05
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·摸暗慢
 date: 2015-01-04 22:28:47
-description: 
 categories: 诗盗
 tags:
 - 七律

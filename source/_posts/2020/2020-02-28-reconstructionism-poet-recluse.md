@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·隐玊
 date: 2020-02-28 09:23:00
-description:
 categories: 诗盗
 tags:
 - 七律

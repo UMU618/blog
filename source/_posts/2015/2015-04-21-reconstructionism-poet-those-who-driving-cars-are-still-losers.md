@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·在这里开车的还是屌丝
 date: 2015-04-21 00:38:44
-description: 
 categories: 诗盗
 tags:
 - 七律

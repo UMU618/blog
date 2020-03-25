@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·碉堡的机机
 date: 2012-12-15 15:57:39
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·毒
 date: 2009-04-07 16:08:49
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 留一法交叉验证
 date: 2018-05-26 23:27:16
-description:
 categories: 宇督观
 tags:
 - 数学

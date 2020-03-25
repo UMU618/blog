@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·百世惊沦一夜输
 date: 2015-07-02 12:47:00
-description: 
 categories: 诗盗
 tags:
 - 词

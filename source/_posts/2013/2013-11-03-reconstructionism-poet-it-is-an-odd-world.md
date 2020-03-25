@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·世事如棋
 date: 2013-11-03 23:25:20
-description: 
 categories: 诗盗
 tags:
 - 七律

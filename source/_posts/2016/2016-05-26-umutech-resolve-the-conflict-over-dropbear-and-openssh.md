@@ -2,7 +2,6 @@
 layout: post
 title: 解决 dropbear 和 openssh 的冲突
 date: 2016-05-26 10:12:44
-description: 
 categories: UMUTech
 tags:
 - embedded

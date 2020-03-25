@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·园工现状
 date: 2015-01-05 16:40:49
-description: 
 categories: 诗盗
 tags:
 - 五言

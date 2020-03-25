@@ -2,7 +2,6 @@
 layout: post
 title: 刽子手
 date: 2019-07-25 22:32:47
-description:
 categories: 宇督观
 tags:
 - 寓言

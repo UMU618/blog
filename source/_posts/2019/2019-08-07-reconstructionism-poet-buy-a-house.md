@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·今年七夕不送礼送礼只送学区房吓醒
 date: 2019-08-02 13:38:00
-description:
 categories: 诗盗
 tags:
 - 七律

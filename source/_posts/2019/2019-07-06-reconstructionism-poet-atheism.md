@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·道梦无神论
 date: 2019-07-06 17:32:00
-description:
 categories: 诗盗
 tags:
 - 七律

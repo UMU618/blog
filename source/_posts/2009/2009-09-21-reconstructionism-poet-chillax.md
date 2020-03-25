@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·蛋定
 date: 2009-09-21 14:32:54
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·贱肥
 date: 2013-07-10 14:25:12
-description: 
 categories: 诗盗
 tags:
 - 七律

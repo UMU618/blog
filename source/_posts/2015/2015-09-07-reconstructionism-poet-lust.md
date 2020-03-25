@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·郭伶仃痒
 date: 2015-09-07 12:58:52
-description: 
 categories: 诗盗
 tags:
 - 七律

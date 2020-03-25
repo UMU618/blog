@@ -2,7 +2,6 @@
 layout: post
 title: 为什么稣不追星？
 date: 2018-08-22 00:00:00
-description: 
 categories: U墨
 tags:
 - 怪悟

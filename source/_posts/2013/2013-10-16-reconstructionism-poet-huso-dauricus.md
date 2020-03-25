@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·鳇鱼
 date: 2013-10-16 13:00:30
-description: 
 categories: 诗盗
 tags:
 - 五言

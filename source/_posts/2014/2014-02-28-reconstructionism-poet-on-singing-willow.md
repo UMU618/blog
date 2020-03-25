@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·咏柳
 date: 2014-02-28 09:52:20
-description: 
 categories: 诗盗
 tags:
 - 七律

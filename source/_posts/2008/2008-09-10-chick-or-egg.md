@@ -2,7 +2,6 @@
 layout: post
 title: 关于“先有鸡，还是先有蛋”的哲学研究
 date: 2008-09-10 20:44:00
-description: 
 categories: U墨
 tags:
 - 怪悟

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·暴走遇狗记
 date: 2015-04-14 20:55:51
-description: 
 categories: 诗盗
 tags:
 - 七律

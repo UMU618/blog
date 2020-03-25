@@ -2,7 +2,6 @@
 layout: post
 title: EOSIO 的连续通胀率 4.879% 是怎么算出来的？
 date: 2018-12-21 15:32:05
-description: 
 categories: UMUTech
 tags:
 - 调研

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·ATX780脚力车
 date: 2014-04-25 23:03:40
-description: 
 categories: 诗盗
 tags:
 - 七律

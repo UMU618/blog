@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·庄十三入赘记
 date: 2008-07-10 12:42:58
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 人工神经网络训练方法——随机查找
 date: 2018-07-05 23:45:52
-description: 
 categories: UMUTech
 tags:
 - cpp

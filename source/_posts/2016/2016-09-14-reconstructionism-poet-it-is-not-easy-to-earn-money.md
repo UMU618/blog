@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·钱非盗
 date: 2016-09-14 10:52:45
-description: 
 categories: 诗盗
 tags:
 - 七律

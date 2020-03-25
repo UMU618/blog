@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·镇外来客无银呢
 date: 2012-02-29 20:49:28
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·枪毙脑细胞
 date: 2015-04-13 18:44:00
-description: 
 categories: 诗盗
 tags:
 - 七律

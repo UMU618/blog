@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·挨踢穷十三
 date: 2016-03-27 13:04:00
-description: 
 categories: 诗盗
 tags:
 - 五言

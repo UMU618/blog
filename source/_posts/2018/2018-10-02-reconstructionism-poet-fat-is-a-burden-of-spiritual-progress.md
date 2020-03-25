@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·肥肉是精神累赘
 date: 2018-10-02 22:26:34
-description: 
 categories: 诗盗
 tags:
 - 七律

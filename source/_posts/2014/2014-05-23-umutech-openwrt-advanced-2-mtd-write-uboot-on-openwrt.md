@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（高级篇2）：不拆机刷不死 U-Boot
 date: 2014-05-23 00:23:50
-description: 
 categories: UMUTech
 tags:
 - embedded

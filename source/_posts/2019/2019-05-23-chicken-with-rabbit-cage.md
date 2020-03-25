@@ -2,7 +2,6 @@
 layout: post
 title: 鸡兔同笼问题的程序解法
 date: 2019-05-23 22:29:08
-description:
 categories: UMUTech
 tags:
 - 数学

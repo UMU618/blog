@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·网络记黑
 date: 2009-10-10 13:42:16
-description: 
 categories: 诗盗
 tags:
 - 七律

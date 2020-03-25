@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇5）：升级固件
 date: 2014-06-20 01:05:47
-description: 
 categories: UMUTech
 tags:
 - embedded

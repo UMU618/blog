@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·入魔的觉悟
 date: 2009-04-16 13:02:00
-description: 
 categories: 诗盗
 tags:
 - 词

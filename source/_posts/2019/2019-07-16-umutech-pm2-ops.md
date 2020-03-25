@@ -2,7 +2,6 @@
 layout: post
 title: pm2 运维经验
 date: 2019-07-16 17:32:00
-description:
 categories: UMUTech
 tags:
 - ops

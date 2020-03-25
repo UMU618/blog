@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·有车赛高
 date: 2014-08-21 13:17:44
-description: 
 categories: 诗盗
 tags:
 - 五言

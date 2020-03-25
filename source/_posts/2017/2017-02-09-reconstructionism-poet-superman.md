@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·非正常人类
 date: 2017-02-09 12:23:00
-description: 
 categories: 诗盗
 tags:
 - 词

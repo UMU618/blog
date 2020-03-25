@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·一撸仙
 date: 2012-11-10 15:11:26
-description: 
 categories: 诗盗
 tags:
 - 五言

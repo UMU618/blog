@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·杀马特猿
 date: 2017-12-09 12:00:00
-description: 
 categories: 诗盗
 tags:
 - 七律

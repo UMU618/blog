@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·科技炼狱模式
 date: 2016-06-09 10:28:16
-description: 
 categories: 诗盗
 tags:
 - 七律

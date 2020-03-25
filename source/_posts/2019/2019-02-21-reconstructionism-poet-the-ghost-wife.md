@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·情翔白云稣凰真
 date: 2019-02-21 13:08:08
-description: 
 categories: 诗盗
 tags:
 - 七律

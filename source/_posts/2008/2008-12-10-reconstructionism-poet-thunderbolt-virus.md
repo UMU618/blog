@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·霹雳病毒
 date: 2008-12-10 17:40:14
-description: 
 categories: 诗盗
 tags:
 - 七律

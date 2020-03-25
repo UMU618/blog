@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·圣魔神胎
 date: 2013-02-04 13:51:00
-description: 
 categories: 诗盗
 tags:
 - 五言

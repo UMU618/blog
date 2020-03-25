@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·黑客笑
 date: 2009-04-16 12:51:00
-description: 
 categories: 诗盗
 tags:
 - 词

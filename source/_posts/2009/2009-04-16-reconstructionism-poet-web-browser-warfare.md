@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·网络争锋
 date: 2009-04-16 13:06:00
-description: 
 categories: 诗盗
 tags:
 - 词

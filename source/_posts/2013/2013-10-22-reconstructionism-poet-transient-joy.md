@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·春梦尿无痕
 date: 2013-10-22 09:23:31
-description: 
 categories: 诗盗
 tags:
 - 词

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·山太高炮打不到
 date: 2013-10-08 18:30:06
-description: 
 categories: 诗盗
 tags:
 - 五言

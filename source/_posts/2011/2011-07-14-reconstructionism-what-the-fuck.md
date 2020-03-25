@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·甘草林木
 date: 2011-07-14 14:04:43
-description: 
 categories: 诗盗
 tags:
 - 五言

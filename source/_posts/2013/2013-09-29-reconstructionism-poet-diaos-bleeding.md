@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·屌丝红
 date: 2013-09-29 14:45:10
-description: 
 categories: 诗盗
 tags:
 - 七律

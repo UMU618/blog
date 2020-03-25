@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·被工资爆菊
 date: 2015-07-21 15:41:03
-description: 
 categories: 诗盗
 tags:
 - 七律

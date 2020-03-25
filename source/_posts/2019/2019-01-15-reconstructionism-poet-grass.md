@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·草
 date: 2019-01-15 09:37:00
-description: 
 categories: 诗盗
 tags:
 - 七律

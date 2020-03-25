@@ -2,7 +2,6 @@
 layout: post
 title: SQLite Node.js
 date: 2019-07-16 17:46:52
-description:
 categories: UMUTech
 tags:
 - nodejs

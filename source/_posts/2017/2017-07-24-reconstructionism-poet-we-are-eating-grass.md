@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·绿艹囧
 date: 2017-07-24 12:27:37
-description: 
 categories: 诗盗
 tags:
 - 五言

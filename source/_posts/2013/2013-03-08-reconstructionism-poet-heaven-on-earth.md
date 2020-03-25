@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·天上人间
 date: 2013-03-08 21:21:46
-description: 
 categories: 诗盗
 tags:
 - 七律

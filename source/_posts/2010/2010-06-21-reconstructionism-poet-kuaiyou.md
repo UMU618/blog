@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·快游
 date: 2010-06-21 16:41:16
-description: 
 categories: 诗盗
 tags:
 - 七律

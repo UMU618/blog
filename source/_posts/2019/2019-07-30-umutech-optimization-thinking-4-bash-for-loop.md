@@ -2,7 +2,6 @@
 layout: post
 title: 优化思维【4】Bash for 循环
 date: 2019-07-30 23:25:57
-description:
 categories: UMUTech
 tags:
 - dev

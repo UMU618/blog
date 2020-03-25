@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·梦
 date: 2010-11-27 00:34
-description: 
 categories: 诗盗
 tags:
 - 五言

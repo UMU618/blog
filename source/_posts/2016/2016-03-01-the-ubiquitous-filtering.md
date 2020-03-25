@@ -2,7 +2,6 @@
 layout: post
 title: 无处不在的筛选
 date: 2016-03-01 23:09:18
-description: 
 categories: 宇督观
 tags:
 - 挨踢

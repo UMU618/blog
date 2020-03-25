@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·可胜精兵
 date: 2015-05-26 11:28:22
-description: 
 categories: 诗盗
 tags:
 - 五言

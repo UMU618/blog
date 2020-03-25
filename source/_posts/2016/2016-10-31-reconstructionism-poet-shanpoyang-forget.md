@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·山坡羊·忘
 date: 2016-10-31 17:23:00
-description: 
 categories: 诗盗
 tags:
 - 词

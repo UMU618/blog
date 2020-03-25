@@ -2,7 +2,6 @@
 layout: post
 title: 人工神经网络训练方法——后向传播
 date: 2018-07-10 21:00:23
-description: 
 categories: UMUTech
 tags:
 - cpp

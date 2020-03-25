@@ -2,7 +2,6 @@
 layout: post
 title: EOSIO 1.5.0 MongoDB 插件搭配 MongoDB 4.0.4
 date: 2018-12-16 23:04:42
-description: 
 categories: UMUTech
 tags:
 - debug

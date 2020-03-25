@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·望艳门山
 date: 2009-04-27 20:05:45
-description: 
 categories: 诗盗
 tags:
 - 七律

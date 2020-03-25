@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·中产如猪
 date: 2019-02-17 19:41:00
-description: 
 categories: 诗盗
 tags:
 - 七律

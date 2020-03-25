@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·送春词
 date: 2008-07-08 09:24:31
-description: 
 categories: 诗盗
 tags:
 - 五言

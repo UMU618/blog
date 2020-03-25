@@ -2,7 +2,6 @@
 layout: post
 title: 加班是企业的一种病状
 date: 2016-02-22 22:11:00
-description: 
 categories: 宇督观
 tags:
 - 挨踢

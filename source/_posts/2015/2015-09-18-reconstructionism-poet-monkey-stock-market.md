@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·霹雳劫之猴市录
 date: 2015-09-18 10:48:57
-description: 
 categories: 诗盗
 tags:
 - 七律

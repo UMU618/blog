@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·对联·散打孕淫殇
 date: 2009-01-13 12:44:48
-description: 
 categories: 诗盗
 tags:
 - 词

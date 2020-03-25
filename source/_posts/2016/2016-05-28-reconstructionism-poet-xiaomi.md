@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·小米家抄天下
 date: 2016-05-28 11:05:54
-description: 
 categories: 诗盗
 tags:
 - 五言

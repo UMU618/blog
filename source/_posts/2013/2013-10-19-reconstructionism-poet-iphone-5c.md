@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·爱疯五夕
 date: 2013-10-19 08:46:36
-description: 
 categories: 诗盗
 tags:
 - 词

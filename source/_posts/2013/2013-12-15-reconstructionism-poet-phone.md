@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·天机爵
 date: 2013-12-15 17:08:59
-description: 
 categories: 诗盗
 tags:
 - 词

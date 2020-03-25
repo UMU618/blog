@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·踢西林壁
 date: 2015-10-13 11:52:57
-description: 
 categories: 诗盗
 tags:
 - 七律

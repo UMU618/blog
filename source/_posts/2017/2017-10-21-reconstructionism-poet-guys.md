@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·酒戒佛黄蓝织翔
 date: 2017-10-21 12:07:59
-description: 
 categories: 诗盗
 tags:
 - 词

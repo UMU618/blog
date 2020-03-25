@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·七夕纪实
 date: 2015-08-20 20:59:00
-description: 
 categories: 诗盗
 tags:
 - 七律

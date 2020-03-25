@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·黑数字专题
 date: 2014-09-17 11:52:45
-description: 
 categories: 诗盗
 tags:
 - 七律

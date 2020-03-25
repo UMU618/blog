@@ -2,7 +2,6 @@
 layout: post
 title: 性爱思维和虚拟现实
 date: 2016-05-03 23:38:34
-description: 
 categories: 宇督观
 tags:
 - 洗脑

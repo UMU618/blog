@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·圣诞绿帽
 date: 2018-01-30 11:39:53
-description: 
 categories: 诗盗
 tags:
 - 七律

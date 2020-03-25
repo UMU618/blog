@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·挨踢民工
 date: 2013-10-04 13:19:25
-description: 
 categories: 诗盗
 tags:
 - 五言

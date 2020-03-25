@@ -2,7 +2,6 @@
 layout: post
 title: 为编译 EOSIO 降级 boost 到 1.67
 date: 2018-12-10 16:07:02
-description: 
 categories: UMUTech
 tags:
 - debug

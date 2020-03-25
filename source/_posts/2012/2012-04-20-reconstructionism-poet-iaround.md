@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·遇见
 date: 2012-04-20 22:36:31
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·吃饭去
 date: 2013-10-14 19:01:49
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 学习 Rust【3】所有权
 date: 2020-03-07 17:07:26
-description:
 categories: UMUTech
 tags:
 - dev

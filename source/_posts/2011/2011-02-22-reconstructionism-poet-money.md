@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·慢泥
 date: 2011-02-22 21:18:16
-description: 
 categories: 诗盗
 tags:
 - 七律

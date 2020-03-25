@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·通过让局部富裕来使整体贫穷
 date: 2014-01-06 00:08:39
-description: 
 categories: 诗盗
 tags:
 - 五言

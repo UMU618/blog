@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·量子邪稣
 date: 2018-09-16 18:12:31
-description:
 categories: 诗盗
 tags:
 - 词

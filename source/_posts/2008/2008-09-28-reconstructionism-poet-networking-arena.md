@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·网络风云
 date: 2008-09-28 14:29:45
-description: 
 categories: 诗盗
 tags:
 - 词

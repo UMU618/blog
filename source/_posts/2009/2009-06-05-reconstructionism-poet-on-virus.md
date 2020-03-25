@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·论毒
 date: 2009-06-05 13:47:27
-description: 
 categories: 诗盗
 tags:
 - 七律

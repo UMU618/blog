@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·挨踢无情两篇
 date: 2019-10-03 13:20:44
-description:
 categories: 诗盗
 tags:
 - 七律

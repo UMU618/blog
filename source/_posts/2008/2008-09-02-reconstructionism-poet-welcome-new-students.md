@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·迎接新生
 date: 2008-09-02 23:01:20
-description: 
 categories: 诗盗
 tags:
 - 七律

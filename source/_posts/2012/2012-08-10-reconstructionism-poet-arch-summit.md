@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·全球架构师峰会
 date: 2012-08-10 13:22:05
-description: 
 categories: 诗盗
 tags:
 - 七律

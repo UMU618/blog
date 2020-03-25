@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·马逼
 date: 2014-03-31 14:52:09
-description: 
 categories: 诗盗
 tags:
 - 五言

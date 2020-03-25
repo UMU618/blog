@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·天草丧国撸十二
 date: 2012-02-29 21:01:16
-description: 
 categories: 诗盗
 tags:
 - 五言

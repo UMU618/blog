@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·穷十三
 date: 2011-12-21 09:55:00
-description: 
 categories: 诗盗
 tags:
 - 五言

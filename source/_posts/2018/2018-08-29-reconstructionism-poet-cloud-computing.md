@@ -2,7 +2,6 @@
 layout: post
 title: 《诗盗·算计云好看》
 date: 2018-08-29 09:56:33
-description: 
 categories: 诗盗
 tags:
 - 七律

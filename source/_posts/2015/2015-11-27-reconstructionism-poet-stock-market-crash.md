@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·千股跌停
 date: 2015-11-27 10:28:36
-description: 
 categories: 诗盗
 tags:
 - 七律

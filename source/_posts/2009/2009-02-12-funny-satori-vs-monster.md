@@ -2,7 +2,6 @@
 layout: post
 title: 怪悟 vs 怪物 —— 我是天使还是恶魔
 date: 2009-02-12 09:56:00
-description: 
 categories: 吓醒
 tags:
 - 怪悟

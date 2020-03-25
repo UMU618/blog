@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇6）：挂接 U 盘
 date: 2014-06-23 00:49:39
-description: 
 categories: UMUTech
 tags:
 - embedded

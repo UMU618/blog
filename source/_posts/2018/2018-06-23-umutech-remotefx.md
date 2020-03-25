@@ -2,7 +2,6 @@
 layout: post
 title: RemoteFX 能否用于物理机的远程桌面服务？
 date: 2018-06-23 21:54:47
-description: 
 categories: UMUTech
 tags:
 - 调研

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·咦，洞！
 date: 2013-08-03 14:14:26
-description: 
 categories: 诗盗
 tags:
 - 七律

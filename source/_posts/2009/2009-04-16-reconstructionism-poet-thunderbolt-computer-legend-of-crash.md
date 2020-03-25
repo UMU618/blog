@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·霹雳计算机·死机传说
 date: 2009-04-16 13:16:00
-description: 
 categories: 诗盗
 tags:
 - 词

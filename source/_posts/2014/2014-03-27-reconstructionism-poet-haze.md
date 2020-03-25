@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·万丈云霾
 date: 2014-03-27 20:26:27
-description: 
 categories: 诗盗
 tags:
 - 七律

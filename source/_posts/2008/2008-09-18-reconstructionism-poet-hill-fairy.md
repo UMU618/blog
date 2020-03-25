@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·七鹰圣传奇·云山仙影
 date: 2008-09-18 12:13:22
-description: 
 categories: 诗盗
 tags:
 - 五言

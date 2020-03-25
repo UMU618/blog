@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·研读大股哥
 date: 2013-10-05 00:14:51
-description: 
 categories: 诗盗
 tags:
 - 词

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·悲剧项目
 date: 2012-09-01 16:03:12
-description: 
 categories: 诗盗
 tags:
 - 七律

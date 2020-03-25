@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·搞基记
 date: 2015-04-16 23:20:25
-description: 
 categories: 诗盗
 tags:
 - 七律

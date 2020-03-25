@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·重口嫖流瓶
 date: 2013-01-07 11:20:55
-description: 
 categories: 诗盗
 tags:
 - 五言

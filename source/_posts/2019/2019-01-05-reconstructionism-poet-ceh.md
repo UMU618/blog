@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·黑客求道
 date: 2019-01-05 13:41:28
-description: 
 categories: 诗盗
 tags:
 - 七律

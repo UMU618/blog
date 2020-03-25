@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·穿女神装的不一定就是女神，还可能是基友
 date: 2013-09-10 14:02:44
-description: 
 categories: 诗盗
 tags:
 - 五言

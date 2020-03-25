@@ -2,7 +2,6 @@
 layout: post
 title: 智能合约替用户承担事务的开销
 date: 2019-08-03 21:51:10
-description:
 categories:
 tags:
 ---

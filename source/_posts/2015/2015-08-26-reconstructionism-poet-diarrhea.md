@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·爆菊哇
 date: 2015-08-26 10:07:00
-description: 
 categories: 诗盗
 tags:
 - 七律

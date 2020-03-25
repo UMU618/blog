@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·圣鹰猪口日哥
 date: 2013-08-12 13:01:16
-description: 
 categories: 诗盗
 tags:
 - 词

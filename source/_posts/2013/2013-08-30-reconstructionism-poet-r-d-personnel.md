@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·研发客
 date: 2013-08-30 15:54:31
-description: 
 categories: 诗盗
 tags:
 - 七律

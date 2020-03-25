@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·割肉之鸡鸡都是肉
 date: 2015-08-26 14:13:12
-description: 
 categories: 诗盗
 tags:
 - 七律

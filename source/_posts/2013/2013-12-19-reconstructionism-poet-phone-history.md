@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·手机春秋
 date: 2013-12-19 23:36:54
-description: 
 categories: 诗盗
 tags:
 - 七律

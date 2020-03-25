@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇3）：工作模式开关
 date: 2014-06-05 19:00:48
-description: 
 categories: UMUTech
 tags:
 - embedded

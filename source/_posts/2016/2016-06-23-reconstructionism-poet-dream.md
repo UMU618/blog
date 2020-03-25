@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·一日三睡有梦生
 date: 2016-06-23 10:48:00
-description: 
 categories: 诗盗
 tags:
 - 词

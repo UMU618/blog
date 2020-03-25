@@ -2,7 +2,6 @@
 layout: post
 title: XP 下 Edit 控件透明字体时的 Bug
 date: 2012-12-25 10:06:29
-description:
 categories: UMUTech
 tags:
 - dev

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·屠案谜夜
 date: 2016-08-15 18:36:00
-description: 
 categories: 诗盗
 tags:
 - 七律

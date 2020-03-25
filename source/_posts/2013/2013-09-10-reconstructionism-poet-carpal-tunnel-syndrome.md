@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·鼠标手
 date: 2013-09-10 09:43:49
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 投资必懂的市场理论
 date: 2019-09-08 12:02:43
-description:
 categories: 宇督观
 tags:
 - 金融

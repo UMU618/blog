@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·古古锅锅给哦哦哦
 date: 2013-02-12 13:07:09
-description: 
 categories: 诗盗
 tags:
 - 五言

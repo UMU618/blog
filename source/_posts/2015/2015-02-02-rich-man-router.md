@@ -2,7 +2,6 @@
 layout: post
 title:  土豪路由器
 date: 2015-02-02 22:04:00
-description: 
 categories: U墨
 tags:
 - 怪悟

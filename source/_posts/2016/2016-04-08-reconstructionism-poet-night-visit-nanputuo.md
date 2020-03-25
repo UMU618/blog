@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·夜雨暴走之夜访南普陀
 date: 2016-04-08 23:32:19
-description: 
 categories: 诗盗
 tags:
 - 七律

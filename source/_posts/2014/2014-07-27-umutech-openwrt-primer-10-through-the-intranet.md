@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇10）：穿透内网
 date: 2014-07-27 00:45:32
-description: 
 categories: UMUTech
 tags:
 - embedded

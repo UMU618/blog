@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·哥就是这么雕
 date: 2013-11-15 18:47:07
-description: 
 categories: 诗盗
 tags:
 - 五言

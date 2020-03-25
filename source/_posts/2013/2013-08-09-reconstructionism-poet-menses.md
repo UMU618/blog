@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·朝夕&青春在潮汐间逝去，其实哥想说的是月经……
 date: 2013-08-09 23:25:58
-description: 
 categories: 诗盗
 tags:
 - 七律

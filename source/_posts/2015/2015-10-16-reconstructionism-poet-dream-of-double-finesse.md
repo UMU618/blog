@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·欲阁子
 date: 2015-10-16 11:22:55
-description: 
 categories: 诗盗
 tags:
 - 七律

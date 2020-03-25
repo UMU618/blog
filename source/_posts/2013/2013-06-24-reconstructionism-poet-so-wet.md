@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·好湿
 date: 2013-06-24 12:41:32
-description: 
 categories: 诗盗
 tags:
 - 五言

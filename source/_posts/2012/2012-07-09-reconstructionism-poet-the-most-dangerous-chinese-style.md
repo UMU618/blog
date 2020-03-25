@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·最险中国风
 date: 2012-07-09 09:58:11
-description: 
 categories: 诗盗
 tags:
 - 七律

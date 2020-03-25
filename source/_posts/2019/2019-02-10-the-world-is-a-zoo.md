@@ -2,7 +2,6 @@
 layout: post
 title: 世界是个动物园
 date: 2019-02-10 16:58:58
-description: 
 categories: 宇督观
 tags:
 - 影评

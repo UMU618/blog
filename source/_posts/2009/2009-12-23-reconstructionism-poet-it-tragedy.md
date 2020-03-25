@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·挨踢杯具
 date: 2009-12-23 09:40:37
-description: 
 categories: 诗盗
 tags:
 - 词

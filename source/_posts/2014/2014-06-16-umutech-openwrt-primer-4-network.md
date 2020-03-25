@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇4）：配置网络
 date: 2014-06-16 19:23:07
-description: 
 categories: UMUTech
 tags:
 - embedded

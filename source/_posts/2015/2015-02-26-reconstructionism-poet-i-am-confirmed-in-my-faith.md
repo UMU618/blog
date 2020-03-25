@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·暴走有感之永不降调的逼格
 date: 2015-02-26 21:28:38
-description: 
 categories: 诗盗
 tags:
 - 七律

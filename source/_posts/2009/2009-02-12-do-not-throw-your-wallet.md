@@ -2,7 +2,6 @@
 layout: post
 title: 久恋神经 —— 别以为您帅就可以××
 date: 2009-02-12 09:58:00
-description: 
 categories: 吓醒
 tags:
 - 怪悟

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·为什么不买爱风流？
 date: 2014-09-12 13:57:42
-description: 
 categories: 诗盗
 tags:
 - 词

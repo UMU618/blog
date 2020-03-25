@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·厦大七鹰
 date: 2015-03-29 22:16:02
-description: 
 categories: 诗盗
 tags:
 - 七律

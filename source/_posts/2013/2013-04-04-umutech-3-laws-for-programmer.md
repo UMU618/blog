@@ -2,7 +2,6 @@
 layout: post
 title: 程序员心法三则
 date: 2013-04-04 00:44:11
-description: 
 categories: UMUTech
 tags:
 - optimization

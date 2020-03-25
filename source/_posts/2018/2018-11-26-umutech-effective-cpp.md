@@ -2,7 +2,6 @@
 layout: post
 title: 《Effective C++》读书笔记
 date: 2018-11-26 23:22:15
-description: 
 categories: UMUTech
 tags:
 - cpp

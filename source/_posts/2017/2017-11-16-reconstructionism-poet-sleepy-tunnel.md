@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·翔胺睡道
 date: 2017-11-16 13:02:37
-description: 
 categories: 诗盗
 tags:
 - 七律

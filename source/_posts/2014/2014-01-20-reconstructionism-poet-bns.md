@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·贱灵
 date: 2014-01-20 16:54:20
-description: 
 categories: 诗盗
 tags:
 - 五言

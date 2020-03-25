@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·最近百度没鸟事
 date: 2014-04-01 13:11:19
-description: 
 categories: 诗盗
 tags:
 - 五言

@@ -2,7 +2,6 @@
 layout: post
 title: 寂灭
 date: 2016-10-11 08:59:00
-description: 
 categories: 诗盗
 tags:
 - 词

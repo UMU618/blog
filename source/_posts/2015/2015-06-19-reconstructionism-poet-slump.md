@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·暴跌三首
 date: 2015-06-19 16:39:58
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·宇督公
 date: 2017-09-16 01:45:54
-description: 
 categories: 诗盗
 tags:
 - 七律

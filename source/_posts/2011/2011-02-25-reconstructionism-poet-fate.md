@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·命运
 date: 2011-02-25 12:36:27
-description: 
 categories: 诗盗
 tags:
 - 词

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·真光闲文
 date: 2015-12-26 01:19:00
-description: 
 categories: 诗盗
 tags:
 - 七律

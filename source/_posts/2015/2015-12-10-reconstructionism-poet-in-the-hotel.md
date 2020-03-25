@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·住酒店
 date: 2015-12-10 10:36:17
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·槽倾池
 date: 2018-07-17 09:01:00
-description: 
 categories: 诗盗
 tags:
 - 词

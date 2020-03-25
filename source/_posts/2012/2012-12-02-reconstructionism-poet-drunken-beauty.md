@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·白衣沽酒醉花颜
 date: 2012-12-02 15:34:08
-description: 
 categories: 诗盗
 tags:
 - 七律

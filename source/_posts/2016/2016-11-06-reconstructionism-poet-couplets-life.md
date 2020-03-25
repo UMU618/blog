@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·对联·人生
 date: 2016-11-06 11:36:38
-description: 
 categories: 诗盗
 tags:
 - 词

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·别墅
 date: 2015-11-15 18:38:23
-description: 
 categories: 诗盗
 tags:
 - 七律

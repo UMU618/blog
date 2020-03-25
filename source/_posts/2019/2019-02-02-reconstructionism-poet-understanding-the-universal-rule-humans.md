@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·天之道人
 date: 2019-02-02 16:52:23
-description: 
 categories: 诗盗
 tags:
 - 词

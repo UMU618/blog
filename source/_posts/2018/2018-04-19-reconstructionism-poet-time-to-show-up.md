@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·卧龙小成
 date: 2018-04-19 23:17:12
-description: 
 categories: 诗盗
 tags:
 - 五言

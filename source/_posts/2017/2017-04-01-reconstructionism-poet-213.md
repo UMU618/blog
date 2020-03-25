@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·213
 date: 2017-04-01 0:34:00
-description: 
 categories: 诗盗
 tags:
 - 七律

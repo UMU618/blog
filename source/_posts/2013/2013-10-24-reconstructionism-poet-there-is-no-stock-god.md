@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·股神不死是谓逼
 date: 2013-10-24 11:46:23
-description: 
 categories: 诗盗
 tags:
 - 词

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·挨踢诗人泥巴娃
 date: 2010-07-07 06:39:21
-description: 
 categories: 诗盗
 tags:
 - 七律

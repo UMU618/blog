@@ -2,7 +2,6 @@
 layout: post
 title: 写作的意义
 date: 2016-02-18 23:58:17
-description: 
 categories: 宇督观
 tags:
 - 挨踢

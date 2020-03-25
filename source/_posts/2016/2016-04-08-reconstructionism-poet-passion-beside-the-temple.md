@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·夜雨暴走之寺庙见证激情篇
 date: 2016-04-08 22:00:00
-description: 
 categories: 诗盗
 tags:
 - 七律

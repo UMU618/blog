@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·青春
 date: 2014-07-05 22:42:56
-description: 
 categories: 诗盗
 tags:
 - 七律

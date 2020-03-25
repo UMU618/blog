@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·不二劈
 date: 2012-05-29 16:59:00
-description: 
 categories: 诗盗
 tags:
 - 七律

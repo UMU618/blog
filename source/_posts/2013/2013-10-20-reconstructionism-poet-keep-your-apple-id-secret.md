@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·阿婆爱弟要保密
 date: 2013-10-20 12:49:29
-description: 
 categories: 诗盗
 tags:
 - 五言

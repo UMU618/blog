@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·嘿嗑公鸡
 date: 2009-04-16 12:53:00
-description: 
 categories: 诗盗
 tags:
 - 词

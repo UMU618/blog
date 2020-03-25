@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·买币送禅
 date: 2019-07-17 13:13:00
-description:
 categories: 诗盗
 tags:
 - 七律

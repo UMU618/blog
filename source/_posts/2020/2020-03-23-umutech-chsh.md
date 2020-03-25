@@ -2,7 +2,6 @@
 layout: post
 title: chsh -s zsh
 date: 2020-03-23 15:53:16
-description:
 categories: UMUTech
 tags:
 - ops

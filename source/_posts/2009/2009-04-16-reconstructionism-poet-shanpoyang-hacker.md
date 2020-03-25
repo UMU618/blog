@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·山坡羊·黑客代表
 date: 2009-04-16 12:50:00
-description: 
 categories: 诗盗
 tags:
 - 词

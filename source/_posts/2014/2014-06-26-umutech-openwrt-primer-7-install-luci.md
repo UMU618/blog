@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇7）：安装 LUCI
 date: 2014-06-26 20:30:15
-description: 
 categories: UMUTech
 tags:
 - embedded

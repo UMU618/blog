@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·山坡羊·没钱
 date: 2009-11-02 14:21:13
-description: 
 categories: 诗盗
 tags:
 - 词

@@ -2,7 +2,6 @@
 layout: post
 title: MongoDB Shard ID hash 算法 std::hash 的跨平台性
 date: 2018-04-24 23:18:11
-description: 
 categories: UMUTech
 tags:
 - dev

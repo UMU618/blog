@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇2）：连上路由器
 date: 2014-06-02 01:00:35
-description: 
 categories: UMUTech
 tags:
 - embedded

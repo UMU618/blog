@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·豆芽炒黑木耳
 date: 2014-05-25 19:12:31
-description: 
 categories: 诗盗
 tags:
 - 七律

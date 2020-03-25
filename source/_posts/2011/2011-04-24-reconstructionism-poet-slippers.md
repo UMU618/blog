@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·不给力啊拖鞋
 date: 2011-04-24 22:02:16
-description: 
 categories: 诗盗
 tags:
 - 七律

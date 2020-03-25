@@ -2,7 +2,6 @@
 layout: post
 title: 洗碗
 date: 2019-05-03 02:33:58
-description:
 categories: 宇督观
 tags:
 - 耶乎知稣

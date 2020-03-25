@@ -2,7 +2,6 @@
 layout: post
 title: 股神诞生记——概率和似然
 date: 2019-05-18 13:15:00
-description:
 categories: 宇督观
 tags:
 - 数学

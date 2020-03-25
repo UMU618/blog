@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·抒心事
 date: 2009-04-27 20:37:00
-description: 
 categories: 诗盗
 tags:
 - 七律

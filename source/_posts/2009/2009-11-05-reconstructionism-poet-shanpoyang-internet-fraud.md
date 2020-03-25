@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·山坡羊·网络杯矮
 date: 2009-11-05 08:54:05
-description: 
 categories: 诗盗
 tags:
 - 词

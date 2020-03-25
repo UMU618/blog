@@ -2,7 +2,6 @@
 layout: post
 title: 图像格式转换之 Jpeg2Jxr
 date: 2012-11-18 15:40:25
-description: 
 categories: UMUTech
 tags:
 - dev

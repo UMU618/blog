@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·记一次见鬼吓醒
 date: 2019-01-13 12:20:00
-description: 
 categories: 诗盗
 tags:
 - 七律

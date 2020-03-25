@@ -2,7 +2,6 @@
 layout: post
 title: 程序员鼓励师系列：EOSIO 智能合约开发从入门到入定
 date: 2019-01-04 22:25:47
-description: 
 categories: UMUTech
 tags:
 - 调研

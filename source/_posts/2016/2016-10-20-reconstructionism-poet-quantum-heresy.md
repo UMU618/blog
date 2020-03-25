@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·量子邪说
 date: 2016-10-20 02:19:00
-description: 
 categories: 诗盗
 tags:
 - 词

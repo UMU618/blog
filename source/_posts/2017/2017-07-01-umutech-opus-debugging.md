@@ -2,7 +2,6 @@
 layout: post
 title: Opus 编解码遇到的怪事
 date: 2017-07-01 17:23:52
-description:
 categories: UMUTech
 tags:
 - dev

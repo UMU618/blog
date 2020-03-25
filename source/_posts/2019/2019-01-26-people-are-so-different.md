@@ -2,7 +2,6 @@
 layout: post
 title: 人与人之间的差异咋这么大捏？
 date: 2019-01-26 23:03:27
-description: 
 categories: 宇督观
 tags:
 - 耶乎知稣

@@ -2,7 +2,6 @@
 layout: post
 title: 优化思维【1】字符串去空格
 date: 2019-04-10 23:15:22
-description:
 categories: UMUTech
 tags:
 - dev

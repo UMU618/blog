@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·夏季恨虫叫
 date: 2010-07-09 14:35:09
-description: 
 categories: 诗盗
 tags:
 - 七律

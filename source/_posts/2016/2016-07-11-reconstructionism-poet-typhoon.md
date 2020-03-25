@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·台风天之夜雨迷梦
 date: 2016-07-11 00:04:00
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: ECC Node.js
 date: 2019-08-16 20:28:45
-description:
 categories: UMUTech
 tags:
 - nodejs

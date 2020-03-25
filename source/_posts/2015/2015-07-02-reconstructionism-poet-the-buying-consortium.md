@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·接盘侠
 date: 2015-07-02 13:01:00
-description: 
 categories: 诗盗
 tags:
 - 七律

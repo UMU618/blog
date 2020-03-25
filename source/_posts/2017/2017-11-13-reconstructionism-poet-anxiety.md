@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·上班族焦虑症
 date: 2017-11-13 13:25:21
-description: 
 categories: 诗盗
 tags:
 - 七律

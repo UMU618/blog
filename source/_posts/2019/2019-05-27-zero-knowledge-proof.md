@@ -2,7 +2,6 @@
 layout: post
 title: 零知识证明
 date: 2019-05-27 16:39:12
-description:
 categories: 宇督观
 tags:
 - cryptology

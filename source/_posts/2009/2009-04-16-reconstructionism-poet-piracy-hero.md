@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·盗版鹰熊
 date: 2009-04-16 13:14
-description: 
 categories: 诗盗
 tags:
 - 七律

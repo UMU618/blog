@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·霹雳量子
 date: 2008-12-08 13:22:39
-description: 
 categories: 诗盗
 tags:
 - 词

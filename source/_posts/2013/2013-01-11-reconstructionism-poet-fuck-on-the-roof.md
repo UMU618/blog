@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·望海69打炮门
 date: 2013-01-11 23:19:11
-description: 
 categories: 诗盗
 tags:
 - 七律

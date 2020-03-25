@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇16）：Python3
 date: 2020-02-23 18:17:39
-description:
 categories: UMUTech
 tags:
 - embedded

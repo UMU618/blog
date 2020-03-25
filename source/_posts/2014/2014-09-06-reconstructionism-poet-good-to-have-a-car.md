@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·有车好办事
 date: 2014-09-06 09:26:03
-description: 
 categories: 诗盗
 tags:
 - 七律

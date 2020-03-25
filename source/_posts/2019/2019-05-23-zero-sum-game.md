@@ -2,7 +2,6 @@
 layout: post
 title: 零和博弈
 date: 2019-05-23 22:05:00
-description:
 categories: 宇督观
 tags:
 - 装逼

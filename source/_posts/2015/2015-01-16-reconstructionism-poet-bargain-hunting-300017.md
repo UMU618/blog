@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·抄底科技
 date: 2015-01-16 21:51:19
-description: 
 categories: 诗盗
 tags:
 - 七律

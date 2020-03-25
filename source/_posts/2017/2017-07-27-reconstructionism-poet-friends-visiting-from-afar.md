@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·有朋自远方来
 date: 2017-07-27 16:46:54
-description: 
 categories: 诗盗
 tags:
 - 七律

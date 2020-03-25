@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·大霾苍蝇
 date: 2019-01-12 13:54:00
-description: 
 categories: 诗盗
 tags:
 - 七律

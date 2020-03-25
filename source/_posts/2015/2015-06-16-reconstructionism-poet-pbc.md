@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·互联网加披碧玺
 date: 2015-06-16 21:26:02
-description: 
 categories: 诗盗
 tags:
 - 五言

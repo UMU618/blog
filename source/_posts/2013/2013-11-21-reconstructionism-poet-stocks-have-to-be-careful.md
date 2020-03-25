@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·慎炒股
 date: 2013-11-21 13:54:19
-description: 
 categories: 诗盗
 tags:
 - 五言

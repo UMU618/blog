@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·中秋槽
 date: 2012-09-25 22:41:25
-description: 
 categories: 诗盗
 tags:
 - 七律

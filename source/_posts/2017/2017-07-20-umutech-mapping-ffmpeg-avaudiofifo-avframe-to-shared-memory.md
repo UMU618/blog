@@ -2,7 +2,6 @@
 layout: post
 title: 把 ffmpeg AVAudioFifo/AVFrame 数据读到共享内存
 date: 2017-07-20 16:45:38
-description: 
 categories: UMUTech
 tags:
 - dev

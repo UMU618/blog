@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·厦门焦通
 date: 2012-08-09 12:06:24
-description: 
 categories: 诗盗
 tags:
 - 七律

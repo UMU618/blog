@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·年底一百
 date: 2014-01-09 17:38:52
-description: 
 categories: 诗盗
 tags:
 - 五言

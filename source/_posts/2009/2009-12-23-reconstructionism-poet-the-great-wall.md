@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·墙
 date: 2009-12-23 13:54:54
-description: 
 categories: 诗盗
 tags:
 - 词

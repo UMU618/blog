@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·ZZB
 date: 2011-09-04 16:48:26
-description: 
 categories: 诗盗
 tags:
 - 七律

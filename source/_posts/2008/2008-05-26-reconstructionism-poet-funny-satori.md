@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·怪悟
 date: 2008-05-26 12:58:58
-description: 
 categories: 诗盗
 tags:
 - 词

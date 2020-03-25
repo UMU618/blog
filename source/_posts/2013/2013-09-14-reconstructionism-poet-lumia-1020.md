@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·撸妹十分二十秒
 date: 2013-09-14 08:50:13
-description: 
 categories: 诗盗
 tags:
 - 五言

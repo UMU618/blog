@@ -2,7 +2,6 @@
 layout: post
 title: 拯救 TL-WR941N V4.1 路由器
 date: 2012-11-30 20:15:30
-description:
 categories: UMUTech
 tags:
 - embedded

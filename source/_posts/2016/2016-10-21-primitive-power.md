@@ -2,7 +2,6 @@
 layout: post
 title: 原始强力和成熟进程
 date: 2016-10-21 12:53:27
-description: 
 categories: 宇督观
 tags:
 - 心理邪稣

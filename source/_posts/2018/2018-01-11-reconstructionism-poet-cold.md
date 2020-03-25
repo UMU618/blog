@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·狗冻鸡冻
 date: 2018-01-11 22:35:24
-description: 
 categories: 诗盗
 tags:
 - 七律

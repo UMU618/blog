@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·对联·挨踢民工
 date: 2009-08-04 12:18:00
-description: 
 categories: 诗盗
 tags:
 - 词

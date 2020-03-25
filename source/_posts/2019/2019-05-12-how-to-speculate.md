@@ -2,7 +2,6 @@
 layout: post
 title: 如何炒？
 date: 2019-05-12 22:41:12
-description:
 categories: 宇督观
 tags:
 - blockchain

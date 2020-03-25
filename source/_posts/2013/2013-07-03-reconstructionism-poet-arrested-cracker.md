@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·高端黑草根
 date: 2013-07-03 15:57:55
-description: 
 categories: 诗盗
 tags:
 - 七律

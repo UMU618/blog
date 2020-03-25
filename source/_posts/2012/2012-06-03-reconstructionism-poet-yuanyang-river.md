@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·鸳鸯溪
 date: 2012-06-03 10:06:41
-description: 
 categories: 诗盗
 tags:
 - 五言

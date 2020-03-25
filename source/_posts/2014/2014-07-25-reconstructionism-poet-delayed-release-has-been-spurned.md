@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·拖坨妥唾
 date: 2014-07-25 23:03:05
-description: 
 categories: 诗盗
 tags:
 - 五言

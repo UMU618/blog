@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·记一次危险性社交活动
 date: 2018-12-22 12:01:47
-description: 
 categories: 诗盗
 tags:
 - 七律

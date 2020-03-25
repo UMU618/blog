@@ -2,7 +2,6 @@
 layout: post
 title: 判断系统是不是 XP
 date: 2012-12-25 11:16:06
-description:
 categories: UMUTech
 tags:
 - dev

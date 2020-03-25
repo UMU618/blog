@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·对联·乱对联
 date: 2014-01-01 01:48:00
-description: 
 categories: 诗盗
 tags:
 - 词

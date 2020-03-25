@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·中年女子不如鸭
 date: 2019-01-31 12:59:00
-description: 
 categories: 诗盗
 tags:
 - 七律

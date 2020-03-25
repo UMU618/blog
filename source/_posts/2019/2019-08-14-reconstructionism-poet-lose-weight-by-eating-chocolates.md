@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·吃巧克力减肥
 date: 2019-08-14 19:53:25
-description:
 categories: 诗盗
 tags:
 - 五言

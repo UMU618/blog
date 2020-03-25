@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·深沉的爱
 date: 2014-03-17 22:04:11
-description: 
 categories: 诗盗
 tags:
 - 词

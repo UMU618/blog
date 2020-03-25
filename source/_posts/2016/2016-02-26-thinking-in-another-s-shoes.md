@@ -2,7 +2,6 @@
 layout: post
 title: 换位思考
 date: 2016-02-26 00:36:31
-description: 
 categories: 宇督观
 tags:
 - 挨踢

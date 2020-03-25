@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·圣魔神胎2
 date: 2016-07-31 08:23:19
-description: 
 categories: 诗盗
 tags:
 - 词

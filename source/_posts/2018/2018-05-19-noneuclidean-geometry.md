@@ -2,7 +2,6 @@
 layout: post
 title: 小本科对非欧几里得几何学脱敏的故事
 date: 2018-05-19 21:23:40
-description: 
 categories: 宇督观
 tags:
 - debug

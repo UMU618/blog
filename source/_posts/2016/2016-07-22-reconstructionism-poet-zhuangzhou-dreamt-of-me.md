@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·庄周梦稣
 date: 2016-07-22 00:21:33
-description: 
 categories: 诗盗
 tags:
 - 词

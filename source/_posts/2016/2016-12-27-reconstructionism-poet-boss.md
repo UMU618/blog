@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·是个头
 date: 2016-12-27 19:48:00
-description: 
 categories: 诗盗
 tags:
 - 七律

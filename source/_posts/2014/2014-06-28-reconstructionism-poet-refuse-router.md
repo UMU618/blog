@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·垃圾路由
 date: 2014-06-28 16:53:01
-description: 
 categories: 诗盗
 tags:
 - 五言

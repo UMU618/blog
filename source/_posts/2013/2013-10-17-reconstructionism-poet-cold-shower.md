@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·冷水澡
 date: 2013-10-17 21:29:17
-description: 
 categories: 诗盗
 tags:
 - 七律

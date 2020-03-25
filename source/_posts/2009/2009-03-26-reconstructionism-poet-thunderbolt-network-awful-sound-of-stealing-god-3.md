@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·霹雳网络·神盗惨声3
 date: 2009-03-26 09:00:19
-description: 
 categories: 诗盗
 tags:
 - 七律

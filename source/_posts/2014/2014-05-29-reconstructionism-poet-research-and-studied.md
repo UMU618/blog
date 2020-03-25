@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·研究以及被研究
 date: 2014-05-29 09:04:46
-description: 
 categories: 诗盗
 tags:
 - 七律

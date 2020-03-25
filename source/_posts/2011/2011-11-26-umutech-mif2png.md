@@ -2,7 +2,6 @@
 layout: post
 title: mif2png（QQGame 专用 mif 格式转 png 格式）
 date: 2011-11-26 00:27:00
-description: 
 categories: UMUTech
 tags:
 - dev

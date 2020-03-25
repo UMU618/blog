@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇15）：ip-tiny 和 ip-full 的区别
 date: 2019-09-28 21:56:16
-description:
 categories: UMUTech
 tags:
 - embedded

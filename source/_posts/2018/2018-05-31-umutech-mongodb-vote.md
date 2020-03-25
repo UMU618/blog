@@ -2,7 +2,6 @@
 layout: post
 title: 学习 MongoDB 选举机制
 date: 2018-05-31 18:25:32
-description: 
 categories: UMUTech
 tags:
 - dev

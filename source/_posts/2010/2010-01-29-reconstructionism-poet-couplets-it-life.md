@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·对联·挨踢生活有感
 date: 2010-01-29 13:44:55
-description: 
 categories: 诗盗
 tags:
 - 词

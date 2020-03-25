@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·乐射网
 date: 2015-02-25 16:58:23
-description: 
 categories: 诗盗
 tags:
 - 七律

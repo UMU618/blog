@@ -2,7 +2,6 @@
 layout: post
 title: 截屏热键怎么设置才能截菜单？
 date: 2018-11-18 16:39:22
-description: 
 categories: UMUTech
 tags:
 - debug

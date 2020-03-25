@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·山坡羊·大妈理财
 date: 2013-12-08 14:26:22
-description: 
 categories: 诗盗
 tags:
 - 词

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·股哥
 date: 2013-10-30 12:42:13
-description: 
 categories: 诗盗
 tags:
 - 五言

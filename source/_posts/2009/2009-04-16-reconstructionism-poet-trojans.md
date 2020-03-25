@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·马
 date: 2009-04-16 13:30:05
-description: 
 categories: 诗盗
 tags:
 - 五言

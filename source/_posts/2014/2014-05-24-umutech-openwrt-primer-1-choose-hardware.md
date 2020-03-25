@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇1）：硬件选型和刷机
 date: 2014-05-24 01:14:14
-description: 
 categories: UMUTech
 tags:
 - embedded

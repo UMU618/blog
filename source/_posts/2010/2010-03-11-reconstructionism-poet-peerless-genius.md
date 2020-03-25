@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·灷邪天灾
 date: 2010-03-11 11:28:32
-description: 
 categories: 诗盗
 tags:
 - 七律

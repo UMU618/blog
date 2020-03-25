@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·霹雳网络·病毒传说
 date: 2009-03-24 10:17:39
-description: 
 categories: 诗盗
 tags:
 - 词

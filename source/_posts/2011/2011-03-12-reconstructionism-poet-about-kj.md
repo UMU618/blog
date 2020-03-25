@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·科技见闻
 date: 2011-03-12 13:27
-description: 
 categories: 诗盗
 tags:
 - 七律

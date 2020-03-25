@@ -2,7 +2,6 @@
 layout: post
 title: EOSIO MongoDB 插件系列：从 log 中找回丢失的插入记录
 date: 2019-01-03 11:58:24
-description: 
 categories: UMUTech
 tags:
 - 调研

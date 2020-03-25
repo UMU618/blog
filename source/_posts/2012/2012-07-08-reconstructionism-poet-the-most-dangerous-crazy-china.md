@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·最险中国疯
 date: 2012-07-08 23:40:16
-description: 
 categories: 诗盗
 tags:
 - 七律

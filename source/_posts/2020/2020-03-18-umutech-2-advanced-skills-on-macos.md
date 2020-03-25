@@ -2,7 +2,6 @@
 layout: post
 title: macOS 研究经验【2】：简单的破解
 date: 2020-03-18 13:19:23
-description:
 categories: UMUTech
 tags:
 - debug

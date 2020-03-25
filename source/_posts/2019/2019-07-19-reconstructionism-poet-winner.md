@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·影帝
 date: 2019-07-19 23:06:00
-description:
 categories: 诗盗
 tags:
 - 七律

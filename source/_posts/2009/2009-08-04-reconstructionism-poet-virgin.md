@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·贱男春 & 僵男春
 date: 2009-08-04 12:15
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·夜宿山寺
 date: 2009-12-23 11:17:35
-description: 
 categories: 诗盗
 tags:
 - 五言

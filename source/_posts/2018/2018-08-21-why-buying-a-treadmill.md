@@ -2,7 +2,6 @@
 layout: post
 title: 为什么穷稣砸锅卖铁也要买个跑步机装逼？
 date: 2018-08-21 00:00:00
-description: 
 categories: U墨
 tags:
 - 装逼

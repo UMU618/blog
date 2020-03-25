@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·梦子·天屎曰
 date: 2009-12-23 14:05:26
-description: 
 categories: 诗盗
 tags:
 - 词

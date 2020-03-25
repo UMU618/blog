@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·翔胺睡道
 date: 2019-08-16 10:00:57
-description:
 categories: 诗盗
 tags:
 - 五言

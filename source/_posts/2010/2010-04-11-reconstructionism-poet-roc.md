@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·风鹏
 date: 2009-05-12 12:08:21
-description: 
 categories: 诗盗
 tags:
 - 五言

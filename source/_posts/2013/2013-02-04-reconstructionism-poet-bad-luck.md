@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·背运
 date: 2013-02-04 13:29:43
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·无语
 date: 2011-04-19 21:31:33
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·山坡羊·河蟹
 date: 2013-08-18 13:38:01
-description: 
 categories: 诗盗
 tags:
 - 词

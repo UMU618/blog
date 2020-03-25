@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·浆含尽
 date: 2015-05-26 09:03:32
-description: 
 categories: 诗盗
 tags:
 - 七律

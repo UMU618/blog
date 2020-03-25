@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·羊尾年牙
 date: 2016-01-18 13:58:09
-description: 
 categories: 诗盗
 tags:
 - 五言

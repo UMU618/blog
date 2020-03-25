@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·曰泡利器
 date: 2013-09-17 16:32:08
-description: 
 categories: 诗盗
 tags:
 - 七律

@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·挨踢威
 date: 2012-12-22 17:32:28
-description: 
 categories: 诗盗
 tags:
 - 七律

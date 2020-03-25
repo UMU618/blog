@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·诡龄长生莫沧桑
 date: 2016-11-26 10:15:49
-description: 
 categories: 诗盗
 tags:
 - 词

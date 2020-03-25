@@ -2,7 +2,6 @@
 layout: post
 title: 编程员的生活
 date: 2009-04-16 13:21
-description: 
 categories: U墨
 tags:
 - 挨踢

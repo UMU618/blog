@@ -2,7 +2,6 @@
 layout: post
 title: EOSIO MongoDB 插件系列：管理技巧
 date: 2019-01-03 14:45:22
-description: 
 categories: UMUTech
 tags:
 - 调研

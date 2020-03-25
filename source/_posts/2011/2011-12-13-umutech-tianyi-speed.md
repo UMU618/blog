@@ -2,7 +2,6 @@
 layout: post
 title: 天翼宽带智能提速
 date: 2011-12-13 17:03:00
-description: 
 categories: UMUTech
 tags:
 - dev

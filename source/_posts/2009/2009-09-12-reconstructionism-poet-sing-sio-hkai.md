@@ -2,7 +2,6 @@
 layout: post
 title: 诗盗·圣小开
 date: 2009-09-12 09:03:39
-description: 
 categories: 诗盗
 tags:
 - 五言
