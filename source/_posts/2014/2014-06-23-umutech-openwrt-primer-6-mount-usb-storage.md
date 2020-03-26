@@ -39,7 +39,7 @@ opkg install usbutils fdisk e2fsprogs
 
 ### 1. 测试能否识别 U 盘
 
-，不插 U 盘时，输入 `lsusb`，显示如下
+不插 U 盘时，输入 `lsusb`，显示如下
 
 ```
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
