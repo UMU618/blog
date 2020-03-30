@@ -1,7 +1,7 @@
 ---
 layout: post
-title: \[UMU 学 go 语言\](1) Hello code!
-date: 
+title: "[UMU 学 go 语言](1) Hello code!"
+date: 2015-08-19 16:44:00
 categories: UMUTech
 tags:
 - dev
