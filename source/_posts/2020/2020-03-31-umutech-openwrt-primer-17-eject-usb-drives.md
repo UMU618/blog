@@ -1,0 +1,35 @@
+---
+layout: post
+title: 跟 UMU 一起玩 OpenWRT（入门篇17）：卸载 U 盘
+date: 2020-03-31 00:05:47
+description:
+categories: UMUTech
+tags:
+- embedded
+- openwrt
+- python
+---
+## 需求
+
+在 PC 插入 U 盘/移动硬盘，Windows 会发出令人愉悦的“灯等灯”声，然后 U 盘灯开始牛逼闪闪（如果有灯）；安全弹出时，又会发出“的的等”，灯熄灭。
+
+OpenWRT 这么屌，怎么能不支持？
+
+- 什么？你说 `umount`？那 /dev/sda 还在呢！那灯还亮着呢！
+
+- 什么？你说直接拔掉？你赢了！但有时候，稣是在远程操作，要是没人配合拔掉，岂不是要插着耗电？穷人可是交不起电费的……
+
+## 解决
+
+```sh
+opkg update
+opkg install eject
+
+eject /dev/sda
+```
+
+终于安全弹出啦！
+
+## 相关
+
+[跟 UMU 一起玩 OpenWRT（入门篇6）：挂接 U 盘](/2014/06/23/umutech-openwrt-primer-6-mount-usb-storage/)
