@@ -2,7 +2,6 @@
 layout: post
 title: 在树莓派上编译 go-ipfs
 date: 2020-03-28 21:39:02
-description:
 categories: UMUTech
 tags:
 - dev

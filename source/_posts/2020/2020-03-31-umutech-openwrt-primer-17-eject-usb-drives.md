@@ -2,7 +2,6 @@
 layout: post
 title: 跟 UMU 一起玩 OpenWRT（入门篇17）：卸载 U 盘
 date: 2020-03-31 00:05:47
-description:
 categories: UMUTech
 tags:
 - embedded
