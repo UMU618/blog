@@ -1,53 +1,32 @@
 ---
 layout: post
-title: 学习 go 语言【1】Hello code!
-date: 2015-08-19 16:44:00
+title: 学习 go 语言【2】升级 1.5 + 优化
+date: 2015-08-21 19:18:39
 categories: UMUTech
 tags:
 - dev
 - go
 ---
-## 需求
+## 问题
 
-go 即将发布的 1.5 版解决了 GC stop-the-world 问题，所以 UMU 打算以后用它来开发工具。
+安装 1.5 时，直接覆盖 1.4.2，结果不能用了，报错：
 
-最近想统计代码行数，以前用 VBS 写的一时间居然找不到，直接用 go 写一个。
+> imports runtime: C source files not allowed when not using cgo or SWIG
 
-## 心得
+## 解决
 
-基本从零开始用了大约 4 小时完成，可见 go 对初学者相当友好。具体经验和心得：
+删掉 go 1.5……然后修复安装一遍。
 
-1. go 的 runtime 居然没有 set，只能用 map 代替了，一开始觉得不优雅，不过想来也差不多，不计较那么多了。
+## 优化前例代码
 
-2. 语法还确实挺简洁，第一次练手就感觉学这个语言，其实是在学它的规范，语言本身很容易。
+1. 加了计时功能，纯属蛋疼。
 
-3. defer 挺好用的，简洁、省心，比如这个核心函数：
+2. 学到一个不占空间的 struct{}，map[string]bool 改为 map[string]struct{}。
 
-```go
-func CountLine(path string) (num int) {
-	f, err := os.Open(path)
-	if nil != err {
-		return
-	}
-	defer f.Close()
-
-	s := bufio.NewScanner(f)
-	for s.Scan() {
-		num += 1
-	}
-	return
-}
-```
-
-4. LiteIDE X 还比较好用，写 import 保存时，会用 `gofmt` 自动按字母顺序排列库名，这样省得纠结顺序……
-
-## 代码
-
-刚刚接触，就说到这里，最后附代码。
 
 ```go
 // UMU @ 2015-08-17 11:30
-// Last update: 2015-08-17 17:01
+// Last update: 2015-08-21 17:40
 package main
 
 import (
@@ -56,6 +35,7 @@ import (
 	"os"
 	"path"
 	"path/filepath"
+	"time"
 )
 
 func isSourceFile(ext string) bool {
@@ -76,7 +56,8 @@ func main() {
 		return
 	}
 
-	files := make(map[string]bool)
+	start := time.Now()
+	files := make(map[string]struct{})
 	lines := 0
 
 	for _, r := range os.Args {
@@ -89,15 +70,16 @@ func main() {
 			}
 		}
 	}
+
 	for file, _ := range files {
 		l := CountLine(file)
 		lines += l
 		fmt.Println(file, l)
 	}
-	fmt.Println("Total lines:", lines)
+	fmt.Printf("Total lines: %d, cost %fs\n", lines, timeElapsed(start))
 }
 
-func AddDirectory(name string, files map[string]bool) {
+func AddDirectory(name string, files map[string]struct{}) {
 	filepath.Walk(name, func(path string, fi os.FileInfo, err error) error {
 		if nil == fi {
 			return err
@@ -108,10 +90,9 @@ func AddDirectory(name string, files map[string]bool) {
 		AddFile(path, files)
 		return nil
 	})
-	return
 }
 
-func AddFile(name string, files map[string]bool) {
+func AddFile(name string, files map[string]struct{}) {
 	ext := path.Ext(name)
 	if isSourceFile(ext) {
 		path, err := filepath.Abs(name)
@@ -120,7 +101,7 @@ func AddFile(name string, files map[string]bool) {
 			if exists {
 				fmt.Println("Duplicated", path)
 			} else {
-				files[path] = true
+				files[path] = struct{}{}
 				fmt.Println("Add", path)
 			}
 		}
@@ -139,5 +120,10 @@ func CountLine(path string) (num int) {
 		num += 1
 	}
 	return
+}
+
+func timeElapsed(start time.Time) float64 {
+	dis := time.Since(start).Seconds()
+	return dis
 }
 ```
