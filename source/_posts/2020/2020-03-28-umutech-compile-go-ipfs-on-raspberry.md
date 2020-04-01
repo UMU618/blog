@@ -73,10 +73,8 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-
 ```sh
 # aria2 比 wget 强大
 # sudo apt install aria2
-cd ~
 aria2c https://dl.google.com/go/go1.14.1.linux-armv6l.tar.gz
-cd /usr/local
-tar -xzf ~/go1.14.1.linux-armv6l.tar.gz
+tar -C /usr/local -xzf go1.14.1.linux-armv6l.tar.gz
 sudo ln -s /usr/local/go/bin/go /usr/bin/go
 sudo ln -s /usr/local/go/bin/gofmt /usr/bin/gofmt
 ```
