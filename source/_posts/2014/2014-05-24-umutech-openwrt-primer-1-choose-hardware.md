@@ -7,9 +7,9 @@ tags:
 - embedded
 - openwrt
 ---
-看了《跟hoowa学做智能路由》系列，<http://www.leiphone.com/diy-a-smart-router.html>，也想写点自己的经验，大家可以先看 hoowa 童鞋的，写得很好。UMU 用的硬件和他不同而已。
+看了《[跟hoowa学做智能路由](https://www.leiphone.com/news/201406/diy-a-smart-router.html)》系列，也想写点自己的经验。
 
-首先声明，UMU 不是 D-Link 员工，也不卖 DIR-505，用它完全是当下对比几个可选项筛选后的结果。理由：
+UMU 用的第一款硬件是 D-Link DIR-505。首先声明，UMU 不是 D-Link 员工，也不卖 DIR-505，用它完全是当下对比几个可选项筛选后的结果。理由：
 
 1. 本身就是不死 Bootloader，刷坏了固件用网线就可以救，把电脑 IP 设为 192.168.0.100，按住 Reset 开机，Web 浏览器访问 192.168.0.1。前面写的《[不拆机给 D-Link DIR-505 刷上不死 U-Boot](/2014/05/23/umutech-openwrt-advanced-2-mtd-write-uboot-on-openwrt/)》完全是蛋疼地研究过程，对一般用户 UMU 建议不要刷，因为没有 JTAG，刷固件本来就不死，不小心刷坏 Bootloader，就只能拆机上编程器了，这明显作死。
 
