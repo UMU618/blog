@@ -2,7 +2,7 @@
 layout: post
 title: 优化思维【5】合并步骤
 date: 2020-02-26 23:38:07
-categories:
+categories: UMUTech
 tags:
 - dev
 - optimization
