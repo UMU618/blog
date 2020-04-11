@@ -46,12 +46,18 @@ apt install nfs-ganesha nfs-ganesha-vfs
 
 配置文件 /etc/ganesh/ganesha.conf，安装 nfs-ganesha-vfs 会多一个 vfs.conf 参考模板，但其实和初始的 ganesha.conf 一模一样。
 
-以下配置共享 /root/share 和 /opt 两个目录：
+以下配置创建读写共享 /root/share 和只读共享 /opt：
 
 ```
+EXPORT_DEFAULTS
+{
+        Protocols = 4;
+}
+
 EXPORT
 {
         Export_Id = 77;
+        Protocols = 3, 4;
         Path = /root/share;
         Pseudo = /root/share;
         Access_Type = RW;
@@ -65,7 +71,7 @@ EXPORT
         Export_Id = 78;
         Path = /opt;
         Pseudo = /opt;
-        Access_Type = RW;
+        Access_Type = RO;
         FSAL {
                 Name = VFS;
         }
@@ -91,3 +97,15 @@ apt install nfs-common
 ![安装 NFS 客户端](/images/20200411-install-nfs-client.png)
 
 ![浏览 NFS 共享目录](/images/20200411-browse-nfs.png)
+
+![NFS 属性](/images/20200411-nfs-property.png)
+
+### 注意
+
+Windows 10 目前只有 NFS v3 客户端。服务端如果只开 v4 协议，则 Windows 10 将无法访问。
+
+## 参考
+
+<https://github.com/nfs-ganesha/nfs-ganesha/blob/next/src/config_samples/config.txt>
+
+<https://github.com/nfs-ganesha/nfs-ganesha/blob/next/src/config_samples/export.txt>
