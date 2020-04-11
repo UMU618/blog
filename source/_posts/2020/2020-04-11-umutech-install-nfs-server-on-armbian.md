@@ -44,9 +44,7 @@ nfs-server.service: Job nfs-server.service/start failed with result 'dependency'
 apt install nfs-ganesha nfs-ganesha-vfs
 ```
 
-配置文件为 /etc/ganesh/ganesha.conf。nfs-ganesha-vfs 包另带一个 vfs.conf 参考模板。
-
-以下配置创建读写共享 /root/share 和只读共享 /opt：
+配置文件为 /etc/ganesh/ganesha.conf。nfs-ganesha-vfs 包另带一个 vfs.conf 参考模板。以下配置创建读写共享 /root/share 和只读共享 /opt：
 
 ```
 EXPORT_DEFAULTS
@@ -89,8 +87,18 @@ systemctl restart nfs-ganesha.service
 - Debian
 
 ```sh
-apt install nfs-common
+sudo apt install nfs-common
+
+showmount -e u1
+Export list for u1:
+/root/share (everyone)
+
+sudo mkdir /mnt/share
+# sudo mount -t nfs u1:/root/share /mnt/share
+sudo mount.nfs u1:/root/share /mnt/share
 ```
+
+> **注意**：如果提示 `mount.nfs: No such device`，说明内核没有 NFS 模块，~~洗洗睡了~~，换 Windows 10 吧！
 
 - Windows 10
 
@@ -100,9 +108,7 @@ apt install nfs-common
 
 ![NFS 属性](/images/20200411-nfs-property.png)
 
-### 注意
-
-Windows 10 目前只有 NFS v3 客户端。服务端如果只开 v4 协议，则 Windows 10 将无法访问。
+> **注意**：Windows 10 目前只有 NFS v3 客户端。服务端如果只开 v4 协议，则 Windows 10 将无法访问。
 
 ## 参考
 
