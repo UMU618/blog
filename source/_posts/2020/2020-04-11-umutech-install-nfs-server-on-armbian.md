@@ -44,7 +44,7 @@ nfs-server.service: Job nfs-server.service/start failed with result 'dependency'
 apt install nfs-ganesha nfs-ganesha-vfs
 ```
 
-配置文件 /etc/ganesh/ganesha.conf，安装 nfs-ganesha-vfs 会多一个 vfs.conf 参考模板，但其实和初始的 ganesha.conf 一模一样。
+配置文件为 /etc/ganesh/ganesha.conf。nfs-ganesha-vfs 包另带一个 vfs.conf 参考模板。
 
 以下配置创建读写共享 /root/share 和只读共享 /opt：
 
