@@ -5,6 +5,7 @@ date: 2014-07-21 23:47:09
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 ---
 ## 需求

@@ -5,6 +5,7 @@ date: 2014-07-27 00:45:32
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 ---
 UMU 把路由器放在公司，然后在家里想登陆它，这时候就有一个问题：如何穿越到公司内网呢？本文给出的一种解决方案：SSH 反向连接。涉及的软件是 autossh。

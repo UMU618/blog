@@ -4,6 +4,7 @@ title: 解决通过 TTL 登陆 Armbian 时的 Login incorrect
 date: 2020-04-09 23:18:36
 categories: UMUTech
 tags:
+- armbian
 - debug
 - embedded
 - linux

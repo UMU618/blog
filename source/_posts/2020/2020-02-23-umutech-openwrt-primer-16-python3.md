@@ -5,6 +5,7 @@ date: 2020-02-23 18:17:39
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 - python
 ---

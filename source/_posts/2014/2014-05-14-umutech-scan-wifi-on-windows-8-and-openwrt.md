@@ -5,6 +5,7 @@ date: 2014-05-14 18:39:33
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 - windows
 ---

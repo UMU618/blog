@@ -5,6 +5,7 @@ date: 2014-05-24 01:14:14
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 ---
 看了《[跟hoowa学做智能路由](https://www.leiphone.com/news/201406/diy-a-smart-router.html)》系列，也想写点自己的经验。

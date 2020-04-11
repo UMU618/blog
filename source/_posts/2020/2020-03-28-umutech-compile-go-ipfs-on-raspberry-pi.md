@@ -8,6 +8,7 @@ tags:
 - embedded
 - go
 - linux
+- raspbian
 ---
 ## 1. 需求
 

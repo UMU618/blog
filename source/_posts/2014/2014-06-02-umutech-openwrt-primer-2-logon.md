@@ -5,6 +5,7 @@ date: 2014-06-02 01:00:35
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 ---
 ## 登录

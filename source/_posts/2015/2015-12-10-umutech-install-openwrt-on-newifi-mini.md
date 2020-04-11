@@ -5,6 +5,7 @@ date: 2015-12-10 16:33:42
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 ---
 newifi mini，即 lenovo Y1，属于不开放 SSH 的类型，越用越不爽，还是刷了吧。

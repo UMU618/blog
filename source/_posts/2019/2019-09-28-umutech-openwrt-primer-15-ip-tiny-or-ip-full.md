@@ -5,6 +5,7 @@ date: 2019-09-28 21:56:16
 categories: UMUTech
 tags:
 - embedded
+- linux
 - openwrt
 ---
 ## 起源
