@@ -98,7 +98,7 @@ sudo mkdir /mnt/share
 sudo mount.nfs u1:/root/share /mnt/share
 ```
 
-> **注意**：如果提示 `mount.nfs: No such device`，说明内核没有 NFS 模块，~~洗洗睡了~~，换 Windows 10 吧！
+**注意**：如果提示 `mount.nfs: No such device`，说明内核没有 NFS 模块，~~洗洗睡了~~，换 Windows 10 吧！
 
 - Windows 10
 
@@ -108,7 +108,7 @@ sudo mount.nfs u1:/root/share /mnt/share
 
 ![NFS 属性](/images/20200411-nfs-property.png)
 
-> **注意**：Windows 10 目前只有 NFS v3 客户端。服务端如果只开 v4 协议，则 Windows 10 将无法访问。
+**注意**：Windows 10 目前只有 NFS v3 客户端。服务端如果只开 v4 协议，则 Windows 10 将无法访问。
 
 ## 参考
 
