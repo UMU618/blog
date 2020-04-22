@@ -1,6 +1,6 @@
 ---
 layout: post
-title: nfs-ganesha 防火墙设置
+title: nfs-ganesha 端口绑定
 date: 2020-04-16 22:15:55
 categories: UMUTech
 tags:
@@ -21,7 +21,7 @@ tags:
 
 开放 111、2049 端口，再 mount，还是卡着。
 
-通过反复重启 nfs-ganesha 并 `netstat -nalp | grep ganesha.nfsd` 观测，发现 mountd 端口不固定！给防火墙配置带来困难。
+通过反复重启 nfs-ganesha 并 `netstat -nalp | grep ganesha.nfsd` 观测，发现 mountd 端口不固定！给开放端口配置带来困难。
 
 ## 解决
 
@@ -44,7 +44,7 @@ systemctl restart nfs-ganesha.service
 
 ### 防护墙配置
 
-UMU 用的是 OpenWRT 路由器作为家庭网络出口，防火墙配置文件是 /etc/config/firewall，添加以下几行：
+UMU 用的是 OpenWRT 路由器作为家庭网络出口，firewall 配置文件是 /etc/config/firewall，添加以下几行：
 
 ```
 config rule
@@ -61,7 +61,7 @@ config rule
 
 以上配置开启了 111、2049、2618 三个端口的转发，其中 udp/tcp 111 是 portmap 端口，udp/tcp 2049 是 nfsd 端口，udp/tcp 2618 是上一步绑定的 mountd 端口。
 
-`/etc/init.d/firewall restart` 重启防火墙后就可以在办公室通过 IPv6 访问家里的 NFS 共享了。
+`/etc/init.d/firewall restart` 重启后就可以在办公室通过 IPv6 访问家里的 NFS 共享了。
 
 
 ## 参考
