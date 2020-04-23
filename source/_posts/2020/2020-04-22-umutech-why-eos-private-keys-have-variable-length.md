@@ -26,7 +26,7 @@ tags:
 - n 须为质数，Order of G，是使得 `n * G = 0` 的最⼩正整数，n 是安全性最⼤的决定因素。对于 secp256k1 来说，n
  = 0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141。
 
-- 不是每个数都安全，比如小的数肯定是不安全的，黑客可以从 1 开始枚举，不够大的数很快就被找到对应关系，也可以从 G 倒着枚举，所以太大的也不安全。（PS：临近一些特别数的数也不安全……）一般来说，私钥的安全范围是 [0x0080000000000000000000000000000000000000000000000000000000000000, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff]。
+- 不是每个数都安全，比如小的数肯定是不安全的，黑客可以从 1 开始枚举，不够大的数很快就被找到对应关系，也可以从 n 倒着枚举，所以太大的也不安全。（PS：临近一些特别数的数也不安全……）一般来说，私钥的安全范围是 [0x0080000000000000000000000000000000000000000000000000000000000000, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff]。
 
 ## 工具
 
@@ -56,7 +56,7 @@ PUB_K1_6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5BoDq63
 
 - PVT_K1_1EEr5aW5162skbocDSMDgoWn9jna6HPSr1TwEMR6PNXbPtRky，有 56 个字符，去掉前缀和校验码后有 45 个字符，它代表 0x84ade57e2b35cca8972562fcc6d1f6f2fbf078c4f2cfb532eb4d740767c5a8；
 
-- PVT_K1_2bfGi9rYsXQSXXTvJbDAPhHLQUojjaNLomdm3cEJ1XTzMqUt3V，有 57 个字符，去掉前缀和校验码后有 46 个字符，，它代表 d2653ff7cbb2d8ff129ac27ef5781ce68b2558c41a74af1f2ddca635cbeef07d。
+- PVT_K1_2bfGi9rYsXQSXXTvJbDAPhHLQUojjaNLomdm3cEJ1XTzMqUt3V，有 57 个字符，去掉前缀和校验码后有 46 个字符，它代表 d2653ff7cbb2d8ff129ac27ef5781ce68b2558c41a74af1f2ddca635cbeef07d。
 
 可以清楚地看出前者短一个字符，数值也相应比较小。
 
