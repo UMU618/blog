@@ -3,8 +3,11 @@ layout: post
 title: 用 VS2019 应该尽量链接带有 Spectre 缓解措施的库
 date: 2020-05-19 17:29:35
 description:
-categories:
+categories: UMUTech
 tags:
+- debug
+- dev
+- windows
 ---
 ## 问题
 
