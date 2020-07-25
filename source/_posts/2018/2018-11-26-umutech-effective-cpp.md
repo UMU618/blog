@@ -475,3 +475,63 @@ TMP 是图灵完备（Turling-complete）的。
 
 ## 第八章 定制 new 和 delete
 
+### 49. 了解 new-handler 的行为
+
+当 operator new 无法满足某一内存分配需求时，它会先调用一个客户指定的错误处理函数 new-handler。（这并非全部事实，参考条款 51）为了指定“用以处理内存不足”的函数，客户必须调用声明于 \<new\> 的标准库函数 set_new_handler：
+
+```cpp
+namespace std {
+  typedef void (*new_handler)();
+  new_handler set_new_handler(new_handler p) noexcept;
+}
+```
+
+用法示例：
+
+```cpp
+void OutOfMemory() {
+  std::cerr << "Unable to satisfy request for memory!\n";
+  std::abort();
+}
+
+int main() {
+  std::set_new_handler(OutOfMemory);
+  char* big_array = new char[32 * 1024 * 1024 * 1024];
+}
+```
+
+设计良好的 new-handler 函数必须做一下事情：
+
+- **让更多内存可被使用**。实现此策略的一个做法是：程序一开始就分配一大块内存，而后当 new-handler 第一次被调用，将它们释还给程序使用。
+
+- **安装另一个 new-handler**。如果当前 new-handler 无法取得更多可用内存，或许它知道另外哪个 new-handler 由此能力。
+
+- **卸除 new-handler**，也就是将 nullptr 传给 set_new_handler，这样 operator new 会在内存分配失败时抛出异常。
+
+- **抛出 bad_alloc 或其派生的异常**。这样的异常不会被 operator new 捕捉，而会被传播到内存索求处。
+
+- **不返回**，通常调用 abort 或 exit。
+
+C++ 不支持 class 专属之 new-handler，如果您需要，可以自己实现，只需每个 class 提供自己的 set_new_handler 和 operator new。
+
+nothrow/noexcept new 是一个颇为局限的工具，因为它只适用于内存分配；后续的构造函数调用还是可能抛出异常。
+
+### 50. 了解 new 和 delete 的合理替换时机
+
+替换编译器提供的 operator new/delete 的最常见理由：
+
+- **用来检测运用上的错误。**
+
+- **为了强化效能。**
+
+  - 增加分配和归还速度。
+  
+  - 降低缺省内存管理器带来的空间额外开销。
+
+  - 弥补缺省分配器种的非最佳齐位（suboptimal alignment）。
+
+  - 将相关对象成簇集中。
+
+- **为了收集使用上的统计数据。**
+
+- **为了获得非传统的行为。**
