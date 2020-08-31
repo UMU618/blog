@@ -2,9 +2,11 @@
 layout: post
 title: VS2019 Makefile 型工程调用 Clang
 date: 2020-08-31 23:11:53
-description:
-categories:
+categories: UMUTech
 tags:
+- debug
+- dev
+- windows
 ---
 ## 需求
 

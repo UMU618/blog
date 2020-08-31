@@ -2,9 +2,12 @@
 layout: post
 title: SDL/Windows 代码分析【1】thread
 date: 2020-08-28 15:11:55
-description:
-categories:
+categories: UMUTech
 tags:
+- c
+- debug
+- dev
+- windows
 ---
 ## 1. SDL_semaphore
 
