@@ -28,7 +28,7 @@ Thread model: posix
 InstalledDir: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\Llvm\bin
 ```
 
-x64 是格外安装的，安装时选择把目录注册到 PATH：
+x64 是另外安装的，安装时选择把目录注册到 PATH：
 
 ```powershell
 $ clang -v
