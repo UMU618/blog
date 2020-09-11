@@ -135,4 +135,4 @@ Further information:
 
 - Boost 值得学习和使用。
 
-- 本文本文对仅用 VS 写过 Hello world 的入门级程序员友好。（高手不会看到这末尾……）
+- 本文对仅用 VS 写过 Hello world 的入门级程序员友好。（高手不会看到这末尾……）
