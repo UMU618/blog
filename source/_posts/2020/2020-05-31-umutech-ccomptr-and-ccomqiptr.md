@@ -17,9 +17,9 @@ CComPtr 和 CComQIPtr 长得这么像，有啥关系和区别？
 
 ## 分析
 
-1. 看代码 CComQIPtr 继承自 CComPtr，CComPtr<IUnknown> 没问题，但 CComQIPtr<IUnknown> 报错，应该使用 CComQIPtr<IUnknown, &IID_IUnknown>。
+1. 看代码 CComQIPtr 继承自 CComPtr，CComPtr\<IUnknown\> 没问题，但 CComQIPtr\<IUnknown\> 报错，应该使用 CComQIPtr\<IUnknown, &IID_IUnknown\>。
 
-2. 不同类型 CComPtr<> 不能直接互相构造/赋值；CComQIPtr<> 则可以，因为 CComQIPtr 会进行目标类型的 QueryInterface。
+2. 不同类型 CComPtr\<\> 不能直接互相构造/赋值；CComQIPtr\<\> 则可以，因为 CComQIPtr 会进行目标类型的 QueryInterface。
 
 ```cpp
 CComPtr<IUnknown> u;
