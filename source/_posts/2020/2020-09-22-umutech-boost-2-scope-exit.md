@@ -2,9 +2,11 @@
 layout: post
 title: Boost【2】ScopeExit
 date: 2020-09-22 19:13:38
-description:
-categories:
+categories: UMUTech
 tags:
+- cpp
+- dev
+- windows
 ---
 ## 需求
 
