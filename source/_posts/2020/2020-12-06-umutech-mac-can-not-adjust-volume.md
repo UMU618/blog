@@ -2,9 +2,9 @@
 layout: post
 title: Mac 外接显示器时无法调节音量？
 date: 2020-12-06 23:35:03
-description:
-categories:
+categories: UMUTech
 tags:
+- debug
 - macOS
 ---
 ## 问题
