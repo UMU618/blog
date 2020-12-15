@@ -5,7 +5,7 @@ date: 2020-12-06 23:35:03
 categories: UMUTech
 tags:
 - debug
-- macOS
+- macos
 ---
 ## 问题
 
