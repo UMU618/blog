@@ -105,15 +105,30 @@ Further information:
 
 ```powershell
 # umutech @ UMU618 in D:\dev\boost_1_74_0 [15:03:43]
-.\b2.exe --address-model=64
+.\b2.exe address-model=64
 ```
 非 Windows 系统，可以直接运行 `./b2`。
 
 新机器一般几分钟就能编译完毕。比如 OMEN 25L 只需要 3 分钟。~~廉想~~ L490 笔记本大约 14 分钟。
 
-## 6. 配置 VS 工程
+## 6. 测试编译
 
-### 6.1 配置方法一
+可以用以下仓库验证前面操作是否正确：
+
+<https://github.com/UMU618/test_boost>
+
+```
+git clone https://github.com/UMU618/test_boost
+cd test_boost
+# .\build.cmd
+# ./build.sh
+```
+
+请根据操作系统选择合适的脚本编译，最终编译出来的程序应该打印“OK!”。
+
+## 7. 配置 VS 工程
+
+### 7.1 配置方法一
 
 打开一个工程的属性页，定位到 VC++ Directories。
 
@@ -123,7 +138,7 @@ Further information:
 
 如果已经有其它值，记得用 ; 隔开。
 
-### 6.2 配置方法二
+### 7.2 配置方法二
 
 打开一个工程的属性页。
 
