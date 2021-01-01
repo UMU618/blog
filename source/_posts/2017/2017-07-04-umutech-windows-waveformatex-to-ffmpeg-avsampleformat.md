@@ -63,3 +63,8 @@ inline AVSampleFormat GetSampleFormat(const WAVEFORMATEX *wave_format)
     return AV_SAMPLE_FMT_NONE;
 }
 ```
+## 相关书籍
+
+京东联盟购买链接：
+
+[FFmpeg从入门到精通](https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQAl0eWRIyVlgNRQQlW1dCFFlQCxxKQgFHRE5XDVULR0UVARACXR5ZEh1LQglGaxFVZWEceFlrYkcEKlocdgVSZAtzPFMOHjdQG1oUARUAUxJTJQITBVAZWRYBFDdlG1olVHwHVBpaFAMXBlEYaxcDEwVWE10TAhI3VRxaHQcbB1AYUhUBEzdSG1IlZm5jUhtSJTISBFceUxAAFTdWK2slAiIEZVk1QQpCBgBMWhYFFVJVHl9ACxoDB0hbRQITV1xPDEBVFAZlGVoUBhs%3D) 出版时间：2018-04-01 用纸：胶版纸

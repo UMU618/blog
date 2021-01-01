@@ -83,3 +83,9 @@ AVCodec *output_codec = avcodec_find_encoder_by_name("opus");
 用 AV_SAMPLE_FMT_FLTP 后 frame_size 是 120，用其它是 960，frame_size 小有小的好处，比如在做实时编码直播时，理论延迟会更小。
 
 经过测试，用 AV_SAMPLE_FMT_FLTP 的 opus 比 libopus 压缩率普遍略高一些，但它只支持 48000Hz 一种 sample_rate，libopus 支持的更多：48000, 24000, 16000, 12000, 8000。
+
+## 相关书籍
+
+京东联盟购买链接：
+
+[FFmpeg从入门到精通](https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQAl0eWRIyVlgNRQQlW1dCFFlQCxxKQgFHRE5XDVULR0UVARACXR5ZEh1LQglGaxFVZWEceFlrYkcEKlocdgVSZAtzPFMOHjdQG1oUARUAUxJTJQITBVAZWRYBFDdlG1olVHwHVBpaFAMXBlEYaxcDEwVWE10TAhI3VRxaHQcbB1AYUhUBEzdSG1IlZm5jUhtSJTISBFceUxAAFTdWK2slAiIEZVk1QQpCBgBMWhYFFVJVHl9ACxoDB0hbRQITV1xPDEBVFAZlGVoUBhs%3D) 出版时间：2018-04-01 用纸：胶版纸

@@ -113,3 +113,9 @@ typedef struct AVFrame {
 ```
 
 以 AV_SAMPLE_FMT_S16 为例，发现 InitFrame() 里的 av_frame_get_buffer() 之后只有 linesize[0] 是非 0，即 data[0] 的分配长度，其它 7 个都是 0，即 data[1] -> data[7] 都没有分配，于是猜测就是读 data[0]，长度 linesize[0]，尝试把它写到 FileMapping 里，果然是对的。如果 SampleFormat 是带 P 的，就不是只有 data[0] 了，有几个 channel 就有几个 data，要相应改变。
+
+## 相关书籍
+
+京东联盟购买链接：
+
+[FFmpeg从入门到精通](https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQAl0eWRIyVlgNRQQlW1dCFFlQCxxKQgFHRE5XDVULR0UVARACXR5ZEh1LQglGaxFVZWEceFlrYkcEKlocdgVSZAtzPFMOHjdQG1oUARUAUxJTJQITBVAZWRYBFDdlG1olVHwHVBpaFAMXBlEYaxcDEwVWE10TAhI3VRxaHQcbB1AYUhUBEzdSG1IlZm5jUhtSJTISBFceUxAAFTdWK2slAiIEZVk1QQpCBgBMWhYFFVJVHl9ACxoDB0hbRQITV1xPDEBVFAZlGVoUBhs%3D) 出版时间：2018-04-01 用纸：胶版纸
