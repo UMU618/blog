@@ -74,7 +74,11 @@ D:\dev\boost_1_74_0
 
 ## 4. 编译 b2
 
-直接运行 bootstrap.bat 即可，如果是非 Windows 系统，则是 bootstrap.sh。
+直接运行 bootstrap.bat 即可，但是这样编译出来的是 32 位的 b2.exe。
+
+如果您需要 x64 的 b2.exe，可以在 `x64 Native Tools Command Prompt for VS 2019` 下面运行 bootstrap.bat。
+
+如果是非 Windows 系统，则是 bootstrap.sh。
 
 ```powershell
 # umutech @ UMU618 in D:\dev\boost_1_74_0 [15:02:20]
@@ -111,6 +115,20 @@ Further information:
 非 Windows 系统，可以直接运行 `./b2`。
 
 新机器一般几分钟就能编译完毕。比如 OMEN 25L 只需要 3 分钟。~~廉想~~ L490 笔记本大约 14 分钟。
+
+以上命令将同时编译 runtime-link=shared 的 Debug 和 Release 两种配置，产生的 lib 文件名会分别带有 `-mt-gd-x64` 和 `-mt-x64`，比如：
+
+- Debug 版本：libboost_program_options-vc142-mt-gd-x64-1_75.lib
+
+- Release 版本：libboost_program_options-vc142-mt-x64-1_75.lib
+
+您有可能需要编译不同配置的版本，比如指定 runtime-link 为 static，这样可以不依赖 VC 的运行时 DLL，此时您可以用下面命令：
+
+```powershell
+.\b2.exe address-model=64 runtime-link=static
+```
+
+它编译出来的 lib 文件名中会带有 `-mt-s-x64`，例如：libboost_program_options-vc142-mt-s-x64-1_75.lib。
 
 ## 6. 测试编译
 
@@ -151,4 +169,6 @@ cd test_boost
 
 - Boost 值得学习和使用。
 
-- 本文对仅用 VS 写过 Hello world 的入门级程序员友好。（高手不会看到这末尾……）
+- 本文对仅用 VS 写过 Hello world 的入门级程序员友好。
+
+- 更多应用 Boost 可以参考[鎏光云游戏引擎](https://github.com/ksyun-kenc/liuguang)。
