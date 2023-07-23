@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse Testing Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Mouse Testing">
+    <meta name="keywords" content="云桌面,VHID">
+    <style>
+        body {
+            color: black;
+            background: #c7edcc;
+            margin: 0px auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 816px;
+            margin: 0px auto;
+        }
+
+        td {
+            width: 50px;
+            height: 40px;
+            border: 1px solid;
+        }
+
+        .inner-border {
+            border: 10px solid #FF0000;
+        }
+    </style>
+</head>
+
+<script>
+    function onKeyPress() {
+        let obj = document.getElementById("arena");
+        if (event.key == "h") {
+            obj.style.cursor = "none";
+        } else if (event.key == "s") {
+            obj.style.cursor = "auto";
+        }
+    }
+    function onMouseDown() {
+        document.getElementById("mousedown").innerHTML = "which: " + event.which + ", clientX: " + event.clientX + ", clientY: " + event.clientY;
+    }
+    function onMouseMove() {
+        document.getElementById("mousemove").innerHTML = "clientX: " + event.clientX + ", clientY: " + event.clientY;
+    }
+    function onMouseUp() {
+        document.getElementById("mouseup").innerHTML = "which: " + event.which + ", clientX: " + event.clientX + ", clientY: " + event.clientY;
+    }
+    function onWheel() {
+        document.getElementById("wheel").innerHTML = "clientX: " + event.clientX + ", clientY: " + event.clientY + ", deltaX: " + event.deltaX + ", deltaY: " + event.deltaY + ", deltaZ: " + event.deltaZ + ", deltaMode: " + event.deltaMode;
+    }
+    function onChangeCursor() {
+        let cursorStyle = document.getElementById("selectCursor").value;
+        document.getElementById("selectCursor").style.cursor = cursorStyle;
+        document.getElementById("arena").style.cursor = cursorStyle;
+    }
+</script>
+
+<body width="100%" height="100%" onkeypress="onKeyPress()" onmousedown="onMouseDown()" onmousemove="onMouseMove()"
+    onmouseup="onMouseUp()" onwheel="onWheel()">
+    <div id="arena" class="inner-border">
+        <p style="color:#FF0000" align="center">测试区域为红框以内</p>
+        <p>说明</p>
+        <ul>请在云桌面环境打开本页面！</ul>
+        <ul>按 h 隐藏光标，云桌面将进入相对鼠标模式。</ul>
+        <ul>按 s 显示光标，云桌面将进入绝对鼠标模式。</ul>
+        <table id="table" width="100%" border="1px">
+            <tr height="50px">
+                <th width="200px">Action</th>
+                <th width="80%">Info</th>
+            </tr>
+            <tr>
+                <td>
+                    <dev style="color:#FF0000">MouseDown</dev>
+                </td>
+                <td>
+                    <dev id="mousedown" style="color:#FF0000"></dev>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <dev style="color:#0900C4">MouseMove</dev>
+                </td>
+                <td>
+                    <dev id="mousemove" style="color:#0900C4"></dev>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <dev style="color:#FF0000">MouseUp</dev>
+                </td>
+                <td>
+                    <dev id="mouseup" style="color:#FF0000"></dev>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <dev style="color:#00cc99">Wheel</dev>
+                </td>
+                <td>
+                    <dev id="wheel" style="color:#00cc99"></dev>
+                </td>
+            </tr>
+        </table>
+        选择光标样式：<select id="selectCursor" onchange="onChangeCursor()" height="36px">
+            <option>alias</option>
+            <option>all-scroll</option>
+            <option>cell</option>
+            <option>context-menu</option>
+            <option>col-resize</option>
+            <option>copy</option>
+            <option>crosshair</option>
+            <option selected>default</option>
+            <option>e-resize</option>
+            <option>ew-resize</option>
+            <option>help</option>
+            <option>move</option>
+            <option>n-resize</option>
+            <option>ne-resize</option>
+            <option>nesw-resize</option>
+            <option>ns-resize</option>
+            <option>nw-resize</option>
+            <option>nwse-resize</option>
+            <option>no-drop</option>
+            <option>none</option>
+            <option>not-allowed</option>
+            <option>pointer</option>
+            <option>progress</option>
+            <option>row-resize</option>
+            <option>s-resize</option>
+            <option>se-resize</option>
+            <option>sw-resize</option>
+            <option>text</option>
+            <option>vertical-text</option>
+            <option>w-resize</option>
+            <option>wait</option>
+            <option>zoom-in</option>
+            <option>zoom-out</option>
+        </select>
+        <p>测试事项</p>
+        <ul>1. 五个鼠标键（如果没有五键就测三键）：按下和松开，看 which 值。</ul>
+        <ul>2. 鼠标移动：分别测试绝对模式和相对模式，确保 X、Y 值都正常。</ul>
+        <ul>3. 鼠标滚轮：Y 应该有正负值。</ul>
+        <ul>4. 操作不能互窜，比如只移动光标时，不应该有点击或滚动。</ul>
+        <p style="color:#FF0000" align="center">测试区域为红框以内</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+# Header
+subtitle: 天地玄黄，宇宙洪荒，度修七鹰劫，证悟神通。
+
+menu:
+  home: /
+  archive: /archives
+  about: /about
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: false
+mathjax: false
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+- links
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+#google_analytics:
+#gauges_analytics:
+favicon: /favicon.ico
+twitter: UMU618
+#google_plus:
+#fb_admins:
+#fb_app_id:
+
+# Links
+links:
+  UMUTech: http://my.oschina.net/umu618
+  叹为观止: http://blog.vichamp.com/
+
+disqus_shortname: umu618
+
+sohucs: true
+
+# Baidu share
+baidushare: true
+
+icp: 闽ICP备14015033号-1

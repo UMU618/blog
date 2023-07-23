@@ -1,0 +1,4 @@
+npm install hexo-cli
+npm install
+
+npx hexo server

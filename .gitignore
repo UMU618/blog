@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# nodejs
+node_modules/
+yarn.lock
+package-lock.json
+
+# hexo
+public/
+db.json

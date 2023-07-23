@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html><head><title>寻径算法</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="寻径算法">
+<meta name="keywords" content="寻径算法">
+<style>
+	body {
+		color: black;
+		background: #c7edcc;
+		margin: 0px auto;
+	}
+	.toolbar {
+		width: 810px;
+		height: 36px;
+		margin: 2px auto;
+	}
+	button {
+		height: 32px;
+		margin: 0px auto;
+	}
+	.clear {
+		color: red;
+	}
+	table {
+		border-collapse: collapse;
+		width: 810px;
+		margin: 0px auto;
+	}
+	td {
+		width: 50px;
+		height: 50px;
+		border: 1px solid orange;
+	}
+	td.start {
+		background: url(cat.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+	td.end {
+		background: url(fish.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+	td.searched {
+		background: #259b24;
+	}
+	td.path {
+		background: url(foot.png) no-repeat center center;
+		background-size: 100% 100%;
+	}
+	td.block {
+		background: url(block.jpg) no-repeat center center;
+		background-size: 100% 100%;
+	}
+</style>
+</head>
+<body>
+	<div class="toolbar">
+		<button class="clear" onclick="javascript: clearAll();">Clear</button>
+		<button onclick="javascript:console.time('elapsed'); bfs(); console.timeEnd('elapsed');">Breadth First Search</button>
+		<button onclick="javascript:console.time('elapsed'); gbfs(); console.timeEnd('elapsed');">Greedy Best First Search</button>
+		<button onclick="javascript:console.time('elapsed'); dijkstra(); console.timeEnd('elapsed');">Dijkstra</button>
+		<button onclick="javascript:console.time('elapsed'); dijkstraPlus(); console.timeEnd('elapsed');">Dijkstra+</button>
+		<button onclick="javascript:console.time('elapsed'); aStarSearch(); console.timeEnd('elapsed');">A*</button>
+		<button onclick="javascript:console.time('elapsed'); aStarSearchConservative(); console.timeEnd('elapsed');">A* Conservative</button>
+		<button onclick="javascript:console.time('elapsed'); aStarSearchRadical(); console.timeEnd('elapsed');">A* Radical</button>
+		<text id="steps" />
+	</div>
+	<script type="text/javascript">
+
+// Reference
+// https://www.redblobgames.com/pathfinding/a-star/introduction.html
+
+const ROWS = 8, COLUMNS = 17
+
+class Pos {
+	constructor(row, column) {
+		this.row = row
+		this.column = column
+	}
+
+	equals(pos) {
+		if (pos instanceof Pos) {
+			return pos.row === this.row && pos.column === this.column
+		}
+		throw new Error('Not Pos: ' + pos)
+	}
+	equals2(row, column) {
+		if (typeof row !== 'number' || typeof column !== 'number') {
+			throw new Error('Invalid parameter: ' + row + ', ' + column)
+		}
+		return row === this.row && column === this.column
+	}
+
+	setPos(row, column) {
+		this.row = row
+		this.column = column
+	}
+}
+
+class Matrix {
+	constructor(rows, columns) {
+		this.rows = rows
+		this.columns = columns
+		this.array = new Array(rows * columns)
+		this.array.fill(0)
+	}
+
+	getElement() {
+		if (arguments.length === 1) {
+			var n = arguments[0]
+			return this.array[n.row * this.columns + n.column]
+		} else if (arguments.length === 2) {
+			var row = arguments[0]
+			var column = arguments[1]
+			if (typeof row !== 'number' || typeof column !== 'number') {
+				throw new Error('Invalid parameter: ' + row + ', ' + column)
+			}
+			return this.array[row * this.columns + column]
+		} else {
+			throw new Error('Invalid parameters count')
+		}
+	}
+
+	setElement() {
+		if (arguments.length === 2) {
+			var n = arguments[0]
+			if (n instanceof Pos) {
+				this.array[n.row * this.columns + n.column] = arguments[1]
+			} else {
+				throw new Error('Invalid parameter: ' + n)
+			}
+		} else if (arguments.length === 3) {
+			var row = arguments[0]
+			var column = arguments[1]
+			if (typeof row !== 'number' || typeof column !== 'number') {
+				throw new Error('Invalid parameter: ' + row + ', ' + column)
+			}
+			this.array[row * this.columns + column] = arguments[2]
+		} else {
+			throw new Error('Invalid parameters count')
+		}
+	}
+}
+
+const map = new Matrix(ROWS, COLUMNS), uiMap = new Matrix(ROWS, COLUMNS)
+const start = new Pos(0, 0)
+var moving_start = false
+const end = new Pos(ROWS - 1, COLUMNS - 1)
+var moving_end = false
+const table = document.createElement('table')
+
+for (var i = 0; i < ROWS; ++i) {
+	const tr = document.createElement('tr')
+	for (var j = 0; j < COLUMNS; ++j) {
+		const td = document.createElement('td')
+		if (start.equals2(i, j)) {
+			td.className = 'start'
+		} else if (end.equals2(i, j)) {
+			td.className = 'end'
+		} else {
+			td.className = ''
+		}
+		uiMap.setElement(i, j, tr.appendChild(td))
+		; (function (i, j) {
+			// 用闭包把确定下来的 i, j 传给 onclick
+			td.onclick = function () {
+				clearPath()
+				if (uiMap.getElement(i, j).className == 'block') {
+					uiMap.getElement(i, j).className = ''
+					map.setElement(i, j, 0)
+				} else if (uiMap.getElement(i, j).className == "start" && !moving_start) {
+					uiMap.getElement(i, j).className = ''
+					moving_start = true
+				} else if (uiMap.getElement(i, j).className == 'end' && !moving_end) {
+					uiMap.getElement(i, j).className = ''
+					moving_end = true
+				} else if (!uiMap.getElement(i, j).className) {
+					if (moving_start) {
+						moving_start = false
+						start.setPos(i, j)
+						uiMap.getElement(i, j).className = 'start'
+					} else if (moving_end) {
+						moving_end = false
+						end.setPos(i, j)
+						uiMap.getElement(i, j).className = 'end'
+					} else {
+						uiMap.getElement(i, j).className = 'block'
+						map.setElement(i, j, 1)
+					}
+				}
+			}
+		})(i, j)
+	}
+	table.appendChild(tr)
+}
+document.body.appendChild(table)
+
+function clearAll() {
+	for (var i = 0; i < uiMap.array.length; ++i) {
+		map.array[i] = 0
+		if (uiMap.array[i].className == "block"
+			|| uiMap.array[i].className == "path"
+			|| uiMap.array[i].className == "searched") {
+			uiMap.array[i].className = ""
+		}
+	}
+}
+
+function clearPath() {
+	for (var i = 0; i < uiMap.array.length; ++i) {
+		if (uiMap.array[i].className == "path"
+			|| uiMap.array[i].className == "searched") {
+			uiMap.array[i].className = ""
+		}
+	}
+}
+
+// 相当于在起点倒水，满了溢出扩散，直到溢到终点
+function bfs() {
+	clearPath()
+	var finded = false
+	var frontier = [start]
+	const visited = new Matrix(ROWS, COLUMNS)
+	var tempList = []
+
+	function walk(from, to) {
+		if (!map.getElement(to) && !finded) {
+			if (end.equals(to)) {
+				finded = true
+				visited.setElement(to, from)
+			} else if (!visited.getElement(to)) {
+				tempList.push(to)
+				visited.setElement(to, from)
+			}
+		}
+	}
+
+	do {
+		tempList = []
+		for (var i = 0; i < frontier.length; ++i) {
+			const current = frontier[i]
+			const r = current.row, c = current.column
+			// 左
+			; (c - 1 >= 0) && walk(current, new Pos(r, c - 1))
+			// 右
+			; (c + 1 < COLUMNS) && walk(current, new Pos(r, c + 1))
+			// 上
+			; (r - 1 >= 0) && walk(current, new Pos(r - 1, c))
+			// 下
+			; (r + 1 < ROWS) && walk(current, new Pos(r + 1, c))
+		}
+		frontier = tempList
+	} while (!finded && frontier.length)
+
+	// 显示搜索过的路径
+	var searched = 0
+	for (var i = 0; i < uiMap.array.length; ++i) {
+		if (visited.array[i] && !uiMap.array[i].className) {
+			++searched
+			uiMap.array[i].className = 'searched'
+		}
+	}
+
+	// 显示结果
+	const result = []
+	if (finded) {
+		var cur = end
+		while (!cur.equals(start)) {
+			result.unshift(cur)
+			cur = visited.getElement(cur)
+		}
+	}
+	document.getElementById('steps').innerHTML = result.length + ', ' + searched
+	for (var i = 0; i < result.length; ++i) {
+		if (!result[i].equals(end)) {
+			uiMap.getElement(result[i]).className = 'path'
+		}
+	}
+}
+
+// 带权重的水，更智能一些，一般比 BFS 搜索面更少，但可能找到的不是最短。
+function aStar(choose) {
+	clearPath()
+	var finded = false
+	const openList = new Map
+	const closeList = new Map
+
+	function getIndex(n) {
+		return n.row * COLUMNS + n.column
+	}
+	function getIndex2(row, column) {
+		return row * COLUMNS + column
+	}
+
+	function getDistance(a, b) {
+		return Math.abs(a.row - b.row) + Math.abs(a.column - b.column)
+	}
+
+	function G(n) {
+		var current = closeList.get(getIndex(n))
+		return current.g
+	}
+
+	function H(n) {
+		return getDistance(n, end)
+	}
+
+	function removeFromOpenList(n) {
+		openList.delete(getIndex(n))
+	}
+
+	function popMinOpenPos() {
+		var index = choose(openList)
+		openList.delete(index)
+		return new Pos(Math.floor(index / COLUMNS), index % COLUMNS)
+	}
+
+	function walk(from, to) {
+		if (!closeList.has(getIndex(to)) && !openList.has(getIndex(to))
+			&& !map.getElement(to) && !finded) {
+			if (end.equals(to)) {
+				finded = true
+			} else {
+				openList.set(getIndex(to), { g: G(from), h: H(to) })
+			}
+			closeList.set(getIndex(to), {parent: from, g: G(from) + 1})
+		}
+	}
+
+	openList.set(getIndex(start), {g: 0, h: H(start)})
+	closeList.set(getIndex(start), {parent: null, g: 0})
+
+	do {
+		var current = popMinOpenPos()
+		const r = current.row, c = current.column
+		// 左
+		; (c - 1 >= 0) && walk(current, new Pos(r, c - 1))
+		// 右
+		; (c + 1 < COLUMNS) && walk(current, new Pos(r, c + 1))
+		// 上
+		; (r - 1 >= 0) && walk(current, new Pos(r - 1, c))
+		// 下
+		; (r + 1 < ROWS) && walk(current, new Pos(r + 1, c))
+	} while (!finded && openList.size > 0)
+
+	// 显示搜索过的路径
+	var searched = 0
+	closeList.forEach(function (v, k) {
+		var i = Math.floor(k / COLUMNS)
+		var j = k % COLUMNS
+		if (!uiMap.getElement(i, j).className) {
+			++searched
+			uiMap.getElement(i, j).className = 'searched'
+		}
+	})
+
+	// 显示结果
+	const result = []
+	if (finded) {
+		var cur = end
+		while (!cur.equals(start)) {
+			result.unshift(cur)
+			cur = closeList.get(getIndex(cur)).parent
+		}
+	}
+	document.getElementById('steps').innerHTML = result.length + ', ' + searched
+	for (var i = 0; i < result.length; ++i) {
+		if (!result[i].equals(end)) {
+			uiMap.getElement(result[i]).className = 'path'
+		}
+	}
+}
+
+// 优先向着目标奔去
+function gbfs() {
+	return aStar(function (list) {
+		var min_h = ROWS * COLUMNS
+		var index
+		list.forEach(function (v, k) {
+			if (v.h < min_h) {
+				min_h = v.h
+				index = k
+			}
+		})
+		return index
+	})
+}
+
+// 网格图每个节点之间的移动代价是相等的，所以 Dijkstra 算法和 BFS 一样。
+function dijkstra() {
+	return aStar(function (list) {
+		var min = ROWS * COLUMNS
+		var index
+		list.forEach(function (v, k) {
+			if (v.g < min) {
+				min = v.g
+				index = k
+			}
+		})
+		return index
+	})
+}
+
+function dijkstraPlus() {
+	return aStar(function (list) {
+		var min
+		var min_g = ROWS * COLUMNS
+		var index
+		list.forEach(function (v, k) {
+			if (v.g < min_g) {
+				min_g = v.g
+				min = v.g + v.h
+				index = k
+			} else if (v.g === min_g && v.g + v.h < min) {
+				min = v.g
+				index = k
+			}
+		})
+		return index
+	})
+}
+
+function aStarSearch() {
+	return aStar(function (list) {
+		var min = ROWS * COLUMNS
+		var index
+		list.forEach(function (v, k) {
+			if (v.g + v.h < min) {
+				min = v.g + v.h
+				index = k
+			}
+		})
+		return index
+	})
+}
+
+function aStarSearchConservative() {
+	return aStar(function (list) {
+		var min = ROWS * COLUMNS
+		var min_g
+		var index
+		list.forEach(function (v, k) {
+			if (v.g + v.h < min) {
+				min_g = v.g
+				min = v.g + v.h
+				index = k
+			} else if (v.g + v.h === min && v.g < min_g) {
+				min_g = v.g
+				index = k
+			}
+		})
+		return index
+	})
+}
+
+function aStarSearchRadical() {
+	return aStar(function (list) {
+		var min = ROWS * COLUMNS
+		var min_h
+		var index
+		list.forEach(function (v, k) {
+			if (v.g + v.h < min) {
+				min_h = v.h
+				min = v.g + v.h
+				index = k
+			} else if (v.g + v.h === min && v.h < min_h) {
+				min_h = v.h
+				index = k
+			}
+		})
+		return index
+	})
+}
+
+	</script>
+</body></html>
