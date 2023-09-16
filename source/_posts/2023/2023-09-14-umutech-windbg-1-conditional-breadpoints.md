@@ -33,7 +33,7 @@ bp function "$$<C:\\commands.txt"
 
 `winver` 显示的 Windows 的 Relase 版本信息，比如“22H2”，是从注册表里读的，想断下这个读取。
 
-![winver](/images/20230915_winver.png)
+![winver](/images/20230915-winver.png)
 
 ### 实现
 
