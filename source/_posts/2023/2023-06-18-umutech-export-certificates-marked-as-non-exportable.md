@@ -30,7 +30,7 @@ New-SelfSignedCertificate -DnsName "umu618.com" -CertStoreLocation "Cert:\Curren
 
 想想其它办法吧！理论上，系统里一定是有私钥的，“不可导出”只是个标志而已，无视它即可。
 
-![PrivateKey](/images/20230618-private.png)
+![PrivateKey](/images/2023/20230618-private.png)
 
 1. 从系统自己读取私钥。这需要了解 Windows 对私钥的存储方式，包括保存位置，怎么加密保护的，文件格式怎么解析……按照微软的习性，这肯定需要大量逆向，太难了！
 
@@ -56,10 +56,10 @@ New-SelfSignedCertificate -DnsName "umu618.com" -CertStoreLocation "Cert:\Curren
 
 果断在 GitHub 上搜一下，结果找到另一个基于 [EasyHook][easyhook] 的实现 [jailbreak][jailbreak]，稣毕竟是 [EasyHook][easyhook] 代码贡献者，当然是切换到 [jailbreak][jailbreak] 尝试，结果令人愉悦！在虚拟机里实践成功。
 
-![IDA 1](/images/20230618-ida-1.png)
-![IDA 2](/images/20230618-ida-2.png)
-![IDA 3](/images/20230618-ida-3.png)
-![IDA 4](/images/20230618-ida-4.png)
+![IDA 1](/images/2023/20230618-ida-1.png)
+![IDA 2](/images/2023/20230618-ida-2.png)
+![IDA 3](/images/2023/20230618-ida-3.png)
+![IDA 4](/images/2023/20230618-ida-4.png)
 
 ### 3. 惨遭打脸
 
@@ -67,9 +67,9 @@ New-SelfSignedCertificate -DnsName "umu618.com" -CertStoreLocation "Cert:\Curren
 
 仔细对比，发现以下提示是不同的！
 
-![笔记本上说的是“找不到私钥”](/images/20230618-not-found.png)
+![笔记本上说的是“找不到私钥”](/images/2023/20230618-not-found.png)
 
-![虚拟机上说的是“私钥不可导出”](/images/20230618-non-exportable.png)
+![虚拟机上说的是“私钥不可导出”](/images/2023/20230618-non-exportable.png)
 
 ### 4. 痛苦地回忆
 

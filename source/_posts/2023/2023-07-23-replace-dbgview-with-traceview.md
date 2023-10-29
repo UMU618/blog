@@ -101,13 +101,13 @@ int main() {
 
 打开 [TraceView][tv]，做好基本配置：
 
-![采用 GUID 方式](/images/20230723-traceview-guid.png)
+![采用 GUID 方式](/images/2023/20230723-traceview-guid.png)
 
-![没有 TMF，先 Auto，等八哥](/images/20230723-traceview-tmf.png)
+![没有 TMF，先 Auto，等八哥](/images/2023/20230723-traceview-tmf.png)
 
 然后，运行以上 C++ 代码，回到 [TraceView][tv] 界面，能看到捕获到信息，但并没有“Hello ETW!”，而是写着“解码错误 1168”。
 
-![解码错误](/images/20230723-traceview-1168.png)
+![解码错误](/images/2023/20230723-traceview-1168.png)
 
 到此，恍然大悟，原来 ETW 太底层，所以才有 WPP 定义一系列规范来使用 ETW，只不过 WPP 太老，不好用了。有没有一种不需要 pdb/man/tmf 的使用 ETW 的方式？
 

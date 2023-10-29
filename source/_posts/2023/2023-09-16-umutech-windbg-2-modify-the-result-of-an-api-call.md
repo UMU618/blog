@@ -13,7 +13,7 @@ tags:
 
 想修改 API 的返回结果。举个例子，想把前文提到的 Windows Release 信息改为 "0618"。
 
-![winver](/images/20230916-winver.png)
+![winver](/images/2023/20230916-winver.png)
 
 ## 分析
 

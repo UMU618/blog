@@ -63,4 +63,4 @@ sudo apt install firmware-iwlwifi firmware-sof-signed
 sudo apt install xrdp
 ```
 
-![Plasma UX3000E](/images/20220418-ux3000e.png)
+![Plasma UX3000E](/images/2022/20220418-ux3000e.png)

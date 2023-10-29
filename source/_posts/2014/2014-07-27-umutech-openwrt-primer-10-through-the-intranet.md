@@ -83,6 +83,6 @@ ssh -i /etc/dropbear/id_rsa -f -N -T -R 2222:localhost:22 <user>@<cloud_ip>
 
 如果成功则大功告成，以后只需要 ssh 到中转服务器的 2222 端口就等于连接到路由器了。最后配合本地端口转发，可以连接很多内网机器了。如下图：
 
-![Putty](/images/20140727-putty.jpg)
+![Putty](/images/2014/20140727-putty.jpg)
 
 再加一台路由器，用于做本地端口转发，就可以让 Surface、iPad 之类的设备也能快乐地穿透到内网了。

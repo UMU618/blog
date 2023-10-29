@@ -31,4 +31,4 @@ ren scp.exe -scp.exe
 mklink scp.exe %windir%\System32\OpenSSH\scp.exe
 ```
 
-![git ssh 链接到 OpenSSH](/images/20200407-mklink.png)
+![git ssh 链接到 OpenSSH](/images/2020/20200407-mklink.png)

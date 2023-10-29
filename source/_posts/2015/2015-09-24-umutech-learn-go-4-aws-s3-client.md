@@ -118,8 +118,8 @@ func main() {
 ```
 效果如下：
 
-![xs3cnc](/images/20150924-1.png)
+![xs3cnc](/images/2015/20150924-1.png)
 
 参照对象：
 
-![S3 Browser](/images/20150924-2.jpg)
+![S3 Browser](/images/2015/20150924-2.jpg)

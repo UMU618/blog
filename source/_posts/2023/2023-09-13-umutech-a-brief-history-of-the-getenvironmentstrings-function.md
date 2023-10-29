@@ -21,7 +21,7 @@ tags:
 #endif // !UNICODE
 ```
 
-![GetEnvironmentStrings](/images/20230913-get-environment-strings.jpg)
+![GetEnvironmentStrings](/images/2023/20230913-get-environment-strings.jpg)
 
 但是经历过 OutputDebugString 逆向的稣十分淡定地推测，这一定是故意的！毕竟，微软为了兼容性，啥都干得出来。
 
@@ -43,4 +43,4 @@ tags:
 
 大家可以不必担心相关的可能问题，因为现代的 Windows 会同时导出 GetEnvironmentStrings 和 GetEnvironmentStringsA。
 
-![GetEnvironmentStrings functions](/images/20230913-get-environment-strings-functions.jpg)
+![GetEnvironmentStrings functions](/images/2023/20230913-get-environment-strings-functions.jpg)

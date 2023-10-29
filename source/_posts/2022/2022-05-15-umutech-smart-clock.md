@@ -32,7 +32,7 @@ tags:
 
 稣正好有一个屏幕失灵的八英寸的平板电脑，酷比魔方 iWork 8，拿它来做智能时钟刚好合适。
 
-![SmartClock](/images/20220515-clock.jpg)
+![SmartClock](/images/2022/20220515-clock.jpg)
 
 当然，如果能定制一个，那更好：
 

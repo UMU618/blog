@@ -14,13 +14,13 @@ tags:
 
 “磁盘工具”默认“仅显示宗卷”，“显示所有设备”后是这样的：
 
-![disk0](/images/20200315-0.png)
+![disk0](/images/2020/20200315-0.png)
 
-![disk1](/images/20200315-1.png)
+![disk1](/images/2020/20200315-1.png)
 
-![disk1s5](/images/20200315-2.png)
+![disk1s5](/images/2020/20200315-2.png)
 
-![disk1s1](/images/20200315-3.png)
+![disk1s1](/images/2020/20200315-3.png)
 
 ## 分析
 

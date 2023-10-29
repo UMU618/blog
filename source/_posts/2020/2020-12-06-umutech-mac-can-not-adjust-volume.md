@@ -15,13 +15,13 @@ tags:
 2. 当笔记本是 MBP13 M1 时，无法调节外部音响的音量。
 3. 对比另一台 MBP 接 UltraFine 显示器时，却又可以调……怀疑是贵的才可以，便宜的阉割了【开玩笑的】。
 
-![M1 + AOC 便宜的显示器不行](/images/20201206-mbp-m1.jpg)
+![M1 + AOC 便宜的显示器不行](/images/2020/20201206-mbp-m1.jpg)
 
-![M1 + AOC 便宜的显示器无法调音量](/images/20201206-aoc.jpg)
+![M1 + AOC 便宜的显示器无法调音量](/images/2020/20201206-aoc.jpg)
 
-![Intel + UltraFine 可以](/images/20201206-mbp-intel.png)
+![Intel + UltraFine 可以](/images/2020/20201206-mbp-intel.png)
 
-![Intel + 贵的 UltraFine 可以调音量](/images/20201206-ultrafine.png)
+![Intel + 贵的 UltraFine 可以调音量](/images/2020/20201206-ultrafine.png)
 
 ## 原理
 
@@ -33,7 +33,7 @@ tags:
 
 然而……M1 是 Arm64e 的 CPU，而此软件的核心是个内核扩展模块，Release 出来的只有 x64 的 Mach-O 程序。
 
-![Soundflower 安装失败](/images/20201206-install-failed.jpg)
+![Soundflower 安装失败](/images/2020/20201206-install-failed.jpg)
 
 赫赫，尴尬地笑出声！好在 [Soundflower](https://github.com/mattingalls/Soundflower) 是开源的，要自己编译个对应架构的版本……然后：
 

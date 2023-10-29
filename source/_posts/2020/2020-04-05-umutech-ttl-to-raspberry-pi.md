@@ -25,21 +25,21 @@ tags:
 
 把 TTL 线插入 PC USB 口，Windows 10 会自动安装驱动，然而  `Prolific USB-to-Serial Comm Port 版本 3.8.31.0 [2019/7/30]` 和  `Prolific USB-to-Serial Comm Port 版本 3.8.18.0 [2017/10/17]` 都不能正常工作。**这说明 PL2303 芯片已经被淘汰……买 TTL 线请选当下流行的其它芯片。**
 
-![Prolific USB-to-Serial Comm Port 版本 3.8.31.0 [2019/7/30] 不能正常工作](/images/20200405-bad-driver-0.png)
+![Prolific USB-to-Serial Comm Port 版本 3.8.31.0 [2019/7/30] 不能正常工作](/images/2020/20200405-bad-driver-0.png)
 
-![Prolific USB-to-Serial Comm Port 版本 3.8.18.0 [2017/10/17] 不能正常工作](/images/20200405-bad-driver-1.png)
+![Prolific USB-to-Serial Comm Port 版本 3.8.18.0 [2017/10/17] 不能正常工作](/images/2020/20200405-bad-driver-1.png)
 
 搜“PL2303_Prolific_GPS_1013_20090319”，装“Prolific USB-to-Serial Comm Port 版本 3.3.2.105 [2008/10/27]”，可正常工作。
 
-![Prolific USB-to-Serial Comm Port 版本 3.3.2.105 [2008/10/27] 可正常工作](/images/20200405-driver-version.png)
+![Prolific USB-to-Serial Comm Port 版本 3.3.2.105 [2008/10/27] 可正常工作](/images/2020/20200405-driver-version.png)
 
 ### 2. 配置串口
 
 波特率设为 115200，其它默认，最终参数如图：
 
-![串口参数](/images/20200405-com1-settings.png)
+![串口参数](/images/2020/20200405-com1-settings.png)
 
-![高级](/images/20200405-com1-advance.png)
+![高级](/images/2020/20200405-com1-advance.png)
 
 ### 3. TTL 线连树莓派 GPIO
 
@@ -52,11 +52,11 @@ tags:
 | TX | 绿 | GPIO15(UART_RXD) | P10 |
 | GND | 黑 | GND | P6, P39 |
 
-![GPIO](/images/20200405-gpio.png)
+![GPIO](/images/2020/20200405-gpio.png)
 
-![TTL 接 GPIO：红接 1 或 2，黑接 3，白接 4，绿接 5](/images/20200405-ttl-gpio.jpg)
+![TTL 接 GPIO：红接 1 或 2，黑接 3，白接 4，绿接 5](/images/2020/20200405-ttl-gpio.jpg)
 
-![树莓派 GPIO 供电](/images/20200405-raspberry-pi.jpg)
+![树莓派 GPIO 供电](/images/2020/20200405-raspberry-pi.jpg)
 
 ### 4. 用 PuTTY 连接串口
 
@@ -66,11 +66,11 @@ tags:
 plink -serial \\.\COM1 -sercfg 115200,8,n,1,n
 ```
 
-![plink](/images/20200405-plink.png)
+![plink](/images/2020/20200405-plink.png)
 
-![PuTTY](/images/20200405-putty.png)
+![PuTTY](/images/2020/20200405-putty.png)
 
-![COM1 - PuTTY](/images/20200405-com1-putty.png)
+![COM1 - PuTTY](/images/2020/20200405-com1-putty.png)
 
 ## 相关
 

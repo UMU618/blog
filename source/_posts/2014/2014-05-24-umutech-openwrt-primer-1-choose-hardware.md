@@ -26,8 +26,8 @@ UMU 用的第一款硬件是 D-Link DIR-505。首先声明，UMU 不是 D-Link �
 
 接下来就刷个 OpenWRT 先~目前没有稳定发行版支持 DIR-505，所以要在 trunk 下找，下载目录是：<http://downloads.openwrt.org/snapshots/trunk/ar71xx/>。如果直接开刷，很可能失败，因为 D-Link 是有锁区的，OpenWRT.org 编译的 ROM 不是为中国版准备的，所以要动一下手脚先。上 WinHex 改 ROM，下面两张图分别是中国版和国际版：
 
-![中国版](/images/20140524-dir-505-cn.jpg)
+![中国版](/images/2014/20140524-dir-505-cn.jpg)
 
-![国际版](/images/20140524-dir-505-def.jpg)
+![国际版](/images/2014/20140524-dir-505-def.jpg)
 
 两者只是图片指出的位置不同而已，可以自己改，如果把 OpenWRT 的 ROM 改为 CN 也无法在原厂 ROM 下刷成功的话，可以先找个官方的 DEF ROM 改为 CN，刷一下，再刷 OpenWRT 原版的 DEF ROM。

@@ -45,7 +45,7 @@ std::cout << GetFileBaseName(__FILE__) << '\n';
 
 方法一：去掉 `Use Full Paths (/FC)` 即可把 `__FILE__` 设置为只有文件名，没有全路径。
 
-![Use Full Paths](/images/20221205-fc.png)
+![Use Full Paths](/images/2022/20221205-fc.png)
 
 方法二：改用 `__BASE_FILE__` 吧！新问题是：msvc 不支持。那就自己定义一个：
 

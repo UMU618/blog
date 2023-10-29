@@ -22,7 +22,7 @@ tags:
 
 在 Windows 下用 putty 连到 HomeRouter，基本就大功告成！开 tunnels 方法如图：
 
-![PuTTY tunnels](/images/20170301-putty.png)
+![PuTTY tunnels](/images/2017/20170301-putty.png)
 
 或者用：
 
@@ -32,4 +32,4 @@ PLINK.EXE -N -D 1080 root@HomeRouter
 
 最后是 QQ 的设置：
 
-![QQ Proxy](/images/20170301-qq.png)
+![QQ Proxy](/images/2017/20170301-qq.png)

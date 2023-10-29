@@ -102,11 +102,11 @@ sudo mount.nfs u1:/root/share /mnt/share
 
 - Windows 10
 
-![安装 NFS 客户端](/images/20200411-install-nfs-client.png)
+![安装 NFS 客户端](/images/2020/20200411-install-nfs-client.png)
 
-![浏览 NFS 共享目录](/images/20200411-browse-nfs.png)
+![浏览 NFS 共享目录](/images/2020/20200411-browse-nfs.png)
 
-![NFS 属性](/images/20200411-nfs-property.png)
+![NFS 属性](/images/2020/20200411-nfs-property.png)
 
 **注意**：Windows 10 目前只有 NFS v3 客户端。服务端如果只开 v4 协议，则 Windows 10 将无法访问。
 

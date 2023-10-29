@@ -6,7 +6,7 @@ categories: 吓醒
 tags:
 - 鲸神链
 ---
-![听说鲁豫要来采访稣](/images/20190207-luyu.jpg)
+![听说鲁豫要来采访稣](/images/2019/20190207-luyu.jpg)
 
 ## 2020 年，外传
 

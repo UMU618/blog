@@ -6,8 +6,8 @@ categories: 吓醒
 tags:
 - 鲸神魂裂
 ---
-![听说鲁豫要来采访稣](/images/20190207-luyu.jpg)
-![请戴口罩采访](/images/20200131-gauze-mask.png)
+![听说鲁豫要来采访稣](/images/2019/20190207-luyu.jpg)
+![请戴口罩采访](/images/2020/20200131-gauze-mask.png)
 
 由于没有经费写《后传》就把后传的内容写到《番外篇》了。
 
