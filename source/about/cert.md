@@ -30,3 +30,9 @@ Fingerprint(指纹): **ff8a8160116e35775506d0dd86360935877aaf3b**
 - <https://github.com/UMU618/nv-video-info>
 
 - <https://github.com/UMU618/PowerEconomizer>
+
+## 安装证书并信任它【非必要】
+
+可以[下载证书](/images/umu618.com.cer)，或从已签名的程序的属性里查看，再安装。
+
+![安装证书到“受信任的根证书颁发机构”](/images/install_cert.png)
